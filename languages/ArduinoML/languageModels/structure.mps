@@ -2,12 +2,12 @@
 <model ref="r:8c8ffeca-626e-49e8-b280-da1ade137fa2(ArduinoML.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="4fqr" ref="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="4fqr" ref="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -23,6 +23,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -54,6 +55,7 @@
     <property role="TrG5h" value="Brick" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="1210471889" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="3ur1G0gz0XR" role="1TKVEl">
       <property role="TrG5h" value="pin" />
@@ -65,15 +67,18 @@
   </node>
   <node concept="1TIwiD" id="3ur1G0gz1fS">
     <property role="TrG5h" value="Actuator" />
+    <property role="1pbfSe" value="1210522296" />
     <ref role="1TJDcQ" node="3ur1G0gyOWh" resolve="Brick" />
   </node>
   <node concept="1TIwiD" id="3ur1G0gz1fT">
     <property role="TrG5h" value="Sensor" />
+    <property role="1pbfSe" value="1210522297" />
     <ref role="1TJDcQ" node="3ur1G0gyOWh" resolve="Brick" />
   </node>
   <node concept="1TIwiD" id="3ur1G0gz1fZ">
     <property role="TrG5h" value="App" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="1210522303" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3ur1G0gz1g9" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -115,6 +120,7 @@
   </node>
   <node concept="1TIwiD" id="3ur1G0g$P_p">
     <property role="TrG5h" value="Action" />
+    <property role="1pbfSe" value="1210998809" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="3ur1G0g$PA1" role="1TKVEl">
       <property role="TrG5h" value="value" />
@@ -129,6 +135,7 @@
   </node>
   <node concept="1TIwiD" id="3ur1G0g$PAI">
     <property role="TrG5h" value="State" />
+    <property role="1pbfSe" value="1210998894" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3ur1G0g$PBp" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -148,6 +155,7 @@
   </node>
   <node concept="1TIwiD" id="3ur1G0g$PC_">
     <property role="TrG5h" value="Transition" />
+    <property role="1pbfSe" value="1210999013" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="3ur1G0g$PDk" role="1TKVEl">
       <property role="TrG5h" value="value" />
