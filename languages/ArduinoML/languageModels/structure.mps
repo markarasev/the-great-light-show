@@ -161,17 +161,68 @@
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" node="3ur1G0g$PzW" resolve="SIGNAL" />
     </node>
-    <node concept="1TJgyj" id="3ur1G0g$PDE" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="sensor" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3ur1G0gz1fT" resolve="Sensor" />
-    </node>
     <node concept="1TJgyj" id="3ur1G0g$PDG" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="target" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3ur1G0g$PAI" resolve="State" />
+    </node>
+    <node concept="1TJgyj" id="5ZZcmB$saIL" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5ZZcmB$saH6" resolve="Condition" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5ZZcmB$saFZ">
+    <property role="1pbfSe" value="1148181608" />
+    <property role="TrG5h" value="Input" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="5ZZcmB$saG0" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" node="3ur1G0g$PzW" resolve="SIGNAL" />
+    </node>
+    <node concept="1TJgyj" id="5ZZcmB$saG2" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="sensor" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3ur1G0gz1fT" resolve="Sensor" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5ZZcmB$saH6">
+    <property role="1pbfSe" value="1148181679" />
+    <property role="TrG5h" value="Condition" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5ZZcmB$saH7" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="input" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5ZZcmB$saFZ" resolve="Input" />
+    </node>
+    <node concept="1TJgyj" id="5ZZcmB$saH9" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="nested" />
+      <ref role="20lvS9" node="5ZZcmB$saH6" resolve="Condition" />
+    </node>
+    <node concept="1TJgyi" id="5ZZcmB$saHh" role="1TKVEl">
+      <property role="TrG5h" value="operator" />
+      <ref role="AX2Wp" node="5ZZcmB$saHc" resolve="BOOLEAN_OPERATOR" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="5ZZcmB$saHc">
+    <property role="TrG5h" value="BOOLEAN_OPERATOR" />
+    <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="M4N5e" id="5ZZcmB$saHd" role="M5hS2">
+      <property role="1uS6qo" value=" " />
+      <property role="1uS6qv" value="0" />
+    </node>
+    <node concept="M4N5e" id="5ZZcmB$saIz" role="M5hS2">
+      <property role="1uS6qo" value="or" />
+      <property role="1uS6qv" value="1" />
+    </node>
+    <node concept="M4N5e" id="5ZZcmB$saHe" role="M5hS2">
+      <property role="1uS6qo" value="and" />
+      <property role="1uS6qv" value="2" />
     </node>
   </node>
 </model>

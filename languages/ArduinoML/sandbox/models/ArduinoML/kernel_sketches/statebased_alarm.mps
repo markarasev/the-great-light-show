@@ -13,9 +13,8 @@
     </language>
     <language id="9faaf0ad-8c6c-45e7-a5cb-659ec4a07533" name="ArduinoML">
       <concept id="4006803715457767973" name="ArduinoML.structure.Transition" flags="ng" index="B25N_">
-        <property id="4006803715457768020" name="value" index="B25Mk" />
-        <reference id="4006803715457768042" name="sensor" index="B25ME" />
         <reference id="4006803715457768044" name="target" index="B25MG" />
+        <child id="6917301883538287537" name="condition" index="2VzTFo" />
       </concept>
       <concept id="4006803715457767854" name="ArduinoML.structure.State" flags="ng" index="B25XI">
         <child id="4006803715457767915" name="actions" index="B25WF" />
@@ -34,6 +33,13 @@
         <reference id="4006803715457768564" name="initialState" index="B25EO" />
         <child id="4006803715457768492" name="states" index="B25FG" />
         <child id="4006803715457291273" name="bricks" index="B5Lb9" />
+      </concept>
+      <concept id="6917301883538287430" name="ArduinoML.structure.Condition" flags="ng" index="2VzTCJ">
+        <child id="6917301883538287431" name="input" index="2VzTCI" />
+      </concept>
+      <concept id="6917301883538287359" name="ArduinoML.structure.Input" flags="ng" index="2VzTIm">
+        <property id="6917301883538287360" name="value" index="2VzTDD" />
+        <reference id="6917301883538287362" name="sensor" index="2VzTDF" />
       </concept>
     </language>
   </registry>
@@ -54,10 +60,14 @@
         <property role="B25X1" value="false" />
         <ref role="B25Xg" node="3e1pPA_M1c1" resolve="led" />
       </node>
-      <node concept="B25N_" id="5ZZcmB$s8i6" role="B25WY">
-        <property role="B25Mk" value="true" />
-        <ref role="B25ME" node="3e1pPA_M1c7" resolve="button" />
+      <node concept="B25N_" id="5ZZcmB$sl6A" role="B25WY">
         <ref role="B25MG" node="3e1pPA_M1cp" resolve="on" />
+        <node concept="2VzTCJ" id="5ZZcmB$sl6B" role="2VzTFo">
+          <node concept="2VzTIm" id="5ZZcmB$sl6J" role="2VzTCI">
+            <property role="2VzTDD" value="true" />
+            <ref role="2VzTDF" node="3e1pPA_M1c7" resolve="button" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="B25XI" id="3e1pPA_M1cp" role="B25FG">
@@ -66,10 +76,14 @@
         <property role="B25X1" value="true" />
         <ref role="B25Xg" node="3e1pPA_M1c1" resolve="led" />
       </node>
-      <node concept="B25N_" id="5ZZcmB$s8ia" role="B25WY">
-        <property role="B25Mk" value="true" />
-        <ref role="B25ME" node="3e1pPA_M1c7" resolve="button" />
+      <node concept="B25N_" id="5ZZcmB$sl6W" role="B25WY">
         <ref role="B25MG" node="3e1pPA_M1c0" resolve="off" />
+        <node concept="2VzTCJ" id="5ZZcmB$sl6X" role="2VzTFo">
+          <node concept="2VzTIm" id="5ZZcmB$sl75" role="2VzTCI">
+            <property role="2VzTDD" value="true" />
+            <ref role="2VzTDF" node="3e1pPA_M1c7" resolve="button" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
