@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:661eab62-a24d-494b-af56-727f28a34dd4(ArduinoML.sandbox)">
+<model ref="r:661eab62-a24d-494b-af56-727f28a34dd4(ArduinoML.kernel_sketches.verysimple_alarm)">
   <persistence version="9" />
   <languages>
     <use id="9faaf0ad-8c6c-45e7-a5cb-659ec4a07533" name="ArduinoML" version="-1" />
