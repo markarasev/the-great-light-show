@@ -16,7 +16,6 @@
         <property id="4006803715457768020" name="value" index="B25Mk" />
         <reference id="4006803715457768042" name="sensor" index="B25ME" />
         <reference id="4006803715457768044" name="target" index="B25MG" />
-        <child id="3711361202661102303" name="sensors" index="2minm6" />
       </concept>
       <concept id="4006803715457767854" name="ArduinoML.structure.State" flags="ng" index="B25XI">
         <child id="4006803715457767915" name="actions" index="B25WF" />
@@ -59,17 +58,15 @@
         <property role="B25X1" value="false" />
         <ref role="B25Xg" node="NB8hd4uZW5" resolve="buzzer" />
       </node>
-      <node concept="B25N_" id="3e1pPA_MakI" role="B25WY">
+      <node concept="B25N_" id="5ZZcmB$s8gU" role="B25WY">
         <property role="B25Mk" value="true" />
         <ref role="B25ME" node="NB8hd4uZWb" resolve="button1" />
         <ref role="B25MG" node="NB8hd4uZW_" resolve="waiting2" />
-        <node concept="B5LkT" id="3e1pPA_MakJ" role="2minm6" />
       </node>
-      <node concept="B25N_" id="3e1pPA_MakO" role="B25WY">
+      <node concept="B25N_" id="5ZZcmB$s8h0" role="B25WY">
         <property role="B25Mk" value="true" />
         <ref role="B25ME" node="NB8hd4uZWj" resolve="button2" />
         <ref role="B25MG" node="NB8hd4vtLG" resolve="waiting1" />
-        <node concept="B5LkT" id="3e1pPA_MakP" role="2minm6" />
       </node>
     </node>
     <node concept="B25XI" id="NB8hd4uZW_" role="B25FG">
@@ -78,17 +75,15 @@
         <property role="B25X1" value="false" />
         <ref role="B25Xg" node="NB8hd4uZW5" resolve="buzzer" />
       </node>
-      <node concept="B25N_" id="3e1pPA_Mal5" role="B25WY">
+      <node concept="B25N_" id="5ZZcmB$s8h7" role="B25WY">
         <property role="B25Mk" value="false" />
         <ref role="B25ME" node="NB8hd4uZWb" resolve="button1" />
         <ref role="B25MG" node="NB8hd4uZV$" resolve="off" />
-        <node concept="B5LkT" id="3e1pPA_Mal6" role="2minm6" />
       </node>
-      <node concept="B25N_" id="3e1pPA_Malb" role="B25WY">
+      <node concept="B25N_" id="5ZZcmB$s8hd" role="B25WY">
         <property role="B25Mk" value="true" />
         <ref role="B25ME" node="NB8hd4uZWj" resolve="button2" />
         <ref role="B25MG" node="NB8hd4vtLO" resolve="on" />
-        <node concept="B5LkT" id="3e1pPA_Malc" role="2minm6" />
       </node>
     </node>
     <node concept="B25XI" id="NB8hd4vtLG" role="B25FG">
@@ -97,17 +92,15 @@
         <property role="B25X1" value="false" />
         <ref role="B25Xg" node="NB8hd4uZW5" resolve="buzzer" />
       </node>
-      <node concept="B25N_" id="3e1pPA_Malw" role="B25WY">
+      <node concept="B25N_" id="5ZZcmB$s8hk" role="B25WY">
         <property role="B25Mk" value="true" />
         <ref role="B25ME" node="NB8hd4uZWb" resolve="button1" />
         <ref role="B25MG" node="NB8hd4vtLO" resolve="on" />
-        <node concept="B5LkT" id="3e1pPA_Malx" role="2minm6" />
       </node>
-      <node concept="B25N_" id="3e1pPA_MalA" role="B25WY">
+      <node concept="B25N_" id="5ZZcmB$s8hq" role="B25WY">
         <property role="B25Mk" value="false" />
         <ref role="B25ME" node="NB8hd4uZWj" resolve="button2" />
         <ref role="B25MG" node="NB8hd4uZV$" resolve="off" />
-        <node concept="B5LkT" id="3e1pPA_MalB" role="2minm6" />
       </node>
     </node>
     <node concept="B25XI" id="NB8hd4vtLO" role="B25FG">
@@ -116,17 +109,15 @@
         <property role="B25X1" value="true" />
         <ref role="B25Xg" node="NB8hd4uZW5" resolve="buzzer" />
       </node>
-      <node concept="B25N_" id="3e1pPA_MalR" role="B25WY">
+      <node concept="B25N_" id="5ZZcmB$s8hx" role="B25WY">
         <property role="B25Mk" value="false" />
         <ref role="B25ME" node="NB8hd4uZWb" resolve="button1" />
         <ref role="B25MG" node="NB8hd4vtLG" resolve="waiting1" />
-        <node concept="B5LkT" id="3e1pPA_MalS" role="2minm6" />
       </node>
-      <node concept="B25N_" id="3e1pPA_MalX" role="B25WY">
+      <node concept="B25N_" id="5ZZcmB$s8hB" role="B25WY">
         <property role="B25Mk" value="false" />
         <ref role="B25ME" node="NB8hd4uZWj" resolve="button2" />
         <ref role="B25MG" node="NB8hd4uZW_" resolve="waiting2" />
-        <node concept="B5LkT" id="3e1pPA_MalY" role="2minm6" />
       </node>
     </node>
   </node>

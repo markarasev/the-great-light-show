@@ -173,12 +173,6 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3ur1G0g$PAI" resolve="State" />
     </node>
-    <node concept="1TJgyj" id="3e1pPA_M1bv" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="sensors" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="3ur1G0gz1fT" resolve="Sensor" />
-    </node>
   </node>
 </model>
 

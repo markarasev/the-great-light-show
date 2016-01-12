@@ -17,7 +17,6 @@
         <property id="4006803715457768020" name="value" index="B25Mk" />
         <reference id="4006803715457768042" name="sensor" index="B25ME" />
         <reference id="4006803715457768044" name="target" index="B25MG" />
-        <child id="3711361202661102303" name="sensors" index="2minm6" />
       </concept>
       <concept id="4006803715457767854" name="ArduinoML.structure.State" flags="ng" index="B25XI">
         <child id="4006803715457767915" name="actions" index="B25WF" />
@@ -64,11 +63,10 @@
         <property role="B25X1" value="false" />
         <ref role="B25Xg" node="NB8hd4uJxA" resolve="buzzer" />
       </node>
-      <node concept="B25N_" id="3e1pPA_M9Hc" role="B25WY">
+      <node concept="B25N_" id="5ZZcmB$s8ig" role="B25WY">
         <property role="B25Mk" value="true" />
         <ref role="B25ME" node="3ur1G0gzYTK" resolve="button" />
         <ref role="B25MG" node="3ur1G0g$XHN" resolve="on" />
-        <node concept="B5LkT" id="3e1pPA_M9Hd" role="2minm6" />
       </node>
     </node>
     <node concept="B25XI" id="3ur1G0g$XHN" role="B25FG">
@@ -81,11 +79,10 @@
         <property role="B25X1" value="true" />
         <ref role="B25Xg" node="NB8hd4uJxA" resolve="buzzer" />
       </node>
-      <node concept="B25N_" id="3e1pPA_M9Hg" role="B25WY">
+      <node concept="B25N_" id="5ZZcmB$s8ik" role="B25WY">
         <property role="B25Mk" value="false" />
         <ref role="B25ME" node="3ur1G0gzYTK" resolve="button" />
         <ref role="B25MG" node="3ur1G0g$XHp" resolve="off" />
-        <node concept="B5LkT" id="3e1pPA_M9Hh" role="2minm6" />
       </node>
     </node>
   </node>

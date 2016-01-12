@@ -16,7 +16,6 @@
         <property id="4006803715457768020" name="value" index="B25Mk" />
         <reference id="4006803715457768042" name="sensor" index="B25ME" />
         <reference id="4006803715457768044" name="target" index="B25MG" />
-        <child id="3711361202661102303" name="sensors" index="2minm6" />
       </concept>
       <concept id="4006803715457767854" name="ArduinoML.structure.State" flags="ng" index="B25XI">
         <child id="4006803715457767915" name="actions" index="B25WF" />
@@ -63,20 +62,18 @@
         <property role="B25X1" value="false" />
         <ref role="B25Xg" node="3e1pPA_M3yJ" resolve="led" />
       </node>
-      <node concept="B25N_" id="3e1pPA_M3zb" role="B25WY">
+      <node concept="B25N_" id="5ZZcmB$s8gF" role="B25WY">
         <property role="B25Mk" value="true" />
         <ref role="B25ME" node="3e1pPA_M3yX" resolve="button" />
         <ref role="B25MG" node="3e1pPA_M3zf" resolve="buzz" />
-        <node concept="B5LkT" id="3e1pPA_M3zc" role="2minm6" />
       </node>
     </node>
     <node concept="B25XI" id="3e1pPA_M3zf" role="B25FG">
       <property role="TrG5h" value="buzz" />
-      <node concept="B25N_" id="3e1pPA_M3zo" role="B25WY">
+      <node concept="B25N_" id="5ZZcmB$s8gJ" role="B25WY">
         <property role="B25Mk" value="true" />
         <ref role="B25ME" node="3e1pPA_M3yX" resolve="button" />
         <ref role="B25MG" node="3e1pPA_M3zz" resolve="bright" />
-        <node concept="B5LkT" id="3e1pPA_M3zp" role="2minm6" />
       </node>
       <node concept="B25Yp" id="3e1pPA_M3zm" role="B25WF">
         <property role="B25X1" value="true" />
@@ -97,11 +94,10 @@
         <property role="B25X1" value="true" />
         <ref role="B25Xg" node="3e1pPA_M3yJ" resolve="led" />
       </node>
-      <node concept="B25N_" id="3e1pPA_M3zS" role="B25WY">
+      <node concept="B25N_" id="5ZZcmB$s8gN" role="B25WY">
         <property role="B25Mk" value="true" />
         <ref role="B25ME" node="3e1pPA_M3yX" resolve="button" />
         <ref role="B25MG" node="3e1pPA_M3yI" resolve="off" />
-        <node concept="B5LkT" id="3e1pPA_M3zT" role="2minm6" />
       </node>
     </node>
   </node>
