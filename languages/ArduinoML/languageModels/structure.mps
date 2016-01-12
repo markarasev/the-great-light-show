@@ -149,7 +149,7 @@
     <node concept="1TJgyj" id="3ur1G0g$PBY" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="transitions" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3ur1G0g$PC_" resolve="Transition" />
     </node>
   </node>
