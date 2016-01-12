@@ -39,11 +39,15 @@
     </language>
   </registry>
   <node concept="B5LkZ" id="3ur1G0gzYTk">
-    <property role="TrG5h" value="BigRedButton" />
+    <property role="TrG5h" value="VerySimpleAlarm" />
     <ref role="B25EO" node="3ur1G0g$XHp" resolve="off" />
     <node concept="B5LkS" id="3ur1G0gzYTz" role="B5Lb9">
       <property role="TrG5h" value="red_led" />
       <property role="B5KAR" value="12" />
+    </node>
+    <node concept="B5LkS" id="NB8hd4uJxA" role="B5Lb9">
+      <property role="TrG5h" value="buzzer" />
+      <property role="B5KAR" value="9" />
     </node>
     <node concept="B5LkT" id="3ur1G0gzYTK" role="B5Lb9">
       <property role="TrG5h" value="button" />
@@ -60,17 +64,25 @@
         <property role="B25X1" value="false" />
         <ref role="B25Xg" node="3ur1G0gzYTz" resolve="red_led" />
       </node>
+      <node concept="B25Yp" id="NB8hd4uJxQ" role="B25WF">
+        <property role="B25X1" value="false" />
+        <ref role="B25Xg" node="NB8hd4uJxA" resolve="buzzer" />
+      </node>
     </node>
     <node concept="B25XI" id="3ur1G0g$XHN" role="B25FG">
       <property role="TrG5h" value="on" />
       <node concept="B25N_" id="3ur1G0g$XHO" role="B25WY">
-        <property role="B25Mk" value="true" />
+        <property role="B25Mk" value="false" />
         <ref role="B25ME" node="3ur1G0gzYTK" resolve="button" />
         <ref role="B25MG" node="3ur1G0g$XHp" resolve="off" />
       </node>
       <node concept="B25Yp" id="3ur1G0g$XHU" role="B25WF">
         <property role="B25X1" value="true" />
         <ref role="B25Xg" node="3ur1G0gzYTz" resolve="red_led" />
+      </node>
+      <node concept="B25Yp" id="NB8hd4uJxX" role="B25WF">
+        <property role="B25X1" value="true" />
+        <ref role="B25Xg" node="NB8hd4uJxA" resolve="buzzer" />
       </node>
     </node>
   </node>
