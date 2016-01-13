@@ -69,7 +69,7 @@
       <node concept="B25N_" id="5ZZcmB$slaI" role="B25WY">
         <ref role="B25MG" node="NB8hd4vtLO" resolve="on" />
         <node concept="2VzTCJ" id="5ZZcmB$slaJ" role="2VzTFo">
-          <property role="2VzTCS" value="and" />
+          <property role="2VzTCS" value="2" />
           <node concept="2VzTIm" id="5ZZcmB$slaQ" role="2VzTCI">
             <property role="2VzTDD" value="true" />
             <ref role="2VzTDF" node="NB8hd4uZWb" resolve="button1" />
@@ -92,7 +92,7 @@
       <node concept="B25N_" id="5ZZcmB$slcL" role="B25WY">
         <ref role="B25MG" node="NB8hd4uZV$" resolve="off" />
         <node concept="2VzTCJ" id="5ZZcmB$slcM" role="2VzTFo">
-          <property role="2VzTCS" value="or" />
+          <property role="2VzTCS" value="1" />
           <node concept="2VzTIm" id="5ZZcmB$slcT" role="2VzTCI">
             <property role="2VzTDD" value="false" />
             <ref role="2VzTDF" node="NB8hd4uZWb" resolve="button1" />
