@@ -81,7 +81,7 @@
     <node concept="B25XI" id="3e1pPA_M3zf" role="B25FG">
       <property role="TrG5h" value="buzz" />
       <node concept="B25N_" id="5ZZcmB$slf3" role="B25WY">
-        <ref role="B25MG" node="3e1pPA_M3zf" resolve="buzz" />
+        <ref role="B25MG" node="3e1pPA_M3zz" resolve="bright" />
         <node concept="2VzTCJ" id="5ZZcmB$slf4" role="2VzTFo">
           <node concept="2VzTIm" id="5ZZcmB$slfc" role="2VzTCI">
             <property role="2VzTDD" value="true" />
