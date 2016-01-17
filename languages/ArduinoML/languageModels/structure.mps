@@ -262,6 +262,10 @@
       <property role="1uS6qo" value="B3" />
       <property role="1uS6qv" value="247" />
     </node>
+    <node concept="M4N5e" id="14Oqs0tMoAL" role="M5hS2">
+      <property role="1uS6qo" value="C4" />
+      <property role="1uS6qv" value="262" />
+    </node>
   </node>
   <node concept="AxPO7" id="14Oqs0tM9i6">
     <property role="TrG5h" value="Rythm" />

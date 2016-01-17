@@ -172,6 +172,15 @@
         </node>
         <node concept="l2Vlx" id="3ur1G0g_0Ps" role="2iSdaV" />
       </node>
+      <node concept="3EZMnI" id="14Oqs0tMkAV" role="3EZMnx">
+        <node concept="VPM3Z" id="14Oqs0tMkAX" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F1sOY" id="14Oqs0tMkB$" role="3EZMnx">
+          <ref role="1NtTu8" to="ve6y:14Oqs0tMd19" />
+        </node>
+        <node concept="l2Vlx" id="14Oqs0tMkB0" role="2iSdaV" />
+      </node>
       <node concept="3EZMnI" id="3ur1G0g_0Y7" role="3EZMnx">
         <node concept="VPM3Z" id="3ur1G0g_0Y9" role="3F10Kt">
           <property role="VOm3f" value="false" />
@@ -226,6 +235,25 @@
         <ref role="1NtTu8" to="ve6y:5ZZcmB$saH9" />
       </node>
       <node concept="l2Vlx" id="5ZZcmB$saHt" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="14Oqs0tMk$R">
+    <ref role="1XX52x" to="ve6y:14Oqs0tMd0A" resolve="NoteAndRythm" />
+    <node concept="3EZMnI" id="14Oqs0tMk_o" role="2wV5jI">
+      <node concept="3F0A7n" id="14Oqs0tMk_v" role="3EZMnx">
+        <ref role="1NtTu8" to="ve6y:14Oqs0tMd12" resolve="note" />
+      </node>
+      <node concept="3F0A7n" id="14Oqs0tMk__" role="3EZMnx">
+        <ref role="1NtTu8" to="ve6y:14Oqs0tMd14" resolve="rythm" />
+      </node>
+      <node concept="2iRfu4" id="14Oqs0tMk_r" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="14Oqs0tMk_I">
+    <ref role="1XX52x" to="ve6y:14Oqs0tMcZJ" resolve="Stave" />
+    <node concept="3F2HdR" id="14Oqs0tMkAk" role="2wV5jI">
+      <ref role="1NtTu8" to="ve6y:14Oqs0tMd17" />
+      <node concept="l2Vlx" id="14Oqs0tMkAm" role="2czzBx" />
     </node>
   </node>
 </model>
