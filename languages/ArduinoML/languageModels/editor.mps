@@ -176,6 +176,9 @@
         <node concept="VPM3Z" id="14Oqs0tMkAX" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>
+        <node concept="3F0ifn" id="14Oqs0tMwKW" role="3EZMnx">
+          <property role="3F0ifm" value="stave:" />
+        </node>
         <node concept="3F1sOY" id="14Oqs0tMkB$" role="3EZMnx">
           <ref role="1NtTu8" to="ve6y:14Oqs0tMd19" />
         </node>
@@ -251,9 +254,9 @@
   </node>
   <node concept="24kQdi" id="14Oqs0tMk_I">
     <ref role="1XX52x" to="ve6y:14Oqs0tMcZJ" resolve="Stave" />
-    <node concept="3F2HdR" id="14Oqs0tMkAk" role="2wV5jI">
+    <node concept="3F2HdR" id="14Oqs0tMTak" role="2wV5jI">
       <ref role="1NtTu8" to="ve6y:14Oqs0tMd17" />
-      <node concept="l2Vlx" id="14Oqs0tMkAm" role="2czzBx" />
+      <node concept="l2Vlx" id="14Oqs0tMTam" role="2czzBx" />
     </node>
   </node>
 </model>
