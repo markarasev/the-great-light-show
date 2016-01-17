@@ -153,6 +153,11 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3ur1G0g$PC_" resolve="Transition" />
     </node>
+    <node concept="1TJgyj" id="14Oqs0tMd19" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="stave" />
+      <ref role="20lvS9" node="14Oqs0tMcZJ" resolve="Stave" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3ur1G0g$PC_">
     <property role="TrG5h" value="Transition" />
@@ -281,6 +286,30 @@
     <node concept="M4N5e" id="14Oqs0tM9je" role="M5hS2">
       <property role="1uS6qo" value="o" />
       <property role="1uS6qv" value="1" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="14Oqs0tMcZJ">
+    <property role="1pbfSe" value="788347311" />
+    <property role="TrG5h" value="Stave" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="14Oqs0tMd17" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="notes" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="14Oqs0tMd0A" resolve="NoteAndRythm" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="14Oqs0tMd0A">
+    <property role="1pbfSe" value="788347366" />
+    <property role="TrG5h" value="NoteAndRythm" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="14Oqs0tMd12" role="1TKVEl">
+      <property role="TrG5h" value="note" />
+      <ref role="AX2Wp" node="14Oqs0tM5Ms" resolve="Note" />
+    </node>
+    <node concept="1TJgyi" id="14Oqs0tMd14" role="1TKVEl">
+      <property role="TrG5h" value="rythm" />
+      <ref role="AX2Wp" node="14Oqs0tM9i6" resolve="Rythm" />
     </node>
   </node>
 </model>
