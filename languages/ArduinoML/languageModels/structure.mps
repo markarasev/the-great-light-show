@@ -13,6 +13,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <property id="1212080844762" name="hasNoDefaultMember" index="PDuV0" />
+        <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <child id="1083172003582" name="member" index="M5hS2" />
       </concept>
@@ -255,6 +256,31 @@
     <node concept="M4N5e" id="14Oqs0tM5NH" role="M5hS2">
       <property role="1uS6qo" value="B3" />
       <property role="1uS6qv" value="247" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="14Oqs0tM9i6">
+    <property role="TrG5h" value="Rythm" />
+    <property role="3lZH7k" value="derive_from_internal_value" />
+    <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="M4N5e" id="14Oqs0tM9i7" role="M5hS2">
+      <property role="1uS6qv" value="4" />
+      <property role="1uS6qo" value="♩" />
+    </node>
+    <node concept="M4N5e" id="14Oqs0tM9j2" role="M5hS2">
+      <property role="1uS6qo" value="♫" />
+      <property role="1uS6qv" value="8" />
+    </node>
+    <node concept="M4N5e" id="14Oqs0tM9j5" role="M5hS2">
+      <property role="1uS6qo" value="♬" />
+      <property role="1uS6qv" value="16" />
+    </node>
+    <node concept="M4N5e" id="14Oqs0tM9j9" role="M5hS2">
+      <property role="1uS6qo" value="♭" />
+      <property role="1uS6qv" value="2" />
+    </node>
+    <node concept="M4N5e" id="14Oqs0tM9je" role="M5hS2">
+      <property role="1uS6qo" value="o" />
+      <property role="1uS6qv" value="1" />
     </node>
   </node>
 </model>
