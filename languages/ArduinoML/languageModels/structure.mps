@@ -225,5 +225,37 @@
       <property role="1uS6qv" value="2" />
     </node>
   </node>
+  <node concept="AxPO7" id="14Oqs0tM5Ms">
+    <property role="TrG5h" value="Note" />
+    <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="M4N5e" id="14Oqs0tM5Mt" role="M5hS2">
+      <property role="1uS6qo" value="C3" />
+      <property role="1uS6qv" value="131" />
+    </node>
+    <node concept="M4N5e" id="14Oqs0tM5Nn" role="M5hS2">
+      <property role="1uS6qo" value="D3" />
+      <property role="1uS6qv" value="147" />
+    </node>
+    <node concept="M4N5e" id="14Oqs0tM5Nk" role="M5hS2">
+      <property role="1uS6qo" value="E3" />
+      <property role="1uS6qv" value="165" />
+    </node>
+    <node concept="M4N5e" id="14Oqs0tM5Nr" role="M5hS2">
+      <property role="1uS6qo" value="F3" />
+      <property role="1uS6qv" value="175" />
+    </node>
+    <node concept="M4N5e" id="14Oqs0tM5Nw" role="M5hS2">
+      <property role="1uS6qo" value="G3" />
+      <property role="1uS6qv" value="196" />
+    </node>
+    <node concept="M4N5e" id="14Oqs0tM5NA" role="M5hS2">
+      <property role="1uS6qo" value="A3" />
+      <property role="1uS6qv" value="220" />
+    </node>
+    <node concept="M4N5e" id="14Oqs0tM5NH" role="M5hS2">
+      <property role="1uS6qo" value="B3" />
+      <property role="1uS6qv" value="247" />
+    </node>
+  </node>
 </model>
 
