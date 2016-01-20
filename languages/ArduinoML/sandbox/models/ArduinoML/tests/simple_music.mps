@@ -57,7 +57,7 @@
     <ref role="B25EO" node="14Oqs0tMgKf" resolve="off" />
     <node concept="B5LkS" id="14Oqs0tMgL6" role="B5Lb9">
       <property role="TrG5h" value="buzzer" />
-      <property role="B5KAR" value="5" />
+      <property role="B5KAR" value="9" />
     </node>
     <node concept="B5LkS" id="14Oqs0tMgLy" role="B5Lb9">
       <property role="TrG5h" value="led" />
