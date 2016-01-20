@@ -94,38 +94,22 @@
         <ref role="B25Xg" node="14Oqs0tMgLy" resolve="led" />
       </node>
       <node concept="cZaoJ" id="14Oqs0tMo_J" role="cZbA9">
-        <node concept="cZbBA" id="14Oqs0tMo_N" role="cZbA7">
-          <property role="cZbA4" value="4" />
-          <property role="cZbA2" value="1568" />
-        </node>
-        <node concept="cZbBA" id="14Oqs0tMo_P" role="cZbA7">
+        <node concept="cZbBA" id="42tOd6I$i0g" role="cZbA7">
           <property role="cZbA2" value="1760" />
-          <property role="cZbA4" value="4" />
+          <property role="cZbA4" value="2" />
         </node>
-        <node concept="cZbBA" id="14Oqs0tMo_S" role="cZbA7">
-          <property role="cZbA2" value="1976" />
-          <property role="cZbA4" value="4" />
-        </node>
-        <node concept="cZbBA" id="14Oqs0tMo_W" role="cZbA7">
+        <node concept="cZbBA" id="42tOd6I$i0i" role="cZbA7">
           <property role="cZbA2" value="1568" />
-          <property role="cZbA4" value="4" />
         </node>
-        <node concept="cZbBA" id="14Oqs0tMoA1" role="cZbA7">
-          <property role="cZbA2" value="1568" />
-          <property role="cZbA4" value="4" />
-        </node>
-        <node concept="cZbBA" id="14Oqs0tMoA7" role="cZbA7">
+        <node concept="cZbBA" id="42tOd6I$i0l" role="cZbA7">
           <property role="cZbA2" value="1760" />
-          <property role="cZbA4" value="4" />
+          <property role="cZbA4" value="8" />
         </node>
-        <node concept="cZbBA" id="14Oqs0tMoAe" role="cZbA7">
-          <property role="cZbA2" value="1976" />
-          <property role="cZbA4" value="4" />
-        </node>
-        <node concept="cZbBA" id="14Oqs0tMoAm" role="cZbA7">
+        <node concept="cZbBA" id="42tOd6I$i0p" role="cZbA7">
           <property role="cZbA2" value="1568" />
-          <property role="cZbA4" value="4" />
+          <property role="cZbA4" value="8" />
         </node>
+        <node concept="cZbBA" id="42tOd6I$nbD" role="cZbA7" />
       </node>
       <node concept="B25N_" id="14Oqs0tMwKD" role="B25WY">
         <ref role="B25MG" node="14Oqs0tMgKf" resolve="off" />

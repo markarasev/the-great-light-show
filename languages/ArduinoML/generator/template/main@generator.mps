@@ -495,7 +495,7 @@
                 </node>
                 <node concept="3cpWs3" id="3ur1G0g_fKL" role="3uHU7B">
                   <node concept="Xl_RD" id="3ur1G0g_ejh" role="3uHU7B">
-                    <property role="Xl_RC" value="\nvoid loop() { serial.begin(9600); state_" />
+                    <property role="Xl_RC" value="\nvoid loop() { Serial.begin(9600); state_" />
                   </node>
                   <node concept="Xl_RD" id="3ur1G0g_fXa" role="3uHU7w">
                     <property role="Xl_RC" value="initialState" />
