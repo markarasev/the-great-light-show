@@ -72,7 +72,7 @@
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -356,7 +356,7 @@
             <node concept="liA8E" id="42tOd6IxSGt" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="42tOd6IxSIJ" role="37wK5m">
-                <property role="Xl_RC" value="void loop() {\n    int i; // Définir 1 variable pour faire des boucles\n    int sample = 50;\n    int size = sizeof(melody) / sizeof(int);\n\n    Serial.begin(9600);\n    Serial.println(\&quot;'Mario Theme'\&quot;);\n    for (int thisNote = 0; thisNote &lt; size; thisNote++) {\n        // to calculate the note duration, take one second\n        // divided by the note type.\n        //e.g. quarter note = 1000 / 4, eighth note = 1000/8, etc.\n        int noteDuration = 1000 / tempo[thisNote]; \n        // to distinguish the notes, set a minimum time between them.\n        // the note's duration + 30% seems to work well:\n        int pauseBetweenNotes = noteDuration * 1.30;\n\n        buzz(buzzer, melody[thisNote], noteDuration);\n          delay(pauseBetweenNotes);\n        // stop the tone playing:\n        buzz(buzzer, 0, noteDuration);\n    }\n}\n" />
+                <property role="Xl_RC" value="void music_loop(int[] melody, int[] tempo) {\n    int i; // Définir 1 variable pour faire des boucles\n    int sample = 50;\n    int size = sizeof(melody) / sizeof(int);\n\n    Serial.begin(9600);\n    Serial.println(\&quot;'Mario Theme'\&quot;);\n    for (int thisNote = 0; thisNote &lt; size; thisNote++) {\n        // to calculate the note duration, take one second\n        // divided by the note type.\n        //e.g. quarter note = 1000 / 4, eighth note = 1000/8, etc.\n        int noteDuration = 1000 / tempo[thisNote]; \n        // to distinguish the notes, set a minimum time between them.\n        // the note's duration + 30% seems to work well:\n        int pauseBetweenNotes = noteDuration * 1.30;\n\n        buzz(buzzer, melody[thisNote], noteDuration);\n          delay(pauseBetweenNotes);\n        // stop the tone playing:\n        buzz(buzzer, 0, noteDuration);\n    }\n}\n" />
               </node>
             </node>
           </node>
@@ -1415,60 +1415,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="6LjMCYGffEF" role="3cqZAp">
-          <node concept="2OqwBi" id="6LjMCYGffEC" role="3clFbG">
-            <node concept="10M0yZ" id="6LjMCYGffED" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="6LjMCYGffEE" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.print(java.lang.String):void" resolve="print" />
-              <node concept="Xl_RD" id="6LjMCYGffKQ" role="37wK5m">
-                <property role="Xl_RC" value="int melody_tempo[] = {" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6LjMCYGfHlf" role="3cqZAp">
-          <node concept="2OqwBi" id="6LjMCYGfHlc" role="3clFbG">
-            <node concept="10M0yZ" id="6LjMCYGfHld" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="6LjMCYGfHle" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.print(java.lang.String):void" resolve="print" />
-              <node concept="Xl_RD" id="6LjMCYGfHrz" role="37wK5m" />
-            </node>
-          </node>
-          <node concept="2b32R4" id="6LjMCYGfIFG" role="lGtFl">
-            <node concept="3JmXsc" id="6LjMCYGfIFI" role="2P8S$">
-              <node concept="3clFbS" id="6LjMCYGfIFK" role="2VODD2">
-                <node concept="3clFbF" id="6LjMCYGfIQD" role="3cqZAp">
-                  <node concept="2OqwBi" id="6LjMCYGfISY" role="3clFbG">
-                    <node concept="30H73N" id="6LjMCYGfIQC" role="2Oq$k0" />
-                    <node concept="3Tsc0h" id="6LjMCYGfIZc" role="2OqNvi">
-                      <ref role="3TtcxE" to="ve6y:14Oqs0tMd17" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6LjMCYGfgUE" role="3cqZAp">
-          <node concept="2OqwBi" id="6LjMCYGfgUB" role="3clFbG">
-            <node concept="10M0yZ" id="6LjMCYGfgUC" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="6LjMCYGfgUD" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="Xl_RD" id="6LjMCYGfh0R" role="37wK5m">
-                <property role="Xl_RC" value="};" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="6LjMCYGg2J0" role="3cqZAp">
           <node concept="2OqwBi" id="6LjMCYGg2IX" role="3clFbG">
             <node concept="10M0yZ" id="6LjMCYGg2IY" role="2Oq$k0">
@@ -1573,6 +1519,128 @@
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="6LjMCYGg3ju" role="37wK5m">
                 <property role="Xl_RC" value="};" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6LjMCYGgBL3" role="3cqZAp">
+          <node concept="2OqwBi" id="6LjMCYGgBL0" role="3clFbG">
+            <node concept="10M0yZ" id="6LjMCYGgBL1" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="6LjMCYGgBL2" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="6LjMCYGgBX0" role="37wK5m">
+                <property role="Xl_RC" value="int tempo[] = {" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6LjMCYGgD8M" role="3cqZAp">
+          <node concept="2OqwBi" id="6LjMCYGgD8J" role="3clFbG">
+            <node concept="10M0yZ" id="6LjMCYGgD8K" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="6LjMCYGgD8L" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="6LjMCYGgDl8" role="37wK5m">
+                <node concept="17Uvod" id="6LjMCYGgFEI" role="lGtFl">
+                  <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+                  <property role="2qtEX9" value="value" />
+                  <node concept="3zFVjK" id="6LjMCYGgFEJ" role="3zH0cK">
+                    <node concept="3clFbS" id="6LjMCYGgFEK" role="2VODD2">
+                      <node concept="3cpWs8" id="6LjMCYGgG0z" role="3cqZAp">
+                        <node concept="3cpWsn" id="6LjMCYGgG0$" role="3cpWs9">
+                          <property role="TrG5h" value="builder" />
+                          <node concept="3uibUv" id="6LjMCYGgG0_" role="1tU5fm">
+                            <ref role="3uigEE" to="wyt6:~StringBuilder" resolve="StringBuilder" />
+                          </node>
+                          <node concept="2ShNRf" id="6LjMCYGgG38" role="33vP2m">
+                            <node concept="1pGfFk" id="6LjMCYGgGbY" role="2ShVmc">
+                              <ref role="37wK5l" to="wyt6:~StringBuilder.&lt;init&gt;()" resolve="StringBuilder" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2Gpval" id="6LjMCYGgGew" role="3cqZAp">
+                        <node concept="2GrKxI" id="6LjMCYGgGey" role="2Gsz3X">
+                          <property role="TrG5h" value="note" />
+                        </node>
+                        <node concept="3clFbS" id="6LjMCYGgGe$" role="2LFqv$">
+                          <node concept="3clFbF" id="6LjMCYGgGuM" role="3cqZAp">
+                            <node concept="2OqwBi" id="6LjMCYGgGyf" role="3clFbG">
+                              <node concept="37vLTw" id="6LjMCYGgGuL" role="2Oq$k0">
+                                <ref role="3cqZAo" node="6LjMCYGgG0$" resolve="builder" />
+                              </node>
+                              <node concept="liA8E" id="6LjMCYGgGF3" role="2OqNvi">
+                                <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
+                                <node concept="3cpWs3" id="6LjMCYGgHvf" role="37wK5m">
+                                  <node concept="Xl_RD" id="6LjMCYGgHz2" role="3uHU7w">
+                                    <property role="Xl_RC" value="," />
+                                  </node>
+                                  <node concept="2OqwBi" id="6LjMCYGgGLR" role="3uHU7B">
+                                    <node concept="2GrUjf" id="6LjMCYGgGJa" role="2Oq$k0">
+                                      <ref role="2Gs0qQ" node="6LjMCYGgGey" resolve="note" />
+                                    </node>
+                                    <node concept="3TrcHB" id="6LjMCYGgHid" role="2OqNvi">
+                                      <ref role="3TsBF5" to="ve6y:14Oqs0tMd14" resolve="rythm" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="2OqwBi" id="6LjMCYGgGk3" role="2GsD0m">
+                          <node concept="30H73N" id="6LjMCYGgGhI" role="2Oq$k0" />
+                          <node concept="3Tsc0h" id="6LjMCYGgGqi" role="2OqNvi">
+                            <ref role="3TtcxE" to="ve6y:14Oqs0tMd17" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="6LjMCYGgHWL" role="3cqZAp">
+                        <node concept="2OqwBi" id="6LjMCYGgI4u" role="3clFbG">
+                          <node concept="37vLTw" id="6LjMCYGgHWJ" role="2Oq$k0">
+                            <ref role="3cqZAo" node="6LjMCYGgG0$" resolve="builder" />
+                          </node>
+                          <node concept="liA8E" id="6LjMCYGgIh4" role="2OqNvi">
+                            <ref role="37wK5l" to="wyt6:~StringBuilder.toString():java.lang.String" resolve="toString" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6LjMCYGgE5n" role="3cqZAp">
+          <node concept="2OqwBi" id="6LjMCYGgE5k" role="3clFbG">
+            <node concept="10M0yZ" id="6LjMCYGgE5l" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="6LjMCYGgE5m" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="6LjMCYGgEi8" role="37wK5m">
+                <property role="Xl_RC" value="};" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6LjMCYGg_LT" role="3cqZAp">
+          <node concept="2OqwBi" id="6LjMCYGg_LQ" role="3clFbG">
+            <node concept="10M0yZ" id="6LjMCYGg_LR" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="6LjMCYGg_LS" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="6LjMCYGg_Xs" role="37wK5m">
+                <property role="Xl_RC" value="music_loop(melody, tempo);" />
               </node>
             </node>
           </node>
