@@ -178,7 +178,7 @@
         </node>
         <node concept="3XFhqQ" id="2yZLhGHHlqK" role="3EZMnx" />
         <node concept="3F0ifn" id="14Oqs0tMwKW" role="3EZMnx">
-          <property role="3F0ifm" value="stave:" />
+          <property role="3F0ifm" value="score:" />
         </node>
         <node concept="3F1sOY" id="14Oqs0tMkB$" role="3EZMnx">
           <ref role="1NtTu8" to="ve6y:14Oqs0tMd19" />
