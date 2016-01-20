@@ -12,7 +12,7 @@
       </concept>
     </language>
     <language id="9faaf0ad-8c6c-45e7-a5cb-659ec4a07533" name="ArduinoML">
-      <concept id="1239732071288066031" name="ArduinoML.structure.Stave" flags="ng" index="cZaoJ">
+      <concept id="1239732071288066031" name="ArduinoML.structure.Score" flags="ng" index="cZaoJ">
         <child id="1239732071288066119" name="notes" index="cZbA7" />
       </concept>
       <concept id="1239732071288066086" name="ArduinoML.structure.NoteAndRythm" flags="ng" index="cZbBA">
@@ -43,6 +43,7 @@
         <child id="4006803715457291273" name="bricks" index="B5Lb9" />
       </concept>
       <concept id="6917301883538287430" name="ArduinoML.structure.Condition" flags="ng" index="2VzTCJ">
+        <property id="6917301883538287441" name="operator" index="2VzTCS" />
         <child id="6917301883538287431" name="input" index="2VzTCI" />
       </concept>
       <concept id="6917301883538287359" name="ArduinoML.structure.Input" flags="ng" index="2VzTIm">
@@ -124,10 +125,15 @@
           <property role="cZbA2" value="262" />
           <property role="cZbA4" value="8" />
         </node>
+        <node concept="cZbBA" id="2yZLhGHHlqr" role="cZbA7">
+          <property role="cZbA2" value="147" />
+          <property role="cZbA4" value="16" />
+        </node>
       </node>
       <node concept="B25N_" id="14Oqs0tMwKD" role="B25WY">
         <ref role="B25MG" node="14Oqs0tMgKf" resolve="off" />
         <node concept="2VzTCJ" id="14Oqs0tMwKE" role="2VzTFo">
+          <property role="2VzTCS" value="0" />
           <node concept="2VzTIm" id="14Oqs0tMwKJ" role="2VzTCI">
             <property role="2VzTDD" value="true" />
             <ref role="2VzTDF" node="14Oqs0tMgLk" resolve="button" />
