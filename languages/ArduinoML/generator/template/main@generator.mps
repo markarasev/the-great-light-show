@@ -2,10 +2,10 @@
 <model ref="r:e7c4ce0d-fdac-4462-b2d9-19303e843608(ArduinoML.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="9faaf0ad-8c6c-45e7-a5cb-659ec4a07533" name="ArduinoML" version="0" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
+    <use id="9faaf0ad-8c6c-45e7-a5cb-659ec4a07533" name="ArduinoML" version="-1" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -72,7 +72,7 @@
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -319,6 +319,49 @@
           </node>
         </node>
         <node concept="3clFbH" id="3ur1G0g$i$6" role="3cqZAp" />
+        <node concept="3clFbF" id="42tOd6IxKwB" role="3cqZAp">
+          <node concept="2OqwBi" id="42tOd6IxKLf" role="3clFbG">
+            <node concept="10M0yZ" id="42tOd6IxKwA" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="42tOd6IxKVE" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="42tOd6IxKYG" role="37wK5m">
+                <property role="Xl_RC" value="// Loop and buzz functions definition" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="42tOd6IxT00" role="3cqZAp">
+          <node concept="2OqwBi" id="42tOd6IxTi6" role="3clFbG">
+            <node concept="10M0yZ" id="42tOd6IxSZZ" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="42tOd6IxTtd" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="42tOd6IxTxF" role="37wK5m">
+                <property role="Xl_RC" value="void buzz(int targetPin, long frequency, long length) {\n    long delayValue = 1000000 / frequency / 2; // calculate the delay value between transitions\n    // 1 second's worth of microseconds, divided by the frequency, then split in half since\n    // there are two phases to each cycle\n    long numCycles = frequency * length / 1000; // calculate the number of cycles for proper timing\n    // multiply frequency, which is really cycles per second, by the number of seconds to\n    // get the total number of cycles to produce\n    for (long i = 0; i &lt; numCycles; i++) { // for the calculated length of time…\n        digitalWrite(targetPin, HIGH); // write the buzzer pin high to push out the diaphram\n        delayMicroseconds(delayValue); // wait for the calculated delay value\n        digitalWrite(targetPin, LOW); // write the buzzer pin low to pull back the diaphram\n        delayMicroseconds(delayValue); // wait again or the calculated delay value\n    }\n}\n" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="42tOd6IxM9o" role="3cqZAp">
+          <node concept="2OqwBi" id="42tOd6IxSxF" role="3clFbG">
+            <node concept="10M0yZ" id="42tOd6IxSiI" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="42tOd6IxSGt" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="42tOd6IxSIJ" role="37wK5m">
+                <property role="Xl_RC" value="void loop() {\n    int i; // Définir 1 variable pour faire des boucles\n    int sample = 50;\n    int size = sizeof(melody) / sizeof(int);\n\n    Serial.begin(9600);\n    Serial.println(\&quot;'Mario Theme'\&quot;);\n    for (int thisNote = 0; thisNote &lt; size; thisNote++) {\n        // to calculate the note duration, take one second\n        // divided by the note type.\n        //e.g. quarter note = 1000 / 4, eighth note = 1000/8, etc.\n        int noteDuration = 1000 / tempo[thisNote]; \n        // to distinguish the notes, set a minimum time between them.\n        // the note's duration + 30% seems to work well:\n        int pauseBetweenNotes = noteDuration * 1.30;\n\n        buzz(buzzer, melody[thisNote], noteDuration);\n          delay(pauseBetweenNotes);\n        // stop the tone playing:\n        buzz(buzzer, 0, noteDuration);\n    }\n}\n" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="42tOd6IxLW_" role="3cqZAp" />
         <node concept="3clFbF" id="3ur1G0g_9_y" role="3cqZAp">
           <node concept="2OqwBi" id="3ur1G0g_9_v" role="3clFbG">
             <node concept="10M0yZ" id="3ur1G0g_9_w" role="2Oq$k0">
