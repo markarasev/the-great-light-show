@@ -2,7 +2,7 @@
 <model ref="r:2572a5e2-2013-4968-b4ee-b32a7c972dc5(ArduinoML.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -254,7 +254,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="14Oqs0tMk_I">
-    <ref role="1XX52x" to="ve6y:14Oqs0tMcZJ" resolve="Stave" />
+    <ref role="1XX52x" to="ve6y:14Oqs0tMcZJ" resolve="Score" />
     <node concept="3F2HdR" id="14Oqs0tMTak" role="2wV5jI">
       <ref role="1NtTu8" to="ve6y:14Oqs0tMd17" />
       <node concept="l2Vlx" id="14Oqs0tMTam" role="2czzBx" />

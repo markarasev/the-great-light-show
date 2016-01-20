@@ -155,7 +155,7 @@
     </node>
     <node concept="1TJgyj" id="14Oqs0tMd19" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="stave" />
+      <property role="20kJfa" value="score" />
       <ref role="20lvS9" node="14Oqs0tMcZJ" resolve="Score" />
     </node>
   </node>
