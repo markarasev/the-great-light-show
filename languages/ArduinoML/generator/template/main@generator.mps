@@ -346,12 +346,12 @@
             <node concept="liA8E" id="42tOd6IxSGt" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="42tOd6IxSIJ" role="37wK5m">
-                <property role="Xl_RC" value="void music_loop(int melody[], int tempo[], int size) {\n    int i; // Définir 1 variable pour faire des boucles\n    int sample = 50;\n\n    Serial.begin(9600);\n    Serial.println(\&quot;'Mario Theme'\&quot;);\n    for (int thisNote = 0; thisNote &lt; size; thisNote++) {\n        // to calculate the note duration, take one second\n        // divided by the note type.\n        //e.g. quarter note = 1000 / 4, eighth note = 1000/8, etc.\n        int noteDuration = 1000 / tempo[thisNote]; \n        // to distinguish the notes, set a minimum time between them.\n        // the note's duration + 30% seems to work well:\n        int pauseBetweenNotes = noteDuration * 1.30;\n\n        buzz(buzzer, melody[thisNote], noteDuration);\n          delay(pauseBetweenNotes);\n        // stop the tone playing:\n        buzz(buzzer, 0, noteDuration);\n    }\n}\n" />
+                <property role="Xl_RC" value="void music_loop(int melody[], int tempo[], int size) {\n    int i; // Définir 1 variable pour faire des boucles\n    int sample = 50;\n\n    Serial.begin(9600);\n    Serial.println(\&quot;'Mario Theme'\&quot;);\n    for (int thisNote = 0; thisNote &lt; size; thisNote++) {\n        // to calculate the note duration, take one second\n        // divided by the note type.\n        //e.g. quarter note = 1000 / 4, eighth note = 1000/8, etc.\n        int noteDuration = 1000 / tempo[thisNote]; \n        // to distinguish the notes, set a minimum time between them.\n        // the note's duration + 30% seems to work well:\n        int pauseBetweenNotes = noteDuration * 1.30;\n\n        buzz(buzzer, melody[thisNote], noteDuration);\n        delay(pauseBetweenNotes);\n        // stop the tone playing:\n        buzz(buzzer, 0, noteDuration);\n    }\n}\n" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="42tOd6IxLW_" role="3cqZAp" />
+        <node concept="3clFbH" id="42tOd6I$4vJ" role="3cqZAp" />
         <node concept="3clFbF" id="3ur1G0g_9_y" role="3cqZAp">
           <node concept="2OqwBi" id="3ur1G0g_9_v" role="3clFbG">
             <node concept="10M0yZ" id="3ur1G0g_9_w" role="2Oq$k0">
@@ -495,7 +495,7 @@
                 </node>
                 <node concept="3cpWs3" id="3ur1G0g_fKL" role="3uHU7B">
                   <node concept="Xl_RD" id="3ur1G0g_ejh" role="3uHU7B">
-                    <property role="Xl_RC" value="\nvoid loop() { state_" />
+                    <property role="Xl_RC" value="\nvoid loop() { serial.begin(9600); state_" />
                   </node>
                   <node concept="Xl_RD" id="3ur1G0g_fXa" role="3uHU7w">
                     <property role="Xl_RC" value="initialState" />
@@ -1349,7 +1349,7 @@
                 </node>
                 <node concept="3cpWs3" id="42tOd6Izxua" role="3uHU7B">
                   <node concept="Xl_RD" id="6LjMCYGg2N7" role="3uHU7B">
-                    <property role="Xl_RC" value="    int melody[] = { " />
+                    <property role="Xl_RC" value="    static int melody[] = { " />
                   </node>
                   <node concept="Xl_RD" id="42tOd6IzxH$" role="3uHU7w">
                     <node concept="17Uvod" id="42tOd6IzxH_" role="lGtFl">
@@ -1439,7 +1439,7 @@
                 </node>
                 <node concept="3cpWs3" id="42tOd6Iz_WF" role="3uHU7B">
                   <node concept="Xl_RD" id="6LjMCYGgBX0" role="3uHU7B">
-                    <property role="Xl_RC" value="    int tempo[] = { " />
+                    <property role="Xl_RC" value="    static int tempo[] = { " />
                   </node>
                   <node concept="Xl_RD" id="42tOd6IzA8X" role="3uHU7w">
                     <node concept="17Uvod" id="42tOd6IzA8Y" role="lGtFl">
@@ -1515,38 +1515,38 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="42tOd6Iz0sf" role="3cqZAp">
-          <node concept="2OqwBi" id="42tOd6Iz0Ed" role="3clFbG">
-            <node concept="10M0yZ" id="42tOd6Iz0se" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+        <node concept="3clFbF" id="42tOd6I$9x_" role="3cqZAp">
+          <node concept="2OqwBi" id="42tOd6I$9xA" role="3clFbG">
+            <node concept="10M0yZ" id="42tOd6I$9xB" role="2Oq$k0">
               <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
             </node>
-            <node concept="liA8E" id="42tOd6Iz0Jg" role="2OqNvi">
+            <node concept="liA8E" id="42tOd6I$9xC" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="42tOd6Iz8yb" role="37wK5m">
-                <node concept="Xl_RD" id="42tOd6Iz8Ev" role="3uHU7w">
+              <node concept="3cpWs3" id="42tOd6I$9xD" role="37wK5m">
+                <node concept="Xl_RD" id="42tOd6I$9xE" role="3uHU7w">
                   <property role="Xl_RC" value=";" />
                 </node>
-                <node concept="3cpWs3" id="42tOd6Iz0So" role="3uHU7B">
-                  <node concept="Xl_RD" id="42tOd6Iz0Jz" role="3uHU7B">
-                    <property role="Xl_RC" value="    int size = " />
+                <node concept="3cpWs3" id="42tOd6I$9xF" role="3uHU7B">
+                  <node concept="Xl_RD" id="42tOd6I$9xG" role="3uHU7B">
+                    <property role="Xl_RC" value="    static int size = " />
                   </node>
-                  <node concept="3cmrfG" id="42tOd6Iz0Tw" role="3uHU7w">
+                  <node concept="3cmrfG" id="42tOd6I$9xH" role="3uHU7w">
                     <property role="3cmrfH" value="0" />
-                    <node concept="17Uvod" id="42tOd6Iz0Zz" role="lGtFl">
+                    <node concept="17Uvod" id="42tOd6I$9xI" role="lGtFl">
                       <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580320020/1068580320021" />
                       <property role="2qtEX9" value="value" />
-                      <node concept="3zFVjK" id="42tOd6Iz0Z$" role="3zH0cK">
-                        <node concept="3clFbS" id="42tOd6Iz0Z_" role="2VODD2">
-                          <node concept="3clFbF" id="42tOd6Iz13e" role="3cqZAp">
-                            <node concept="2OqwBi" id="42tOd6Iz1Ec" role="3clFbG">
-                              <node concept="2OqwBi" id="42tOd6Iz16c" role="2Oq$k0">
-                                <node concept="30H73N" id="42tOd6Iz13d" role="2Oq$k0" />
-                                <node concept="3Tsc0h" id="42tOd6Iz1b_" role="2OqNvi">
+                      <node concept="3zFVjK" id="42tOd6I$9xJ" role="3zH0cK">
+                        <node concept="3clFbS" id="42tOd6I$9xK" role="2VODD2">
+                          <node concept="3clFbF" id="42tOd6I$9xL" role="3cqZAp">
+                            <node concept="2OqwBi" id="42tOd6I$9xM" role="3clFbG">
+                              <node concept="2OqwBi" id="42tOd6I$9xN" role="2Oq$k0">
+                                <node concept="30H73N" id="42tOd6I$9xO" role="2Oq$k0" />
+                                <node concept="3Tsc0h" id="42tOd6I$9xP" role="2OqNvi">
                                   <ref role="3TtcxE" to="ve6y:14Oqs0tMd17" />
                                 </node>
                               </node>
-                              <node concept="34oBXx" id="42tOd6Iz2qm" role="2OqNvi" />
+                              <node concept="34oBXx" id="42tOd6I$9xQ" role="2OqNvi" />
                             </node>
                           </node>
                         </node>
@@ -1558,16 +1558,16 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="6LjMCYGg_LT" role="3cqZAp">
-          <node concept="2OqwBi" id="6LjMCYGg_LQ" role="3clFbG">
-            <node concept="10M0yZ" id="6LjMCYGg_LR" role="2Oq$k0">
+        <node concept="3clFbF" id="42tOd6I$a_K" role="3cqZAp">
+          <node concept="2OqwBi" id="42tOd6I$aN$" role="3clFbG">
+            <node concept="10M0yZ" id="42tOd6I$a_J" role="2Oq$k0">
               <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
               <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
-            <node concept="liA8E" id="6LjMCYGg_LS" role="2OqNvi">
+            <node concept="liA8E" id="42tOd6I$aSB" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="Xl_RD" id="6LjMCYGg_Xs" role="37wK5m">
-                <property role="Xl_RC" value="    music_loop(melody, tempo, size);" />
+              <node concept="Xl_RD" id="42tOd6I$aSU" role="37wK5m">
+                <property role="Xl_RC" value="    static int current = 0;\n    \n    Serial.println(current);\n    // to calculate the note duration, take one second\n    // divided by the note type.\n    //e.g. quarter note = 1000 / 4, eighth note = 1000/8, etc.\n    int noteDuration = 1000 / tempo[current]; \n    // to distinguish the notes, set a minimum time between them.\n    // the note's duration + 30% seems to work well:\n    int pauseBetweenNotes = noteDuration * 1.30;\n\n    buzz(buzzer, melody[current], noteDuration);\n    delay(pauseBetweenNotes);\n    // stop the tone playing:\n    buzz(buzzer, 0, noteDuration);\n    current = (current + 1) % size;" />
               </node>
             </node>
           </node>
