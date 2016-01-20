@@ -283,6 +283,31 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="42tOd6IzShD" role="3cqZAp" />
+        <node concept="3clFbF" id="42tOd6IzSvV" role="3cqZAp">
+          <node concept="2OqwBi" id="42tOd6IzSPu" role="3clFbG">
+            <node concept="10M0yZ" id="42tOd6IzSvU" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="42tOd6IzT0e" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="42tOd6IzTmG" role="37wK5m">
+                <node concept="Xl_RD" id="42tOd6IzTqI" role="3uHU7w">
+                  <property role="Xl_RC" value=";" />
+                </node>
+                <node concept="3cpWs3" id="42tOd6IzTLQ" role="3uHU7B">
+                  <node concept="3cmrfG" id="42tOd6IzTMB" role="3uHU7w">
+                    <property role="3cmrfH" value="9" />
+                  </node>
+                  <node concept="Xl_RD" id="42tOd6IzT2w" role="3uHU7B">
+                    <property role="Xl_RC" value="int buzzer = " />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="3ur1G0g$i$6" role="3cqZAp" />
         <node concept="3clFbF" id="42tOd6IxKwB" role="3cqZAp">
           <node concept="2OqwBi" id="42tOd6IxKLf" role="3clFbG">
