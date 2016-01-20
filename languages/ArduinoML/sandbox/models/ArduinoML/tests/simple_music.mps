@@ -24,7 +24,7 @@
         <child id="6917301883538287537" name="condition" index="2VzTFo" />
       </concept>
       <concept id="4006803715457767854" name="ArduinoML.structure.State" flags="ng" index="B25XI">
-        <child id="1239732071288066121" name="stave" index="cZbA9" />
+        <child id="1239732071288066121" name="score" index="cZbA9" />
         <child id="4006803715457767915" name="actions" index="B25WF" />
         <child id="4006803715457767934" name="transitions" index="B25WY" />
       </concept>
@@ -96,38 +96,35 @@
       <node concept="cZaoJ" id="14Oqs0tMo_J" role="cZbA9">
         <node concept="cZbBA" id="14Oqs0tMo_N" role="cZbA7">
           <property role="cZbA4" value="8" />
+          <property role="cZbA2" value="1047" />
         </node>
         <node concept="cZbBA" id="14Oqs0tMo_P" role="cZbA7">
-          <property role="cZbA2" value="147" />
+          <property role="cZbA2" value="1175" />
           <property role="cZbA4" value="8" />
         </node>
         <node concept="cZbBA" id="14Oqs0tMo_S" role="cZbA7">
-          <property role="cZbA2" value="165" />
+          <property role="cZbA2" value="1319" />
           <property role="cZbA4" value="8" />
         </node>
         <node concept="cZbBA" id="14Oqs0tMo_W" role="cZbA7">
-          <property role="cZbA2" value="175" />
+          <property role="cZbA2" value="1397" />
           <property role="cZbA4" value="8" />
         </node>
         <node concept="cZbBA" id="14Oqs0tMoA1" role="cZbA7">
-          <property role="cZbA2" value="196" />
+          <property role="cZbA2" value="1568" />
           <property role="cZbA4" value="8" />
         </node>
         <node concept="cZbBA" id="14Oqs0tMoA7" role="cZbA7">
-          <property role="cZbA2" value="220" />
+          <property role="cZbA2" value="1760" />
           <property role="cZbA4" value="8" />
         </node>
         <node concept="cZbBA" id="14Oqs0tMoAe" role="cZbA7">
-          <property role="cZbA2" value="247" />
+          <property role="cZbA2" value="1976" />
           <property role="cZbA4" value="8" />
         </node>
         <node concept="cZbBA" id="14Oqs0tMoAm" role="cZbA7">
-          <property role="cZbA2" value="262" />
+          <property role="cZbA2" value="2093" />
           <property role="cZbA4" value="8" />
-        </node>
-        <node concept="cZbBA" id="2yZLhGHHlqr" role="cZbA7">
-          <property role="cZbA2" value="147" />
-          <property role="cZbA4" value="16" />
         </node>
       </node>
       <node concept="B25N_" id="14Oqs0tMwKD" role="B25WY">

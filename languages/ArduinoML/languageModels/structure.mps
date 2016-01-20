@@ -266,6 +266,38 @@
       <property role="1uS6qo" value="C4" />
       <property role="1uS6qv" value="262" />
     </node>
+    <node concept="M4N5e" id="42tOd6IyLdf" role="M5hS2">
+      <property role="1uS6qo" value="C6" />
+      <property role="1uS6qv" value="1047" />
+    </node>
+    <node concept="M4N5e" id="42tOd6IyLef" role="M5hS2">
+      <property role="1uS6qo" value="D6" />
+      <property role="1uS6qv" value="1175" />
+    </node>
+    <node concept="M4N5e" id="42tOd6IyLeq" role="M5hS2">
+      <property role="1uS6qo" value="E6" />
+      <property role="1uS6qv" value="1319" />
+    </node>
+    <node concept="M4N5e" id="42tOd6IyLeA" role="M5hS2">
+      <property role="1uS6qo" value="F6" />
+      <property role="1uS6qv" value="1397" />
+    </node>
+    <node concept="M4N5e" id="42tOd6IyLeN" role="M5hS2">
+      <property role="1uS6qo" value="G6" />
+      <property role="1uS6qv" value="1568" />
+    </node>
+    <node concept="M4N5e" id="42tOd6IyLf1" role="M5hS2">
+      <property role="1uS6qo" value="A6" />
+      <property role="1uS6qv" value="1760" />
+    </node>
+    <node concept="M4N5e" id="42tOd6IyLfg" role="M5hS2">
+      <property role="1uS6qo" value="B6" />
+      <property role="1uS6qv" value="1976" />
+    </node>
+    <node concept="M4N5e" id="42tOd6IyLfw" role="M5hS2">
+      <property role="1uS6qo" value="C7" />
+      <property role="1uS6qv" value="2093" />
+    </node>
   </node>
   <node concept="AxPO7" id="14Oqs0tM9i6">
     <property role="TrG5h" value="Rythm" />
