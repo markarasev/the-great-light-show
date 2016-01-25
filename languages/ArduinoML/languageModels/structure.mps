@@ -163,6 +163,10 @@
       <property role="20kJfa" value="instrument" />
       <ref role="20lvS9" node="3ur1G0gz1fS" resolve="Actuator" />
     </node>
+    <node concept="1TJgyi" id="4QOGFq8qVR$" role="1TKVEl">
+      <property role="TrG5h" value="tempo" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3ur1G0g$PC_">
     <property role="TrG5h" value="Transition" />

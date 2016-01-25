@@ -859,6 +859,46 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="4QOGFq8qWAx" role="3cqZAp">
+          <node concept="2OqwBi" id="4QOGFq8qWPs" role="3clFbG">
+            <node concept="10M0yZ" id="4QOGFq8qWAw" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="4QOGFq8qWZJ" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="4QOGFq8qXQg" role="37wK5m">
+                <node concept="Xl_RD" id="4QOGFq8qXXS" role="3uHU7w">
+                  <property role="Xl_RC" value=";" />
+                </node>
+                <node concept="3cpWs3" id="4QOGFq8qX98" role="3uHU7B">
+                  <node concept="Xl_RD" id="4QOGFq8qX0F" role="3uHU7B">
+                    <property role="Xl_RC" value="    int tempo = " />
+                  </node>
+                  <node concept="3cmrfG" id="4QOGFq8qXag" role="3uHU7w">
+                    <property role="3cmrfH" value="0" />
+                    <node concept="17Uvod" id="4QOGFq8qXgg" role="lGtFl">
+                      <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580320020/1068580320021" />
+                      <property role="2qtEX9" value="value" />
+                      <node concept="3zFVjK" id="4QOGFq8qXgh" role="3zH0cK">
+                        <node concept="3clFbS" id="4QOGFq8qXgi" role="2VODD2">
+                          <node concept="3clFbF" id="4QOGFq8qXkm" role="3cqZAp">
+                            <node concept="2OqwBi" id="4QOGFq8qXnK" role="3clFbG">
+                              <node concept="30H73N" id="4QOGFq8qXkl" role="2Oq$k0" />
+                              <node concept="3TrcHB" id="4QOGFq8qXu7" role="2OqNvi">
+                                <ref role="3TsBF5" to="ve6y:4QOGFq8qVR$" resolve="tempo" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="4QOGFq8qgWA" role="3cqZAp">
           <node concept="2OqwBi" id="4QOGFq8qh95" role="3clFbG">
             <node concept="10M0yZ" id="4QOGFq8qgW_" role="2Oq$k0">
@@ -1445,7 +1485,7 @@
                 </node>
                 <node concept="3cpWs3" id="42tOd6Iz_WF" role="3uHU7B">
                   <node concept="Xl_RD" id="6LjMCYGgBX0" role="3uHU7B">
-                    <property role="Xl_RC" value="    static int tempo[] = { " />
+                    <property role="Xl_RC" value="    static int rythm[] = { " />
                   </node>
                   <node concept="Xl_RD" id="42tOd6IzA8X" role="3uHU7w">
                     <node concept="17Uvod" id="42tOd6IzA8Y" role="lGtFl">
@@ -1573,7 +1613,7 @@
             <node concept="liA8E" id="42tOd6I$aSB" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="42tOd6I$aSU" role="37wK5m">
-                <property role="Xl_RC" value="    static int current = 0;\n    \n    Serial.println(current);\n    // to calculate the note duration, take one second\n    // divided by the note type.\n    //e.g. quarter note = 1000 / 4, eighth note = 1000/8, etc.\n    int noteDuration = 1000 / tempo[current]; \n    // to distinguish the notes, set a minimum time between them.\n    // the note's duration + 30% seems to work well:\n    int pauseBetweenNotes = noteDuration * 1.30;\n\n    buzz(buzzer, melody[current], noteDuration);\n    delay(pauseBetweenNotes);\n    // stop the tone playing:\n    buzz(buzzer, 0, noteDuration);\n    current = (current + 1) % size;" />
+                <property role="Xl_RC" value="    static int current = 0;\n    \n    Serial.println(current);\n    // to calculate the note duration, take one second\n    // divided by the note type.\n    //e.g. quarter note = 1000 / 4, eighth note = 1000/8, etc.\n    int noteDuration = (- 500 / 60 * tempo + 1500) / rythm[current]; \n    // to distinguish the notes, set a minimum time between them.\n    // the note's duration + 30% seems to work well:\n    int pauseBetweenNotes = noteDuration * 1.30;\n\n    buzz(buzzer, melody[current], noteDuration);\n    delay(pauseBetweenNotes);\n    // stop the tone playing:\n    buzz(buzzer, 0, noteDuration);\n    current = (current + 1) % size;" />
               </node>
             </node>
           </node>
