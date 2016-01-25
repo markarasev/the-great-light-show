@@ -24,6 +24,7 @@
         <child id="6917301883538287537" name="condition" index="2VzTFo" />
       </concept>
       <concept id="4006803715457767854" name="ArduinoML.structure.State" flags="ng" index="B25XI">
+        <reference id="5599296733770663683" name="buzzer" index="35ORmP" />
         <child id="1239732071288066121" name="score" index="cZbA9" />
         <child id="4006803715457767915" name="actions" index="B25WF" />
         <child id="4006803715457767934" name="transitions" index="B25WY" />
@@ -89,6 +90,7 @@
     </node>
     <node concept="B25XI" id="14Oqs0tMgLV" role="B25FG">
       <property role="TrG5h" value="on" />
+      <ref role="35ORmP" node="14Oqs0tMgL6" resolve="buzzer" />
       <node concept="B25Yp" id="14Oqs0tMgM3" role="B25WF">
         <property role="B25X1" value="true" />
         <ref role="B25Xg" node="14Oqs0tMgLy" resolve="led" />

@@ -158,6 +158,11 @@
       <property role="20kJfa" value="score" />
       <ref role="20lvS9" node="14Oqs0tMcZJ" resolve="Score" />
     </node>
+    <node concept="1TJgyj" id="4QOGFq8pWs3" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="instrument" />
+      <ref role="20lvS9" node="3ur1G0gz1fS" resolve="Actuator" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3ur1G0g$PC_">
     <property role="TrG5h" value="Transition" />
