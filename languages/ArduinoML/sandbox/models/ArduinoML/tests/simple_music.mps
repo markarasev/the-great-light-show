@@ -17,18 +17,15 @@
       </concept>
       <concept id="1239732071288066086" name="ArduinoML.structure.NoteAndRythm" flags="ng" index="cZbBA">
         <property id="1239732071288066114" name="note" index="cZbA2" />
-        <property id="1239732071288066116" name="rythm" index="cZbA4" />
       </concept>
       <concept id="4006803715457767973" name="ArduinoML.structure.Transition" flags="ng" index="B25N_">
         <reference id="4006803715457768044" name="target" index="B25MG" />
         <child id="6917301883538287537" name="condition" index="2VzTFo" />
       </concept>
       <concept id="4006803715457767854" name="ArduinoML.structure.State" flags="ng" index="B25XI">
-        <property id="5599296733770923492" name="tempo" index="35RKXi" />
-        <reference id="5599296733770663683" name="instrument" index="35ORmP" />
-        <child id="1239732071288066121" name="score" index="cZbA9" />
         <child id="4006803715457767915" name="actions" index="B25WF" />
         <child id="4006803715457767934" name="transitions" index="B25WY" />
+        <child id="5599296733771001015" name="playable" index="35Q5S1" />
       </concept>
       <concept id="4006803715457767769" name="ArduinoML.structure.Action" flags="ng" index="B25Yp">
         <property id="4006803715457767809" name="value" index="B25X1" />
@@ -45,18 +42,90 @@
         <child id="4006803715457291273" name="bricks" index="B5Lb9" />
       </concept>
       <concept id="6917301883538287430" name="ArduinoML.structure.Condition" flags="ng" index="2VzTCJ">
-        <property id="6917301883538287441" name="operator" index="2VzTCS" />
         <child id="6917301883538287431" name="input" index="2VzTCI" />
       </concept>
       <concept id="6917301883538287359" name="ArduinoML.structure.Input" flags="ng" index="2VzTIm">
         <property id="6917301883538287360" name="value" index="2VzTDD" />
         <reference id="6917301883538287362" name="sensor" index="2VzTDF" />
       </concept>
+      <concept id="5599296733770977325" name="ArduinoML.structure.Playable" flags="ng" index="35Q2ar">
+        <property id="5599296733770977353" name="tempo" index="35Q2bZ" />
+        <reference id="5599296733770978151" name="instrument" index="35Q27h" />
+        <child id="5599296733770978145" name="score" index="35Q27n" />
+      </concept>
     </language>
   </registry>
   <node concept="B5LkZ" id="14Oqs0tMgKd">
     <property role="TrG5h" value="SimpleMusic" />
-    <ref role="B25EO" node="14Oqs0tMgKf" resolve="off" />
+    <ref role="B25EO" node="4QOGFq8rp75" resolve="off" />
+    <node concept="B25XI" id="4QOGFq8rp75" role="B25FG">
+      <property role="TrG5h" value="off" />
+      <node concept="B25N_" id="4QOGFq8rp8i" role="B25WY">
+        <ref role="B25MG" node="4QOGFq8rp8B" resolve="on" />
+        <node concept="2VzTCJ" id="4QOGFq8rp8j" role="2VzTFo">
+          <node concept="2VzTIm" id="4QOGFq8rp8o" role="2VzTCI">
+            <property role="2VzTDD" value="true" />
+            <ref role="2VzTDF" node="14Oqs0tMgLk" resolve="button" />
+          </node>
+        </node>
+      </node>
+      <node concept="B25Yp" id="4QOGFq8rp7p" role="B25WF">
+        <property role="B25X1" value="false" />
+        <ref role="B25Xg" node="14Oqs0tMgL6" resolve="buzzer" />
+      </node>
+      <node concept="B25Yp" id="4QOGFq8rp7w" role="B25WF">
+        <property role="B25X1" value="false" />
+        <ref role="B25Xg" node="14Oqs0tMgLy" resolve="led" />
+      </node>
+    </node>
+    <node concept="B25XI" id="4QOGFq8rp8B" role="B25FG">
+      <property role="TrG5h" value="on" />
+      <node concept="B25Yp" id="4QOGFq8rp9b" role="B25WF">
+        <property role="B25X1" value="false" />
+        <ref role="B25Xg" node="14Oqs0tMgL6" resolve="buzzer" />
+      </node>
+      <node concept="B25Yp" id="4QOGFq8rp9g" role="B25WF">
+        <property role="B25X1" value="true" />
+        <ref role="B25Xg" node="14Oqs0tMgLy" resolve="led" />
+      </node>
+      <node concept="35Q2ar" id="4QOGFq8rp9k" role="35Q5S1">
+        <property role="35Q2bZ" value="60" />
+        <ref role="35Q27h" node="14Oqs0tMgL6" resolve="buzzer" />
+        <node concept="cZaoJ" id="4QOGFq8rp9l" role="35Q27n">
+          <node concept="cZbBA" id="4QOGFq8rp9m" role="cZbA7" />
+          <node concept="cZbBA" id="4QOGFq8rp9n" role="cZbA7">
+            <property role="cZbA2" value="147" />
+          </node>
+          <node concept="cZbBA" id="4QOGFq8rp9o" role="cZbA7">
+            <property role="cZbA2" value="165" />
+          </node>
+          <node concept="cZbBA" id="4QOGFq8rp9p" role="cZbA7">
+            <property role="cZbA2" value="175" />
+          </node>
+          <node concept="cZbBA" id="4QOGFq8rp9q" role="cZbA7">
+            <property role="cZbA2" value="196" />
+          </node>
+          <node concept="cZbBA" id="4QOGFq8rp9r" role="cZbA7">
+            <property role="cZbA2" value="220" />
+          </node>
+          <node concept="cZbBA" id="4QOGFq8rp9s" role="cZbA7">
+            <property role="cZbA2" value="247" />
+          </node>
+          <node concept="cZbBA" id="4QOGFq8rp9t" role="cZbA7">
+            <property role="cZbA2" value="262" />
+          </node>
+        </node>
+      </node>
+      <node concept="B25N_" id="4QOGFq8rp9C" role="B25WY">
+        <ref role="B25MG" node="4QOGFq8rp75" resolve="off" />
+        <node concept="2VzTCJ" id="4QOGFq8rp9D" role="2VzTFo">
+          <node concept="2VzTIm" id="4QOGFq8rp9I" role="2VzTCI">
+            <property role="2VzTDD" value="true" />
+            <ref role="2VzTDF" node="14Oqs0tMgLk" resolve="button" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="B5LkS" id="14Oqs0tMgL6" role="B5Lb9">
       <property role="TrG5h" value="buzzer" />
       <property role="B5KAR" value="9" />
@@ -68,64 +137,6 @@
     <node concept="B5LkT" id="14Oqs0tMgLk" role="B5Lb9">
       <property role="TrG5h" value="button" />
       <property role="B5KAR" value="8" />
-    </node>
-    <node concept="B25XI" id="14Oqs0tMgKf" role="B25FG">
-      <property role="TrG5h" value="off" />
-      <property role="35RKXi" value="60" />
-      <node concept="B25Yp" id="14Oqs0tMgLD" role="B25WF">
-        <property role="B25X1" value="false" />
-        <ref role="B25Xg" node="14Oqs0tMgL6" resolve="buzzer" />
-      </node>
-      <node concept="B25Yp" id="14Oqs0tMgLI" role="B25WF">
-        <property role="B25X1" value="false" />
-        <ref role="B25Xg" node="14Oqs0tMgLy" resolve="led" />
-      </node>
-      <node concept="B25N_" id="14Oqs0tMgLM" role="B25WY">
-        <ref role="B25MG" node="14Oqs0tMgLV" resolve="on" />
-        <node concept="2VzTCJ" id="14Oqs0tMgLN" role="2VzTFo">
-          <node concept="2VzTIm" id="14Oqs0tMgLS" role="2VzTCI">
-            <property role="2VzTDD" value="true" />
-            <ref role="2VzTDF" node="14Oqs0tMgLk" resolve="button" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="B25XI" id="14Oqs0tMgLV" role="B25FG">
-      <property role="TrG5h" value="on" />
-      <property role="35RKXi" value="60" />
-      <ref role="35ORmP" node="14Oqs0tMgL6" resolve="buzzer" />
-      <node concept="B25Yp" id="14Oqs0tMgM3" role="B25WF">
-        <property role="B25X1" value="true" />
-        <ref role="B25Xg" node="14Oqs0tMgLy" resolve="led" />
-      </node>
-      <node concept="cZaoJ" id="14Oqs0tMo_J" role="cZbA9">
-        <node concept="cZbBA" id="42tOd6I$i0g" role="cZbA7">
-          <property role="cZbA2" value="1760" />
-          <property role="cZbA4" value="2" />
-        </node>
-        <node concept="cZbBA" id="42tOd6I$i0i" role="cZbA7">
-          <property role="cZbA2" value="1568" />
-        </node>
-        <node concept="cZbBA" id="42tOd6I$i0l" role="cZbA7">
-          <property role="cZbA2" value="1760" />
-          <property role="cZbA4" value="8" />
-        </node>
-        <node concept="cZbBA" id="42tOd6I$i0p" role="cZbA7">
-          <property role="cZbA2" value="1568" />
-          <property role="cZbA4" value="8" />
-        </node>
-        <node concept="cZbBA" id="42tOd6I$nbD" role="cZbA7" />
-      </node>
-      <node concept="B25N_" id="14Oqs0tMwKD" role="B25WY">
-        <ref role="B25MG" node="14Oqs0tMgKf" resolve="off" />
-        <node concept="2VzTCJ" id="14Oqs0tMwKE" role="2VzTFo">
-          <property role="2VzTCS" value="0" />
-          <node concept="2VzTIm" id="14Oqs0tMwKJ" role="2VzTCI">
-            <property role="2VzTDD" value="true" />
-            <ref role="2VzTDF" node="14Oqs0tMgLk" resolve="button" />
-          </node>
-        </node>
-      </node>
     </node>
   </node>
 </model>
