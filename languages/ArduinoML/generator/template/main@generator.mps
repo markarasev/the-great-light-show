@@ -72,7 +72,7 @@
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -256,7 +256,7 @@
     <node concept="3aamgX" id="14Oqs0tMTxk" role="3acgRq">
       <ref role="30HIoZ" to="ve6y:14Oqs0tMcZJ" resolve="Score" />
       <node concept="j$656" id="14Oqs0tMTxE" role="1lVwrX">
-        <ref role="v9R2y" node="14Oqs0tMTxC" resolve="reduce_Stave" />
+        <ref role="v9R2y" node="14Oqs0tMTxC" resolve="reduce_Score" />
       </node>
     </node>
     <node concept="3aamgX" id="4QOGFq8r9jz" role="3acgRq">
@@ -1283,7 +1283,7 @@
     </node>
   </node>
   <node concept="13MO4I" id="14Oqs0tMTxC">
-    <property role="TrG5h" value="reduce_Stave" />
+    <property role="TrG5h" value="reduce_Score" />
     <ref role="3gUMe" to="ve6y:14Oqs0tMcZJ" resolve="Score" />
     <node concept="9aQIb" id="14Oqs0tMTy8" role="13RCb5">
       <node concept="3clFbS" id="14Oqs0tMTy9" role="9aQI4">
