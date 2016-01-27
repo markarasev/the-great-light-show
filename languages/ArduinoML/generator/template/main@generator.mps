@@ -72,7 +72,7 @@
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -313,7 +313,7 @@
             <node concept="liA8E" id="42tOd6IxTtd" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="42tOd6IxTxF" role="37wK5m">
-                <property role="Xl_RC" value="void buzz(int targetPin, long frequency, long length) {\n    long delayValue = 1000000 / frequency / 2; // calculate the delay value between transitions\n    // 1 second's worth of microseconds, divided by the frequency, then split in half since\n    // there are two phases to each cycle\n    long numCycles = frequency * length / 1000; // calculate the number of cycles for proper timing\n    // multiply frequency, which is really cycles per second, by the number of seconds to\n    // get the total number of cycles to produce\n    for (long i = 0; i &lt; numCycles; i++) { // for the calculated length of time…\n        digitalWrite(targetPin, HIGH); // write the buzzer pin high to push out the diaphram\n        delayMicroseconds(delayValue); // wait for the calculated delay value\n        digitalWrite(targetPin, LOW); // write the buzzer pin low to pull back the diaphram\n        delayMicroseconds(delayValue); // wait again or the calculated delay value\n    }\n}\n" />
+                <property role="Xl_RC" value="void buzz(int targetPin, long frequency, long length) {\n  if (!frequency) {\n    digitalWrite(targetPin, LOW);\n    delay(length);\n  }\n  else { \n   long delayValue = 1000000 / frequency / 2; // calculate the delay value between transitions\n    // 1 second's worth of microseconds, divided by the frequency, then split in half since\n    // there are two phases to each cycle\n    long numCycles = frequency * length / 1000; // calculate the number of cycles for proper timing\n    // multiply frequency, which is really cycles per second, by the number of seconds to\n    // get the total number of cycles to produce\n    for (long i = 0; i &lt; numCycles; i++) { // for the calculated length of time…\n        digitalWrite(targetPin, HIGH); // write the buzzer pin high to push out the diaphram\n        delayMicroseconds(delayValue); // wait for the calculated delay value\n        digitalWrite(targetPin, LOW); // write the buzzer pin low to pull back the diaphram\n        delayMicroseconds(delayValue); // wait again or the calculated delay value\n    }\n  }\n}\n" />
               </node>
             </node>
           </node>
@@ -1534,7 +1534,7 @@
             <node concept="liA8E" id="42tOd6I$aSB" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="42tOd6I$aSU" role="37wK5m">
-                <property role="Xl_RC" value="    static int current = 0;\n    \n    Serial.println(current);\n    // to calculate the note duration, take one second\n    // divided by the note type.\n    //e.g. quarter note = 1000 / 4, eighth note = 1000/8, etc.\n    int noteDuration = 240000 / tempo / rythm[current];\n\n    buzz(buzzer, melody[current], noteDuration);\n    // delay? maybe decrease duration and delay the rest\n    current = (current + 1) % size;" />
+                <property role="Xl_RC" value="    static int current = 0;\n    \n    Serial.println(current);\n    // to calculate the note duration, take one second\n    // divided by the note type.\n    //e.g. quarter note = 1000 / 4, eighth note = 1000/8, etc.\n    int totalDuration = 240000 / tempo / rythm[current];\n    int noteDuration = totalDuration * 7 / 10;\n    int delayDuration = totalDuration - noteDuration;\n\n    buzz(buzzer, melody[current], noteDuration);\n    delay(delayDuration);\n    current = (current + 1) % size;" />
               </node>
             </node>
           </node>
