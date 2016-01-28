@@ -19,6 +19,9 @@
         <property id="1239732071288066114" name="note" index="cZbA2" />
         <property id="1239732071288066116" name="rythm" index="cZbA4" />
       </concept>
+      <concept id="8912280891510277061" name="ArduinoML.structure.SensorValue" flags="ng" index="vlwI5">
+        <reference id="8912280891510277070" name="sensor" index="vlwIe" />
+      </concept>
       <concept id="4006803715457767973" name="ArduinoML.structure.Transition" flags="ng" index="B25N_">
         <reference id="4006803715457768044" name="target" index="B25MG" />
         <child id="6917301883538287537" name="condition" index="2VzTFo" />
@@ -52,6 +55,7 @@
       <concept id="5599296733770977325" name="ArduinoML.structure.Playable" flags="ng" index="35Q2ar">
         <property id="5599296733770977353" name="tempo" index="35Q2bZ" />
         <reference id="5599296733770978151" name="instrument" index="35Q27h" />
+        <child id="8912280891510277076" name="tempoValue" index="vlwIk" />
         <child id="5599296733770978145" name="score" index="35Q27n" />
       </concept>
     </language>
@@ -154,6 +158,9 @@
             <property role="cZbA2" value="1319" />
             <property role="cZbA4" value="2" />
           </node>
+        </node>
+        <node concept="vlwI5" id="7IIM41$YRpR" role="vlwIk">
+          <ref role="vlwIe" node="14Oqs0tMgLk" resolve="button" />
         </node>
       </node>
       <node concept="B25N_" id="4QOGFq8rp9C" role="B25WY">

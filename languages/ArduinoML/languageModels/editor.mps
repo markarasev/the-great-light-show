@@ -398,7 +398,39 @@
         </node>
         <node concept="l2Vlx" id="4QOGFq8r9hf" role="2iSdaV" />
       </node>
+      <node concept="3EZMnI" id="7IIM41$YtJb" role="3EZMnx">
+        <node concept="VPM3Z" id="7IIM41$YtJd" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3XFhqQ" id="7IIM41$YtJF" role="3EZMnx" />
+        <node concept="3F0ifn" id="7IIM41$YtJL" role="3EZMnx">
+          <property role="3F0ifm" value="tempoValue :" />
+        </node>
+        <node concept="3F1sOY" id="7IIM41$YtJY" role="3EZMnx">
+          <ref role="1NtTu8" to="ve6y:7IIM41$Ycfk" />
+        </node>
+        <node concept="l2Vlx" id="7IIM41$YtJg" role="2iSdaV" />
+      </node>
       <node concept="2iRkQZ" id="4QOGFq8r9ep" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7IIM41$YzN0">
+    <ref role="1XX52x" to="ve6y:7IIM41$Ycf0" resolve="HardcodedValue" />
+    <node concept="3F0ifn" id="7IIM41$YLgb" role="2wV5jI" />
+  </node>
+  <node concept="24kQdi" id="7IIM41$YF6Z">
+    <ref role="1XX52x" to="ve6y:7IIM41$Ycf5" resolve="SensorValue" />
+    <node concept="3EZMnI" id="7IIM41$YLgt" role="2wV5jI">
+      <node concept="1iCGBv" id="7IIM41$YLg$" role="3EZMnx">
+        <ref role="1NtTu8" to="ve6y:7IIM41$Ycfe" />
+        <node concept="1sVBvm" id="7IIM41$YLgA" role="1sWHZn">
+          <node concept="3F0A7n" id="7IIM41$YLgH" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="7IIM41$YLgw" role="2iSdaV" />
     </node>
   </node>
 </model>

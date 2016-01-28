@@ -405,11 +405,43 @@
       <property role="20kJfa" value="score" />
       <ref role="20lvS9" node="14Oqs0tMcZJ" resolve="Score" />
     </node>
+    <node concept="1TJgyj" id="7IIM41$Ycfk" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tempoValue" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7IIM41$YceV" resolve="Value" />
+    </node>
     <node concept="1TJgyj" id="4QOGFq8r9dB" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="instrument" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3ur1G0gz1fS" resolve="Actuator" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7IIM41$YceV">
+    <property role="1pbfSe" value="525890565" />
+    <property role="TrG5h" value="Value" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="7IIM41$Ycf0">
+    <property role="1pbfSe" value="525890560" />
+    <property role="TrG5h" value="HardcodedValue" />
+    <ref role="1TJDcQ" node="7IIM41$YceV" resolve="Value" />
+    <node concept="1TJgyi" id="7IIM41$Ycf3" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7IIM41$Ycf5">
+    <property role="1pbfSe" value="525890555" />
+    <property role="TrG5h" value="SensorValue" />
+    <ref role="1TJDcQ" node="7IIM41$YceV" resolve="Value" />
+    <node concept="1TJgyj" id="7IIM41$Ycfe" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="sensor" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3ur1G0gz1fT" resolve="Sensor" />
     </node>
   </node>
 </model>
