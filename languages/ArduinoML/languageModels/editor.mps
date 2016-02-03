@@ -2,7 +2,7 @@
 <model ref="r:2572a5e2-2013-4968-b4ee-b32a7c972dc5(ArduinoML.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -26,7 +26,7 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
-      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
+      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
@@ -34,19 +34,22 @@
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
-      <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
+      <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
+        <property id="1130859485024" name="attractsFocus" index="1cu_pB" />
+      </concept>
+      <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
-      <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
+      <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" index="3F0ifn">
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
-      <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
+      <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" index="3F0A7n" />
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
-      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
-      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" index="3F1sOY" />
+      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" index="3F2HdR" />
       <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
@@ -230,10 +233,8 @@
       <node concept="3F1sOY" id="5ZZcmB$saIp" role="3EZMnx">
         <ref role="1NtTu8" to="ve6y:5ZZcmB$saH7" />
       </node>
-      <node concept="3F0A7n" id="5ZZcmB$saIv" role="3EZMnx">
-        <ref role="1NtTu8" to="ve6y:5ZZcmB$saHh" resolve="operator" />
-      </node>
       <node concept="3F1sOY" id="5ZZcmB$saIF" role="3EZMnx">
+        <property role="1cu_pB" value="1" />
         <ref role="1NtTu8" to="ve6y:5ZZcmB$saH9" />
       </node>
       <node concept="l2Vlx" id="5ZZcmB$saHt" role="2iSdaV" />
@@ -401,15 +402,6 @@
       <node concept="2iRkQZ" id="4QOGFq8r9ep" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="7IIM41$YzN0">
-    <ref role="1XX52x" to="ve6y:7IIM41$Ycf0" resolve="HardcodedValue" />
-    <node concept="3EZMnI" id="1rXPBGhaUIM" role="2wV5jI">
-      <node concept="3F0A7n" id="1rXPBGhaUIW" role="3EZMnx">
-        <ref role="1NtTu8" to="ve6y:7IIM41$Ycf3" resolve="value" />
-      </node>
-      <node concept="l2Vlx" id="1rXPBGhaUIP" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="24kQdi" id="7IIM41$YF6Z">
     <ref role="1XX52x" to="ve6y:7IIM41$Ycf5" resolve="SensorValue" />
     <node concept="3EZMnI" id="7IIM41$YLgt" role="2wV5jI">
@@ -426,6 +418,27 @@
         </node>
       </node>
       <node concept="l2Vlx" id="7IIM41$YLgw" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7IIM41$YzN0">
+    <ref role="1XX52x" to="ve6y:7IIM41$Ycf0" resolve="HardcodedValue" />
+    <node concept="3EZMnI" id="1rXPBGhaUIM" role="2wV5jI">
+      <node concept="3F0A7n" id="1rXPBGhaUIW" role="3EZMnx">
+        <ref role="1NtTu8" to="ve6y:7IIM41$Ycf3" resolve="value" />
+      </node>
+      <node concept="l2Vlx" id="1rXPBGhaUIP" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="eB$fPhDT$a">
+    <ref role="1XX52x" to="ve6y:eB$fPhDTz3" resolve="Operator" />
+    <node concept="3EZMnI" id="eB$fPhDT$B" role="2wV5jI">
+      <node concept="3F0A7n" id="eB$fPhDT$I" role="3EZMnx">
+        <ref role="1NtTu8" to="ve6y:eB$fPhDTzv" resolve="operator" />
+      </node>
+      <node concept="3F1sOY" id="eB$fPhDT$O" role="3EZMnx">
+        <ref role="1NtTu8" to="ve6y:eB$fPhDTzz" />
+      </node>
+      <node concept="l2Vlx" id="eB$fPhDT$E" role="2iSdaV" />
     </node>
   </node>
 </model>

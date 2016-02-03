@@ -207,28 +207,21 @@
     </node>
     <node concept="1TJgyj" id="5ZZcmB$saH9" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="nested" />
-      <ref role="20lvS9" node="5ZZcmB$saH6" resolve="Condition" />
-    </node>
-    <node concept="1TJgyi" id="5ZZcmB$saHh" role="1TKVEl">
-      <property role="TrG5h" value="operator" />
-      <ref role="AX2Wp" node="5ZZcmB$saHc" resolve="BOOLEAN_OPERATOR" />
+      <property role="20kJfa" value="operator" />
+      <ref role="20lvS9" node="eB$fPhDTz3" resolve="Operator" />
     </node>
   </node>
   <node concept="AxPO7" id="5ZZcmB$saHc">
     <property role="TrG5h" value="BOOLEAN_OPERATOR" />
+    <property role="PDuV0" value="true" />
     <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
-    <node concept="M4N5e" id="5ZZcmB$saHd" role="M5hS2">
-      <property role="1uS6qo" value=" " />
-      <property role="1uS6qv" value="0" />
-    </node>
     <node concept="M4N5e" id="5ZZcmB$saIz" role="M5hS2">
       <property role="1uS6qo" value="or" />
-      <property role="1uS6qv" value="1" />
+      <property role="1uS6qv" value="0" />
     </node>
     <node concept="M4N5e" id="5ZZcmB$saHe" role="M5hS2">
       <property role="1uS6qo" value="and" />
-      <property role="1uS6qv" value="2" />
+      <property role="1uS6qv" value="1" />
     </node>
   </node>
   <node concept="AxPO7" id="14Oqs0tM5Ms">
@@ -420,15 +413,6 @@
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
-  <node concept="1TIwiD" id="7IIM41$Ycf0">
-    <property role="1pbfSe" value="525890560" />
-    <property role="TrG5h" value="HardcodedValue" />
-    <ref role="1TJDcQ" node="7IIM41$YceV" resolve="Value" />
-    <node concept="1TJgyi" id="7IIM41$Ycf3" role="1TKVEl">
-      <property role="TrG5h" value="value" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="7IIM41$Ycf5">
     <property role="1pbfSe" value="525890555" />
     <property role="TrG5h" value="SensorValue" />
@@ -438,6 +422,30 @@
       <property role="20kJfa" value="sensor" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3ur1G0gz1fT" resolve="Sensor" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7IIM41$Ycf0">
+    <property role="1pbfSe" value="525890560" />
+    <property role="TrG5h" value="HardcodedValue" />
+    <ref role="1TJDcQ" node="7IIM41$YceV" resolve="Value" />
+    <node concept="1TJgyi" id="7IIM41$Ycf3" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="eB$fPhDTz3">
+    <property role="1pbfSe" value="1431251392" />
+    <property role="TrG5h" value="Operator" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="eB$fPhDTzv" role="1TKVEl">
+      <property role="TrG5h" value="operator" />
+      <ref role="AX2Wp" node="5ZZcmB$saHc" resolve="BOOLEAN_OPERATOR" />
+    </node>
+    <node concept="1TJgyj" id="eB$fPhDTzz" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="right" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5ZZcmB$saH6" resolve="Condition" />
     </node>
   </node>
 </model>
