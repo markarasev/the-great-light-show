@@ -19,6 +19,9 @@
         <property id="1239732071288066114" name="note" index="cZbA2" />
         <property id="1239732071288066116" name="rythm" index="cZbA4" />
       </concept>
+      <concept id="8912280891510277056" name="ArduinoML.structure.HardcodedValue" flags="ng" index="vlwI0">
+        <property id="8912280891510277059" name="value" index="vlwI3" />
+      </concept>
       <concept id="8912280891510277061" name="ArduinoML.structure.SensorValue" flags="ng" index="vlwI5">
         <reference id="8912280891510277070" name="sensor" index="vlwIe" />
       </concept>
@@ -233,6 +236,9 @@
           <node concept="cZbBA" id="4q4K4ncqplQ" role="cZbA7">
             <property role="cZbA4" value="8" />
           </node>
+        </node>
+        <node concept="vlwI0" id="1rXPBGhbmH0" role="vlwIk">
+          <property role="vlwI3" value="128" />
         </node>
       </node>
     </node>
