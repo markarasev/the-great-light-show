@@ -35,13 +35,16 @@
         <child id="4006803715457291273" name="bricks" index="B5Lb9" />
       </concept>
       <concept id="6917301883538287430" name="ArduinoML.structure.Condition" flags="ng" index="2VzTCJ">
-        <property id="6917301883538287441" name="operator" index="2VzTCS" />
-        <child id="6917301883538287433" name="nested" index="2VzTCw" />
+        <child id="6917301883538287433" name="operator" index="2VzTCw" />
         <child id="6917301883538287431" name="input" index="2VzTCI" />
       </concept>
       <concept id="6917301883538287359" name="ArduinoML.structure.Input" flags="ng" index="2VzTIm">
         <property id="6917301883538287360" name="value" index="2VzTDD" />
         <reference id="6917301883538287362" name="sensor" index="2VzTDF" />
+      </concept>
+      <concept id="263338520895527107" name="ArduinoML.structure.Operator" flags="ng" index="1i00wY">
+        <property id="263338520895527135" name="operator" index="1i00wy" />
+        <child id="263338520895527139" name="right" index="1i00wu" />
       </concept>
     </language>
   </registry>
@@ -70,6 +73,33 @@
     </node>
     <node concept="B25XI" id="49Al_Z9eqNz" role="B25FG">
       <property role="TrG5h" value="off" />
+      <node concept="B25N_" id="eB$fPhEVcd" role="B25WY">
+        <ref role="B25MG" node="49Al_Z9eqPa" resolve="ledOn" />
+        <node concept="2VzTCJ" id="eB$fPhEVce" role="2VzTFo">
+          <node concept="2VzTIm" id="eB$fPhEVcj" role="2VzTCI">
+            <property role="2VzTDD" value="true" />
+            <ref role="2VzTDF" node="49Al_Z9eqOc" resolve="button1" />
+          </node>
+          <node concept="1i00wY" id="eB$fPhEVcm" role="2VzTCw">
+            <property role="1i00wy" value="0" />
+            <node concept="2VzTCJ" id="eB$fPhEVcn" role="1i00wu">
+              <node concept="2VzTIm" id="eB$fPhEVcs" role="2VzTCI">
+                <property role="2VzTDD" value="true" />
+                <ref role="2VzTDF" node="49Al_Z9eqOm" resolve="button2" />
+              </node>
+              <node concept="1i00wY" id="eB$fPhEVcv" role="2VzTCw">
+                <property role="1i00wy" value="0" />
+                <node concept="2VzTCJ" id="eB$fPhEVcw" role="1i00wu">
+                  <node concept="2VzTIm" id="eB$fPhEVdI" role="2VzTCI">
+                    <property role="2VzTDD" value="true" />
+                    <ref role="2VzTDF" node="49Al_Z9eqOy" resolve="button3" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="B25Yp" id="49Al_Z9eqOR" role="B25WF">
         <property role="B25X1" value="false" />
         <ref role="B25Xg" node="49Al_Z9eqNY" resolve="led" />
@@ -77,29 +107,6 @@
       <node concept="B25Yp" id="49Al_Z9eqOX" role="B25WF">
         <property role="B25X1" value="false" />
         <ref role="B25Xg" node="49Al_Z9eqO4" resolve="buzzer" />
-      </node>
-      <node concept="B25N_" id="49Al_Z9eqP1" role="B25WY">
-        <ref role="B25MG" node="49Al_Z9eqPa" resolve="ledOn" />
-        <node concept="2VzTCJ" id="49Al_Z9eqP2" role="2VzTFo">
-          <property role="2VzTCS" value="1" />
-          <node concept="2VzTIm" id="49Al_Z9eqP7" role="2VzTCI">
-            <property role="2VzTDD" value="true" />
-            <ref role="2VzTDF" node="49Al_Z9eqOc" resolve="button1" />
-          </node>
-          <node concept="2VzTCJ" id="49Al_Z9eqPH" role="2VzTCw">
-            <property role="2VzTCS" value="1" />
-            <node concept="2VzTIm" id="49Al_Z9eqPL" role="2VzTCI">
-              <property role="2VzTDD" value="true" />
-              <ref role="2VzTDF" node="49Al_Z9eqOm" resolve="button2" />
-            </node>
-            <node concept="2VzTCJ" id="49Al_Z9eqPO" role="2VzTCw">
-              <node concept="2VzTIm" id="49Al_Z9eqPS" role="2VzTCI">
-                <property role="2VzTDD" value="true" />
-                <ref role="2VzTDF" node="49Al_Z9eqOy" resolve="button3" />
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
     </node>
     <node concept="B25XI" id="49Al_Z9eqPa" role="B25FG">
@@ -112,24 +119,28 @@
         <property role="B25X1" value="false" />
         <ref role="B25Xg" node="49Al_Z9eqO4" resolve="buzzer" />
       </node>
-      <node concept="B25N_" id="49Al_Z9eqP$" role="B25WY">
+      <node concept="B25N_" id="eB$fPhEVdL" role="B25WY">
         <ref role="B25MG" node="49Al_Z9eqQ9" resolve="happyness" />
-        <node concept="2VzTCJ" id="49Al_Z9eqP_" role="2VzTFo">
-          <property role="2VzTCS" value="2" />
-          <node concept="2VzTIm" id="49Al_Z9eqPE" role="2VzTCI">
+        <node concept="2VzTCJ" id="eB$fPhEVdM" role="2VzTFo">
+          <node concept="2VzTIm" id="eB$fPhEVdY" role="2VzTCI">
             <property role="2VzTDD" value="true" />
             <ref role="2VzTDF" node="49Al_Z9eqOc" resolve="button1" />
           </node>
-          <node concept="2VzTCJ" id="49Al_Z9eqPV" role="2VzTCw">
-            <property role="2VzTCS" value="2" />
-            <node concept="2VzTIm" id="49Al_Z9eqPZ" role="2VzTCI">
-              <property role="2VzTDD" value="true" />
-              <ref role="2VzTDF" node="49Al_Z9eqOm" resolve="button2" />
-            </node>
-            <node concept="2VzTCJ" id="49Al_Z9eqQ2" role="2VzTCw">
-              <node concept="2VzTIm" id="49Al_Z9eqQ6" role="2VzTCI">
+          <node concept="1i00wY" id="eB$fPhEVe1" role="2VzTCw">
+            <property role="1i00wy" value="1" />
+            <node concept="2VzTCJ" id="eB$fPhEVe2" role="1i00wu">
+              <node concept="2VzTIm" id="eB$fPhEVe7" role="2VzTCI">
                 <property role="2VzTDD" value="true" />
-                <ref role="2VzTDF" node="49Al_Z9eqOy" resolve="button3" />
+                <ref role="2VzTDF" node="49Al_Z9eqOm" resolve="button2" />
+              </node>
+              <node concept="1i00wY" id="eB$fPhEVea" role="2VzTCw">
+                <property role="1i00wy" value="1" />
+                <node concept="2VzTCJ" id="eB$fPhEVeb" role="1i00wu">
+                  <node concept="2VzTIm" id="eB$fPhEVeg" role="2VzTCI">
+                    <property role="2VzTDD" value="true" />
+                    <ref role="2VzTDF" node="49Al_Z9eqOy" resolve="button3" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -146,42 +157,52 @@
         <property role="B25X1" value="true" />
         <ref role="B25Xg" node="49Al_Z9eqNY" resolve="led" />
       </node>
-      <node concept="B25N_" id="49Al_Z9eqQF" role="B25WY">
+      <node concept="B25N_" id="eB$fPhEVej" role="B25WY">
         <ref role="B25MG" node="49Al_Z9eqNz" resolve="off" />
-        <node concept="2VzTCJ" id="49Al_Z9eqQG" role="2VzTFo">
-          <property role="2VzTCS" value="2" />
-          <node concept="2VzTIm" id="49Al_Z9eqQL" role="2VzTCI">
+        <node concept="2VzTCJ" id="eB$fPhEVek" role="2VzTFo">
+          <node concept="2VzTIm" id="eB$fPhEVeA" role="2VzTCI">
             <property role="2VzTDD" value="true" />
             <ref role="2VzTDF" node="49Al_Z9eqOc" resolve="button1" />
           </node>
-          <node concept="2VzTCJ" id="49Al_Z9eqQO" role="2VzTCw">
-            <property role="2VzTCS" value="1" />
-            <node concept="2VzTIm" id="49Al_Z9eqQS" role="2VzTCI">
-              <property role="2VzTDD" value="true" />
-              <ref role="2VzTDF" node="49Al_Z9eqOm" resolve="button2" />
-            </node>
-            <node concept="2VzTCJ" id="49Al_Z9eqQV" role="2VzTCw">
-              <property role="2VzTCS" value="2" />
-              <node concept="2VzTIm" id="49Al_Z9eqQZ" role="2VzTCI">
+          <node concept="1i00wY" id="eB$fPhEVeD" role="2VzTCw">
+            <property role="1i00wy" value="1" />
+            <node concept="2VzTCJ" id="eB$fPhEVeE" role="1i00wu">
+              <node concept="2VzTIm" id="eB$fPhEVeJ" role="2VzTCI">
                 <property role="2VzTDD" value="true" />
-                <ref role="2VzTDF" node="49Al_Z9eqOc" resolve="button1" />
+                <ref role="2VzTDF" node="49Al_Z9eqOm" resolve="button2" />
               </node>
-              <node concept="2VzTCJ" id="49Al_Z9eqR2" role="2VzTCw">
-                <property role="2VzTCS" value="1" />
-                <node concept="2VzTIm" id="49Al_Z9eqR9" role="2VzTCI">
-                  <property role="2VzTDD" value="true" />
-                  <ref role="2VzTDF" node="49Al_Z9eqOy" resolve="button3" />
-                </node>
-                <node concept="2VzTCJ" id="49Al_Z9eqRc" role="2VzTCw">
-                  <property role="2VzTCS" value="2" />
-                  <node concept="2VzTIm" id="49Al_Z9eqRg" role="2VzTCI">
+              <node concept="1i00wY" id="eB$fPhEVeM" role="2VzTCw">
+                <property role="1i00wy" value="0" />
+                <node concept="2VzTCJ" id="eB$fPhEVeN" role="1i00wu">
+                  <node concept="2VzTIm" id="eB$fPhEVeS" role="2VzTCI">
                     <property role="2VzTDD" value="true" />
-                    <ref role="2VzTDF" node="49Al_Z9eqOm" resolve="button2" />
+                    <ref role="2VzTDF" node="49Al_Z9eqOc" resolve="button1" />
                   </node>
-                  <node concept="2VzTCJ" id="49Al_Z9eqRJ" role="2VzTCw">
-                    <node concept="2VzTIm" id="49Al_Z9eqRN" role="2VzTCI">
-                      <property role="2VzTDD" value="true" />
-                      <ref role="2VzTDF" node="49Al_Z9eqOy" resolve="button3" />
+                  <node concept="1i00wY" id="eB$fPhEVeV" role="2VzTCw">
+                    <property role="1i00wy" value="1" />
+                    <node concept="2VzTCJ" id="eB$fPhEVeW" role="1i00wu">
+                      <node concept="2VzTIm" id="eB$fPhEVf1" role="2VzTCI">
+                        <property role="2VzTDD" value="true" />
+                        <ref role="2VzTDF" node="49Al_Z9eqOy" resolve="button3" />
+                      </node>
+                      <node concept="1i00wY" id="eB$fPhEVf4" role="2VzTCw">
+                        <property role="1i00wy" value="0" />
+                        <node concept="2VzTCJ" id="eB$fPhEVf5" role="1i00wu">
+                          <node concept="2VzTIm" id="eB$fPhEVfa" role="2VzTCI">
+                            <property role="2VzTDD" value="true" />
+                            <ref role="2VzTDF" node="49Al_Z9eqOm" resolve="button2" />
+                          </node>
+                          <node concept="1i00wY" id="eB$fPhEVfd" role="2VzTCw">
+                            <property role="1i00wy" value="1" />
+                            <node concept="2VzTCJ" id="eB$fPhEVfe" role="1i00wu">
+                              <node concept="2VzTIm" id="eB$fPhEVfj" role="2VzTCI">
+                                <property role="2VzTDD" value="true" />
+                                <ref role="2VzTDF" node="49Al_Z9eqOy" resolve="button3" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>

@@ -34,6 +34,9 @@
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
+      <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
+        <property id="1130859485024" name="attractsFocus" index="1cu_pB" />
+      </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
@@ -230,10 +233,8 @@
       <node concept="3F1sOY" id="5ZZcmB$saIp" role="3EZMnx">
         <ref role="1NtTu8" to="ve6y:5ZZcmB$saH7" />
       </node>
-      <node concept="3F0A7n" id="5ZZcmB$saIv" role="3EZMnx">
-        <ref role="1NtTu8" to="ve6y:5ZZcmB$saHh" resolve="operator" />
-      </node>
       <node concept="3F1sOY" id="5ZZcmB$saIF" role="3EZMnx">
+        <property role="1cu_pB" value="1" />
         <ref role="1NtTu8" to="ve6y:5ZZcmB$saH9" />
       </node>
       <node concept="l2Vlx" id="5ZZcmB$saHt" role="2iSdaV" />
@@ -399,6 +400,18 @@
         <node concept="l2Vlx" id="4QOGFq8r9hf" role="2iSdaV" />
       </node>
       <node concept="2iRkQZ" id="4QOGFq8r9ep" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="eB$fPhDT$a">
+    <ref role="1XX52x" to="ve6y:eB$fPhDTz3" resolve="Operator" />
+    <node concept="3EZMnI" id="eB$fPhDT$B" role="2wV5jI">
+      <node concept="3F0A7n" id="eB$fPhDT$I" role="3EZMnx">
+        <ref role="1NtTu8" to="ve6y:eB$fPhDTzv" resolve="operator" />
+      </node>
+      <node concept="3F1sOY" id="eB$fPhDT$O" role="3EZMnx">
+        <ref role="1NtTu8" to="ve6y:eB$fPhDTzz" />
+      </node>
+      <node concept="l2Vlx" id="eB$fPhDT$E" role="2iSdaV" />
     </node>
   </node>
 </model>
