@@ -396,10 +396,6 @@
     <property role="1pbfSe" value="702463261" />
     <property role="TrG5h" value="Playable" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="4QOGFq8r919" role="1TKVEl">
-      <property role="TrG5h" value="tempo" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
     <node concept="1TJgyj" id="4QOGFq8r9dx" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="score" />

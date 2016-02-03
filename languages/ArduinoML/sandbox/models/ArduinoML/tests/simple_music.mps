@@ -56,7 +56,6 @@
         <reference id="6917301883538287362" name="sensor" index="2VzTDF" />
       </concept>
       <concept id="5599296733770977325" name="ArduinoML.structure.Playable" flags="ng" index="35Q2ar">
-        <property id="5599296733770977353" name="tempo" index="35Q2bZ" />
         <reference id="5599296733770978151" name="instrument" index="35Q27h" />
         <child id="8912280891510277076" name="tempoValue" index="vlwIk" />
         <child id="5599296733770978145" name="score" index="35Q27n" />
@@ -96,9 +95,20 @@
         <property role="B25X1" value="true" />
         <ref role="B25Xg" node="14Oqs0tMgLy" resolve="led" />
       </node>
-      <node concept="35Q2ar" id="4QOGFq8rp9k" role="35Q5S1">
-        <property role="35Q2bZ" value="132" />
+      <node concept="B25N_" id="4QOGFq8rp9C" role="B25WY">
+        <ref role="B25MG" node="4q4K4ncqpbC" resolve="mario" />
+        <node concept="2VzTCJ" id="4QOGFq8rp9D" role="2VzTFo">
+          <node concept="2VzTIm" id="4QOGFq8rp9I" role="2VzTCI">
+            <property role="2VzTDD" value="true" />
+            <ref role="2VzTDF" node="14Oqs0tMgLk" resolve="button" />
+          </node>
+        </node>
+      </node>
+      <node concept="35Q2ar" id="1rXPBGhdUp6" role="35Q5S1">
         <ref role="35Q27h" node="14Oqs0tMgL6" resolve="buzzer" />
+        <node concept="vlwI0" id="1rXPBGhdUpr" role="vlwIk">
+          <property role="vlwI3" value="120" />
+        </node>
         <node concept="cZaoJ" id="4QOGFq8rp9l" role="35Q27n">
           <node concept="cZbBA" id="4QOGFq8rp9o" role="cZbA7">
             <property role="cZbA2" value="2637" />
@@ -162,18 +172,6 @@
             <property role="cZbA4" value="2" />
           </node>
         </node>
-        <node concept="vlwI0" id="1rXPBGhbv_3" role="vlwIk">
-          <property role="vlwI3" value="120" />
-        </node>
-      </node>
-      <node concept="B25N_" id="4QOGFq8rp9C" role="B25WY">
-        <ref role="B25MG" node="4q4K4ncqpbC" resolve="mario" />
-        <node concept="2VzTCJ" id="4QOGFq8rp9D" role="2VzTFo">
-          <node concept="2VzTIm" id="4QOGFq8rp9I" role="2VzTCI">
-            <property role="2VzTDD" value="true" />
-            <ref role="2VzTDF" node="14Oqs0tMgLk" resolve="button" />
-          </node>
-        </node>
       </node>
     </node>
     <node concept="B25XI" id="4q4K4ncqpbC" role="B25FG">
@@ -195,9 +193,11 @@
         <property role="B25X1" value="true" />
         <ref role="B25Xg" node="14Oqs0tMgLy" resolve="led" />
       </node>
-      <node concept="35Q2ar" id="4q4K4ncqpch" role="35Q5S1">
-        <property role="35Q2bZ" value="100" />
+      <node concept="35Q2ar" id="1rXPBGhdZiS" role="35Q5S1">
         <ref role="35Q27h" node="14Oqs0tMgL6" resolve="buzzer" />
+        <node concept="vlwI5" id="1rXPBGhdZiW" role="vlwIk">
+          <ref role="vlwIe" node="1rXPBGhbmHx" resolve="tempoControl" />
+        </node>
         <node concept="cZaoJ" id="4q4K4ncqpcj" role="35Q27n">
           <node concept="cZbBA" id="4q4K4ncqpcl" role="cZbA7">
             <property role="cZbA2" value="2637" />
@@ -237,9 +237,6 @@
             <property role="cZbA4" value="8" />
           </node>
         </node>
-        <node concept="vlwI5" id="1rXPBGhd19O" role="vlwIk">
-          <ref role="vlwIe" node="1rXPBGhbmHx" resolve="tempoControl" />
-        </node>
       </node>
     </node>
     <node concept="B5LkS" id="14Oqs0tMgL6" role="B5Lb9">
@@ -256,7 +253,7 @@
     </node>
     <node concept="B5LkT" id="1rXPBGhbmHx" role="B5Lb9">
       <property role="TrG5h" value="tempoControl" />
-      <property role="B5KAR" value="7" />
+      <property role="B5KAR" value="2" />
     </node>
   </node>
 </model>
