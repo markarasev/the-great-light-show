@@ -162,8 +162,8 @@
             <property role="cZbA4" value="2" />
           </node>
         </node>
-        <node concept="vlwI5" id="7IIM41$YRpR" role="vlwIk">
-          <ref role="vlwIe" node="14Oqs0tMgLk" resolve="button" />
+        <node concept="vlwI0" id="1rXPBGhbv_3" role="vlwIk">
+          <property role="vlwI3" value="120" />
         </node>
       </node>
       <node concept="B25N_" id="4QOGFq8rp9C" role="B25WY">
@@ -237,8 +237,8 @@
             <property role="cZbA4" value="8" />
           </node>
         </node>
-        <node concept="vlwI0" id="1rXPBGhbmH0" role="vlwIk">
-          <property role="vlwI3" value="128" />
+        <node concept="vlwI5" id="1rXPBGhd19O" role="vlwIk">
+          <ref role="vlwIe" node="1rXPBGhbmHx" resolve="tempoControl" />
         </node>
       </node>
     </node>
@@ -253,6 +253,10 @@
     <node concept="B5LkT" id="14Oqs0tMgLk" role="B5Lb9">
       <property role="TrG5h" value="button" />
       <property role="B5KAR" value="8" />
+    </node>
+    <node concept="B5LkT" id="1rXPBGhbmHx" role="B5Lb9">
+      <property role="TrG5h" value="tempoControl" />
+      <property role="B5KAR" value="7" />
     </node>
   </node>
 </model>
