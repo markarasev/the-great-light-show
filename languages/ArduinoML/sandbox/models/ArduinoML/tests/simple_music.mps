@@ -26,7 +26,7 @@
       <concept id="4006803715457767854" name="ArduinoML.structure.State" flags="ng" index="B25XI">
         <child id="4006803715457767915" name="actions" index="B25WF" />
         <child id="4006803715457767934" name="transitions" index="B25WY" />
-        <child id="5599296733771001015" name="playable" index="35Q5S1" />
+        <child id="7995770510022209453" name="playableList" index="PB457" />
       </concept>
       <concept id="4006803715457767769" name="ArduinoML.structure.Action" flags="ng" index="B25Yp">
         <property id="4006803715457767809" name="value" index="B25X1" />
@@ -43,9 +43,12 @@
         <child id="4006803715457291273" name="bricks" index="B5Lb9" />
       </concept>
       <concept id="7995770510021927958" name="ArduinoML.structure.Track" flags="ng" index="P$0FW">
-        <property id="7995770510022035065" name="tempo" index="PBIyj" />
         <reference id="7995770510022128827" name="instrument" index="PBLDh" />
         <child id="7995770510022088210" name="score" index="PBVzS" />
+      </concept>
+      <concept id="7995770510022205738" name="ArduinoML.structure.PlayableList" flags="ng" index="PB4Z0">
+        <property id="7995770510022205739" name="tempo" index="PB4Z1" />
+        <child id="7995770510022205741" name="playables" index="PB4Z7" />
       </concept>
       <concept id="6917301883538287430" name="ArduinoML.structure.Condition" flags="ng" index="2VzTCJ">
         <child id="6917301883538287431" name="input" index="2VzTCI" />
@@ -98,70 +101,72 @@
           </node>
         </node>
       </node>
-      <node concept="P$0FW" id="6VQFIDrpR83" role="35Q5S1">
-        <property role="PBIyj" value="132" />
-        <ref role="PBLDh" node="14Oqs0tMgL6" resolve="buzzer" />
-        <node concept="cZaoJ" id="6VQFIDrqr3e" role="PBVzS">
-          <node concept="cZbBA" id="6VQFIDrqr3f" role="cZbA7">
-            <property role="cZbA2" value="2637" />
-            <property role="cZbA4" value="2" />
-          </node>
-          <node concept="cZbBA" id="6VQFIDrqr3g" role="cZbA7">
-            <property role="cZbA2" value="2349" />
-          </node>
-          <node concept="cZbBA" id="6VQFIDrqr3h" role="cZbA7">
-            <property role="cZbA2" value="2637" />
-            <property role="cZbA4" value="8" />
-          </node>
-          <node concept="cZbBA" id="6VQFIDrqr3i" role="cZbA7">
-            <property role="cZbA2" value="2349" />
-            <property role="cZbA4" value="4" />
-          </node>
-          <node concept="cZbBA" id="6VQFIDrqr3j" role="cZbA7">
-            <property role="cZbA2" value="1976" />
-            <property role="cZbA4" value="8" />
-          </node>
-          <node concept="cZbBA" id="6VQFIDrqr3k" role="cZbA7">
-            <property role="cZbA2" value="2349" />
-            <property role="cZbA4" value="8" />
-          </node>
-          <node concept="cZbBA" id="6VQFIDrqr3l" role="cZbA7">
-            <property role="cZbA2" value="1976" />
-            <property role="cZbA4" value="8" />
-          </node>
-          <node concept="cZbBA" id="6VQFIDrqr3m" role="cZbA7">
-            <property role="cZbA2" value="2349" />
-            <property role="cZbA4" value="8" />
-          </node>
-          <node concept="cZbBA" id="6VQFIDrqr3n" role="cZbA7">
-            <property role="cZbA2" value="1976" />
-            <property role="cZbA4" value="8" />
-          </node>
-          <node concept="cZbBA" id="6VQFIDrqr3o" role="cZbA7">
-            <property role="cZbA2" value="1760" />
-            <property role="cZbA4" value="4" />
-          </node>
-          <node concept="cZbBA" id="6VQFIDrqr3p" role="cZbA7">
-            <property role="cZbA2" value="1760" />
-            <property role="cZbA4" value="2" />
-          </node>
-          <node concept="cZbBA" id="6VQFIDrqr3q" role="cZbA7">
-            <property role="cZbA2" value="1568" />
-          </node>
-          <node concept="cZbBA" id="6VQFIDrqr3r" role="cZbA7">
-            <property role="cZbA2" value="1760" />
-            <property role="cZbA4" value="8" />
-          </node>
-          <node concept="cZbBA" id="6VQFIDrqr3s" role="cZbA7">
-            <property role="cZbA2" value="1568" />
-            <property role="cZbA4" value="8" />
-          </node>
-          <node concept="cZbBA" id="6VQFIDrqr3t" role="cZbA7">
-            <property role="cZbA4" value="8" />
-          </node>
-          <node concept="cZbBA" id="6VQFIDrqr3u" role="cZbA7">
-            <property role="cZbA2" value="1319" />
-            <property role="cZbA4" value="2" />
+      <node concept="PB4Z0" id="6VQFIDrqVcI" role="PB457">
+        <property role="PB4Z1" value="132" />
+        <node concept="P$0FW" id="6VQFIDrqVcM" role="PB4Z7">
+          <ref role="PBLDh" node="14Oqs0tMgL6" resolve="buzzer" />
+          <node concept="cZaoJ" id="6VQFIDrqr3e" role="PBVzS">
+            <node concept="cZbBA" id="6VQFIDrqr3f" role="cZbA7">
+              <property role="cZbA2" value="2637" />
+              <property role="cZbA4" value="2" />
+            </node>
+            <node concept="cZbBA" id="6VQFIDrqr3g" role="cZbA7">
+              <property role="cZbA2" value="2349" />
+            </node>
+            <node concept="cZbBA" id="6VQFIDrqr3h" role="cZbA7">
+              <property role="cZbA2" value="2637" />
+              <property role="cZbA4" value="8" />
+            </node>
+            <node concept="cZbBA" id="6VQFIDrqr3i" role="cZbA7">
+              <property role="cZbA2" value="2349" />
+              <property role="cZbA4" value="4" />
+            </node>
+            <node concept="cZbBA" id="6VQFIDrqr3j" role="cZbA7">
+              <property role="cZbA2" value="1976" />
+              <property role="cZbA4" value="8" />
+            </node>
+            <node concept="cZbBA" id="6VQFIDrqr3k" role="cZbA7">
+              <property role="cZbA2" value="2349" />
+              <property role="cZbA4" value="8" />
+            </node>
+            <node concept="cZbBA" id="6VQFIDrqr3l" role="cZbA7">
+              <property role="cZbA2" value="1976" />
+              <property role="cZbA4" value="8" />
+            </node>
+            <node concept="cZbBA" id="6VQFIDrqr3m" role="cZbA7">
+              <property role="cZbA2" value="2349" />
+              <property role="cZbA4" value="8" />
+            </node>
+            <node concept="cZbBA" id="6VQFIDrqr3n" role="cZbA7">
+              <property role="cZbA2" value="1976" />
+              <property role="cZbA4" value="8" />
+            </node>
+            <node concept="cZbBA" id="6VQFIDrqr3o" role="cZbA7">
+              <property role="cZbA2" value="1760" />
+              <property role="cZbA4" value="4" />
+            </node>
+            <node concept="cZbBA" id="6VQFIDrqr3p" role="cZbA7">
+              <property role="cZbA2" value="1760" />
+              <property role="cZbA4" value="2" />
+            </node>
+            <node concept="cZbBA" id="6VQFIDrqr3q" role="cZbA7">
+              <property role="cZbA2" value="1568" />
+            </node>
+            <node concept="cZbBA" id="6VQFIDrqr3r" role="cZbA7">
+              <property role="cZbA2" value="1760" />
+              <property role="cZbA4" value="8" />
+            </node>
+            <node concept="cZbBA" id="6VQFIDrqr3s" role="cZbA7">
+              <property role="cZbA2" value="1568" />
+              <property role="cZbA4" value="8" />
+            </node>
+            <node concept="cZbBA" id="6VQFIDrqr3t" role="cZbA7">
+              <property role="cZbA4" value="8" />
+            </node>
+            <node concept="cZbBA" id="6VQFIDrqr3u" role="cZbA7">
+              <property role="cZbA2" value="1319" />
+              <property role="cZbA4" value="2" />
+            </node>
           </node>
         </node>
       </node>
@@ -185,47 +190,10 @@
         <property role="B25X1" value="true" />
         <ref role="B25Xg" node="14Oqs0tMgLy" resolve="led" />
       </node>
-      <node concept="P$0FW" id="6VQFIDrpR8m" role="35Q5S1">
-        <property role="PBIyj" value="100" />
-        <ref role="PBLDh" node="14Oqs0tMgL6" resolve="buzzer" />
-        <node concept="cZaoJ" id="4q4K4ncqpcj" role="PBVzS">
-          <node concept="cZbBA" id="4q4K4ncqpcl" role="cZbA7">
-            <property role="cZbA2" value="2637" />
-            <property role="cZbA4" value="16" />
-          </node>
-          <node concept="cZbBA" id="4q4K4ncqpcn" role="cZbA7">
-            <property role="cZbA2" value="2637" />
-            <property role="cZbA4" value="8" />
-          </node>
-          <node concept="cZbBA" id="4q4K4ncqpcq" role="cZbA7">
-            <property role="cZbA2" value="2637" />
-            <property role="cZbA4" value="16" />
-          </node>
-          <node concept="cZbBA" id="4q4K4ncqplH" role="cZbA7">
-            <property role="cZbA4" value="16" />
-          </node>
-          <node concept="cZbBA" id="4q4K4ncqpcu" role="cZbA7">
-            <property role="cZbA2" value="2093" />
-            <property role="cZbA4" value="16" />
-          </node>
-          <node concept="cZbBA" id="4q4K4ncqpcz" role="cZbA7">
-            <property role="cZbA2" value="2637" />
-            <property role="cZbA4" value="8" />
-          </node>
-          <node concept="cZbBA" id="4q4K4ncqpcD" role="cZbA7">
-            <property role="cZbA2" value="3136" />
-            <property role="cZbA4" value="8" />
-          </node>
-          <node concept="cZbBA" id="4q4K4ncqpuG" role="cZbA7">
-            <property role="cZbA4" value="8" />
-          </node>
-          <node concept="cZbBA" id="4q4K4ncqpcK" role="cZbA7">
-            <property role="cZbA2" value="1568" />
-            <property role="cZbA4" value="8" />
-          </node>
-          <node concept="cZbBA" id="4q4K4ncqplQ" role="cZbA7">
-            <property role="cZbA4" value="8" />
-          </node>
+      <node concept="PB4Z0" id="6VQFIDrqVd6" role="PB457">
+        <property role="PB4Z1" value="100" />
+        <node concept="P$0FW" id="6VQFIDrqVda" role="PB4Z7">
+          <ref role="PBLDh" node="14Oqs0tMgL6" resolve="buzzer" />
         </node>
       </node>
     </node>

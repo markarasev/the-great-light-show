@@ -153,10 +153,11 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3ur1G0g$PC_" resolve="Transition" />
     </node>
-    <node concept="1TJgyj" id="4QOGFq8reMR" role="1TKVEi">
+    <node concept="1TJgyj" id="6VQFIDrqIYH" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="playable" />
-      <ref role="20lvS9" node="4QOGFq8r90H" resolve="Playable" />
+      <property role="20kJfa" value="playableList" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="6VQFIDrqI4E" resolve="PlayableList" />
     </node>
   </node>
   <node concept="1TIwiD" id="3ur1G0g$PC_">
@@ -410,10 +411,6 @@
     <property role="1pbfSe" value="899853568" />
     <property role="TrG5h" value="Track" />
     <ref role="1TJDcQ" node="4QOGFq8r90H" resolve="Playable" />
-    <node concept="1TJgyi" id="6VQFIDrq4pT" role="1TKVEl">
-      <property role="TrG5h" value="tempo" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
     <node concept="1TJgyj" id="6VQFIDrqhoi" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="score" />
@@ -425,6 +422,21 @@
       <property role="20kJfa" value="instrument" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3ur1G0gz1fS" resolve="Actuator" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6VQFIDrqI4E">
+    <property role="1pbfSe" value="899575788" />
+    <property role="TrG5h" value="PlayableList" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6VQFIDrqI4F" role="1TKVEl">
+      <property role="TrG5h" value="tempo" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyj" id="6VQFIDrqI4H" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="playables" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="4QOGFq8r90H" resolve="Playable" />
     </node>
   </node>
 </model>
