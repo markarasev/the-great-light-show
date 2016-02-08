@@ -388,22 +388,8 @@
   <node concept="1TIwiD" id="4QOGFq8r90H">
     <property role="1pbfSe" value="702463261" />
     <property role="TrG5h" value="Playable" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="4QOGFq8r919" role="1TKVEl">
-      <property role="TrG5h" value="tempo" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-    <node concept="1TJgyj" id="4QOGFq8r9dx" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="score" />
-      <ref role="20lvS9" node="14Oqs0tMcZJ" resolve="Score" />
-    </node>
-    <node concept="1TJgyj" id="4QOGFq8r9dB" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="instrument" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3ur1G0gz1fS" resolve="Actuator" />
-    </node>
   </node>
   <node concept="1TIwiD" id="eB$fPhDTz3">
     <property role="1pbfSe" value="1431251392" />
@@ -418,6 +404,27 @@
       <property role="20kJfa" value="right" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5ZZcmB$saH6" resolve="Condition" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6VQFIDrpEgm">
+    <property role="1pbfSe" value="899853568" />
+    <property role="TrG5h" value="Track" />
+    <ref role="1TJDcQ" node="4QOGFq8r90H" resolve="Playable" />
+    <node concept="1TJgyi" id="6VQFIDrq4pT" role="1TKVEl">
+      <property role="TrG5h" value="tempo" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyj" id="6VQFIDrqhoi" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="score" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="14Oqs0tMcZJ" resolve="Score" />
+    </node>
+    <node concept="1TJgyj" id="6VQFIDrqriV" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="instrument" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3ur1G0gz1fS" resolve="Actuator" />
     </node>
   </node>
 </model>
