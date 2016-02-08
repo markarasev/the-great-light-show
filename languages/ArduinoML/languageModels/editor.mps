@@ -423,5 +423,60 @@
       <node concept="2iRkQZ" id="6VQFIDrqIA5" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="6VQFIDrrf34">
+    <ref role="1XX52x" to="ve6y:6VQFIDrrf2W" resolve="SignalWrapper" />
+    <node concept="3F0A7n" id="6VQFIDrruKb" role="2wV5jI">
+      <ref role="1NtTu8" to="ve6y:6VQFIDrrf2X" resolve="value" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6VQFIDrrhFt">
+    <ref role="1XX52x" to="ve6y:6VQFIDrreWy" resolve="Light" />
+    <node concept="3EZMnI" id="6VQFIDrrhQL" role="2wV5jI">
+      <node concept="3F0ifn" id="6VQFIDrroHm" role="3EZMnx">
+        <property role="3F0ifm" value="play :" />
+      </node>
+      <node concept="3EZMnI" id="6VQFIDrrhQS" role="3EZMnx">
+        <node concept="VPM3Z" id="6VQFIDrrhQU" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3XFhqQ" id="6VQFIDrroHE" role="3EZMnx" />
+        <node concept="3F0ifn" id="6VQFIDrrhR4" role="3EZMnx">
+          <property role="3F0ifm" value="score :" />
+        </node>
+        <node concept="3F2HdR" id="6VQFIDrrhRc" role="3EZMnx">
+          <ref role="1NtTu8" to="ve6y:6VQFIDrrhFl" />
+          <node concept="l2Vlx" id="6VQFIDrrhRe" role="2czzBx" />
+        </node>
+        <node concept="l2Vlx" id="6VQFIDrrhQX" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="6VQFIDrrhRL" role="3EZMnx">
+        <node concept="VPM3Z" id="6VQFIDrrhRN" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3XFhqQ" id="6VQFIDrroHQ" role="3EZMnx" />
+        <node concept="3F0ifn" id="6VQFIDrrhRP" role="3EZMnx">
+          <property role="3F0ifm" value="on :" />
+        </node>
+        <node concept="1iCGBv" id="6VQFIDrrhS7" role="3EZMnx">
+          <ref role="1NtTu8" to="ve6y:6VQFIDrrf2U" />
+          <node concept="1sVBvm" id="6VQFIDrrhS9" role="1sWHZn">
+            <node concept="3F0A7n" id="6VQFIDrrhSi" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+        <node concept="l2Vlx" id="6VQFIDrrhRQ" role="2iSdaV" />
+      </node>
+      <node concept="2iRkQZ" id="6VQFIDrrhQO" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6VQFIDrri51">
+    <ref role="1XX52x" to="ve6y:6VQFIDrri4T" resolve="LightList" />
+    <node concept="3F2HdR" id="6VQFIDrri5h" role="2wV5jI">
+      <ref role="1NtTu8" to="ve6y:6VQFIDrri4U" />
+      <node concept="2iRkQZ" id="6VQFIDrri5j" role="2czzBx" />
+    </node>
+  </node>
 </model>
 

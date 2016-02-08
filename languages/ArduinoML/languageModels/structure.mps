@@ -439,5 +439,42 @@
       <ref role="20lvS9" node="4QOGFq8r90H" resolve="Playable" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6VQFIDrreWy">
+    <property role="1pbfSe" value="899441140" />
+    <property role="TrG5h" value="Light" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6VQFIDrrf2U" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="led" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3ur1G0gz1fS" resolve="Actuator" />
+    </node>
+    <node concept="1TJgyj" id="6VQFIDrrhFl" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="ledStates" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="6VQFIDrrf2W" resolve="SignalWrapper" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6VQFIDrrf2W">
+    <property role="1pbfSe" value="899440730" />
+    <property role="TrG5h" value="SignalWrapper" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6VQFIDrrf2X" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" node="3ur1G0g$PzW" resolve="SIGNAL" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6VQFIDrri4T">
+    <property role="1pbfSe" value="899428317" />
+    <property role="TrG5h" value="LightList" />
+    <ref role="1TJDcQ" node="4QOGFq8r90H" resolve="Playable" />
+    <node concept="1TJgyj" id="6VQFIDrri4U" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="lights" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="6VQFIDrreWy" resolve="Light" />
+    </node>
+  </node>
 </model>
 

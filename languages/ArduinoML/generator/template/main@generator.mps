@@ -289,6 +289,18 @@
         <ref role="v9R2y" node="6VQFIDrqI57" resolve="reduce_PlayableList" />
       </node>
     </node>
+    <node concept="3aamgX" id="6VQFIDrrf39" role="3acgRq">
+      <ref role="30HIoZ" to="ve6y:6VQFIDrrf2W" resolve="SignalWrapper" />
+      <node concept="j$656" id="6VQFIDrrf3_" role="1lVwrX">
+        <ref role="v9R2y" node="6VQFIDrrf3z" resolve="reduce_SignalWrapper" />
+      </node>
+    </node>
+    <node concept="3aamgX" id="6VQFIDrrMx2" role="3acgRq">
+      <ref role="30HIoZ" to="ve6y:6VQFIDrri4T" resolve="LightList" />
+      <node concept="j$656" id="6VQFIDrrMxw" role="1lVwrX">
+        <ref role="v9R2y" node="6VQFIDrrMxu" resolve="reduce_LightList" />
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="3ur1G0g$76J">
     <property role="TrG5h" value="map_App" />
@@ -1760,6 +1772,81 @@
           </node>
         </node>
         <node concept="raruj" id="6VQFIDrqI5g" role="lGtFl" />
+      </node>
+    </node>
+  </node>
+  <node concept="13MO4I" id="6VQFIDrrf3z">
+    <property role="TrG5h" value="reduce_SignalWrapper" />
+    <ref role="3gUMe" to="ve6y:6VQFIDrrf2W" resolve="SignalWrapper" />
+    <node concept="9aQIb" id="6VQFIDrrf3C" role="13RCb5">
+      <node concept="3clFbS" id="6VQFIDrrf3D" role="9aQI4">
+        <node concept="raruj" id="6VQFIDrrf3G" role="lGtFl" />
+        <node concept="3clFbF" id="6VQFIDrrf3J" role="3cqZAp">
+          <node concept="2OqwBi" id="6VQFIDrrf5J" role="3clFbG">
+            <node concept="10M0yZ" id="6VQFIDrrf3I" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="6VQFIDrrfaL" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.printf(java.lang.String,java.lang.Object...):java.io.PrintStream" resolve="printf" />
+              <node concept="3cpWs3" id="6VQFIDrrfhG" role="37wK5m">
+                <node concept="Xl_RD" id="6VQFIDrrfia" role="3uHU7w">
+                  <property role="Xl_RC" value="," />
+                </node>
+                <node concept="Xl_RD" id="6VQFIDrrfc3" role="3uHU7B">
+                  <property role="Xl_RC" value="LOW" />
+                  <node concept="17Uvod" id="6VQFIDrrgLz" role="lGtFl">
+                    <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+                    <property role="2qtEX9" value="value" />
+                    <node concept="3zFVjK" id="6VQFIDrrgL$" role="3zH0cK">
+                      <node concept="3clFbS" id="6VQFIDrrgL_" role="2VODD2">
+                        <node concept="3clFbF" id="6VQFIDrrgRM" role="3cqZAp">
+                          <node concept="3K4zz7" id="6VQFIDrrhiJ" role="3clFbG">
+                            <node concept="Xl_RD" id="6VQFIDrrhkH" role="3K4E3e">
+                              <property role="Xl_RC" value="HIGH" />
+                            </node>
+                            <node concept="Xl_RD" id="6VQFIDrrhod" role="3K4GZi">
+                              <property role="Xl_RC" value="LOW" />
+                            </node>
+                            <node concept="2OqwBi" id="6VQFIDrrgTZ" role="3K4Cdx">
+                              <node concept="30H73N" id="6VQFIDrrgRL" role="2Oq$k0" />
+                              <node concept="3TrcHB" id="6VQFIDrrgXQ" role="2OqNvi">
+                                <ref role="3TsBF5" to="ve6y:6VQFIDrrf2X" resolve="value" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13MO4I" id="6VQFIDrrMxu">
+    <property role="TrG5h" value="reduce_LightList" />
+    <ref role="3gUMe" to="ve6y:6VQFIDrri4T" resolve="LightList" />
+    <node concept="9aQIb" id="6VQFIDrrMxY" role="13RCb5">
+      <node concept="3clFbS" id="6VQFIDrrMxZ" role="9aQI4">
+        <node concept="raruj" id="6VQFIDrrMy2" role="lGtFl" />
+        <node concept="3clFbF" id="6VQFIDrrMy5" role="3cqZAp">
+          <node concept="2OqwBi" id="6VQFIDrrM$5" role="3clFbG">
+            <node concept="10M0yZ" id="6VQFIDrrMy4" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="6VQFIDrrMD7" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="6VQFIDrrMDp" role="37wK5m">
+                <property role="Xl_RC" value="    // TODO" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
