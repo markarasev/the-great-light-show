@@ -945,7 +945,7 @@
             <node concept="liA8E" id="4QOGFq8rvYo" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="4QOGFq8rvZk" role="37wK5m">
-                <property role="Xl_RC" value="    // Here comes the playable" />
+                <property role="Xl_RC" value="    // Here comes the playables" />
               </node>
             </node>
           </node>
@@ -960,6 +960,90 @@
                     </node>
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7KU5MeOm7E7" role="3cqZAp">
+          <node concept="2OqwBi" id="7KU5MeOm7Qx" role="3clFbG">
+            <node concept="10M0yZ" id="7KU5MeOm7E6" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="7KU5MeOm7YR" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="7KU5MeOm7Za" role="37wK5m">
+                <property role="Xl_RC" value="    \n    Serial.println(current);\n    // to calculate the note duration, take one second\n    // divided by the note type.\n    //e.g. quarter note = 1000 / 4, eighth note = 1000/8, etc.\n    int totalDuration = 240000 / tempo / rythm[current];\n    int noteDuration = totalDuration * 9 / 10;\n    int delayDuration = totalDuration * 1 / 10;\n\n    buzz(buzzer, melody[current], noteDuration);\n    delay(delayDuration);" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7KU5MeOmfRx" role="3cqZAp">
+          <node concept="2OqwBi" id="7KU5MeOmg4l" role="3clFbG">
+            <node concept="10M0yZ" id="7KU5MeOmfRw" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="7KU5MeOmgcF" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="7KU5MeOmgcY" role="37wK5m">
+                <property role="Xl_RC" value="    // updating iterators" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7KU5MeOmgA7" role="3cqZAp">
+          <node concept="2OqwBi" id="7KU5MeOmgNl" role="3clFbG">
+            <node concept="10M0yZ" id="7KU5MeOmgA6" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="7KU5MeOmgVF" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="7KU5MeOmgVY" role="37wK5m">
+                <property role="Xl_RC" value="    current = (current + 1) % size;" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7KU5MeOmhfI" role="3cqZAp">
+          <node concept="2OqwBi" id="7KU5MeOmhtm" role="3clFbG">
+            <node concept="10M0yZ" id="7KU5MeOmhfH" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="7KU5MeOmhyp" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="7KU5MeOmhAD" role="37wK5m">
+                <property role="Xl_RC" value="    for (int i = 0; i &lt; nLeds; i++) {" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7KU5MeOmi6G" role="3cqZAp">
+          <node concept="2OqwBi" id="7KU5MeOmikI" role="3clFbG">
+            <node concept="10M0yZ" id="7KU5MeOmi6F" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="7KU5MeOmipL" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="7KU5MeOmitn" role="37wK5m">
+                <property role="Xl_RC" value="        currentLedStates[i] = ledStates[current + size * 1];" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7KU5MeOmiW2" role="3cqZAp">
+          <node concept="2OqwBi" id="7KU5MeOmjau" role="3clFbG">
+            <node concept="10M0yZ" id="7KU5MeOmiW1" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="7KU5MeOmjfx" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="7KU5MeOmjja" role="37wK5m">
+                <property role="Xl_RC" value="    }" />
               </node>
             </node>
           </node>
@@ -1495,7 +1579,7 @@
             <node concept="liA8E" id="42tOd6I$aSB" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="42tOd6I$aSU" role="37wK5m">
-                <property role="Xl_RC" value="    static int current = 0;\n    \n    Serial.println(current);\n    // to calculate the note duration, take one second\n    // divided by the note type.\n    //e.g. quarter note = 1000 / 4, eighth note = 1000/8, etc.\n    int totalDuration = 240000 / tempo / rythm[current];\n    int noteDuration = totalDuration * 9 / 10;\n    int delayDuration = totalDuration * 1 / 10;\n\n    buzz(buzzer, melody[current], noteDuration);\n    delay(delayDuration);\n    current = (current + 1) % size;" />
+                <property role="Xl_RC" value="    static int current = 0;" />
               </node>
             </node>
           </node>
