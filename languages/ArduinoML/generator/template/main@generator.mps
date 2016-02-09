@@ -378,6 +378,20 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="7KU5MeOniZ0" role="3cqZAp">
+          <node concept="2OqwBi" id="7KU5MeOnjfB" role="3clFbG">
+            <node concept="10M0yZ" id="7KU5MeOniYZ" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="7KU5MeOnjq2" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="7KU5MeOnjtg" role="37wK5m">
+                <property role="Xl_RC" value="// BuzzAndLight function definition\nvoid buzzAndLight(int buzzer, long frequency, long length, int leds[], int ledStates[], int nLeds) {\n  for (int i = 0; i &lt; nLeds; i++) {\n    digitalWrite(leds[i], ledStates[i]); \n  }\n  if (!frequency) {\n    digitalWrite(buzzer, LOW);\n    delay(length);\n  }\n  else { \n   long delayValue = 1000000 / frequency / 2; // calculate the delay value between transitions\n    // 1 second's worth of microseconds, divided by the frequency, then split in half since\n    // there are two phases to each cycle\n    long numCycles = frequency * length / 1000; // calculate the number of cycles for proper timing\n    // multiply frequency, which is really cycles per second, by the number of seconds to\n    // get the total number of cycles to produce\n    for (long i = 0; i &lt; numCycles; i++) { // for the calculated length of time…\n        digitalWrite(buzzer, HIGH); // write the buzzer pin high to push out the diaphram\n        delayMicroseconds(delayValue); // wait for the calculated delay value\n        digitalWrite(buzzer, LOW); // write the buzzer pin low to pull back the diaphram\n        delayMicroseconds(delayValue); // wait again or the calculated delay value\n    }\n  }\n  for (int i = 0; i &lt; nLeds; i++) {\n    digitalWrite(leds[i], LOW); \n  }\n}\n" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="42tOd6I$4vJ" role="3cqZAp" />
         <node concept="3clFbF" id="3ur1G0g_9_y" role="3cqZAp">
           <node concept="2OqwBi" id="3ur1G0g_9_v" role="3clFbG">
@@ -990,7 +1004,7 @@
             <node concept="liA8E" id="7KU5MeOm7YR" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="7KU5MeOm7Za" role="37wK5m">
-                <property role="Xl_RC" value="    \n    Serial.println(current);\n    // to calculate the note duration, take one second\n    // divided by the note type.\n    //e.g. quarter note = 1000 / 4, eighth note = 1000/8, etc.\n    int totalDuration = 240000 / tempo / rythm[current];\n    int noteDuration = totalDuration * 9 / 10;\n    int delayDuration = totalDuration * 1 / 10;\n\n    buzz(buzzer, melody[current], noteDuration);\n    delay(delayDuration);\n    // updating iterators\n    current = (current + 1) % size;" />
+                <property role="Xl_RC" value="    \n    Serial.println(current);\n    // to calculate the note duration, take one second\n    // divided by the note type.\n    //e.g. quarter note = 1000 / 4, eighth note = 1000/8, etc.\n    int totalDuration = 240000 / tempo / rythm[current];\n    int noteDuration = totalDuration * 9 / 10;\n    int delayDuration = totalDuration * 1 / 10;\n\n    buzzAndLight(buzzer, melody[current], noteDuration, leds, currentLedStates, nLeds);\n    delay(delayDuration);\n    // updating iterators\n    current = (current + 1) % size;" />
               </node>
             </node>
           </node>
