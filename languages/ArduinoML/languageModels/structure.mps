@@ -431,6 +431,11 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3ur1G0gz1fS" resolve="Actuator" />
     </node>
+    <node concept="1TJgyj" id="1$2M8shEoGR" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="matrixScore" />
+      <ref role="20lvS9" node="1$2M8shDIR3" resolve="MatrixDisplayScore" />
+    </node>
     <node concept="1TJgyj" id="2Wjadk4wz9D" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="ledScores" />

@@ -63,6 +63,7 @@
         <child id="3392099839708492471" name="ledStates" index="FqdDy" />
       </concept>
       <concept id="7995770510021927958" name="ArduinoML.structure.Track" flags="ng" index="P$0FW">
+        <reference id="1802223283344083767" name="matrixScore" index="8EOeK" />
         <reference id="3392099839708325627" name="score" index="Fq$SI" />
         <reference id="7995770510022128827" name="instrument" index="PBLDh" />
         <child id="3392099839708901993" name="ledScores" index="F$hEW" />
@@ -133,6 +134,7 @@
         <node concept="P$0FW" id="2Wjadk4w85w" role="PB4Z7">
           <ref role="PBLDh" node="14Oqs0tMgL6" resolve="buzzer" />
           <ref role="Fq$SI" node="2Wjadk4w7JM" resolve="ymca" />
+          <ref role="8EOeK" node="1$2M8shE082" resolve="charsScore" />
           <node concept="PA$78" id="2Wjadk4wNle" role="F$hEW">
             <ref role="FqdDG" node="2Wjadk4w7RQ" resolve="led1Score" />
             <ref role="PA_Tg" node="14Oqs0tMgLy" resolve="led1" />

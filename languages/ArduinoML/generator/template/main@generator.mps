@@ -319,6 +319,12 @@
         <ref role="v9R2y" node="1rXPBGhbMKv" resolve="reduce_SensorValue" />
       </node>
     </node>
+    <node concept="3aamgX" id="1$2M8shE8Zz" role="3acgRq">
+      <ref role="30HIoZ" to="ve6y:1$2M8shDIR3" resolve="MatrixDisplayScore" />
+      <node concept="j$656" id="1$2M8shE905" role="1lVwrX">
+        <ref role="v9R2y" node="1$2M8shE903" resolve="reduce_MatrixDisplayScore" />
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="3ur1G0g$76J">
     <property role="TrG5h" value="map_App" />
@@ -989,6 +995,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="1$2M8shEdDr" role="3cqZAp" />
         <node concept="3clFbF" id="7KU5MeOm7E7" role="3cqZAp">
           <node concept="2OqwBi" id="7KU5MeOm7Qx" role="3clFbG">
             <node concept="10M0yZ" id="7KU5MeOm7E6" role="2Oq$k0">
@@ -2388,6 +2395,15 @@
           </node>
         </node>
         <node concept="raruj" id="1rXPBGhboPn" role="lGtFl" />
+      </node>
+    </node>
+  </node>
+  <node concept="13MO4I" id="1$2M8shE903">
+    <property role="TrG5h" value="reduce_MatrixDisplayScore" />
+    <ref role="3gUMe" to="ve6y:1$2M8shDIR3" resolve="MatrixDisplayScore" />
+    <node concept="9aQIb" id="1$2M8shE90a" role="13RCb5">
+      <node concept="3clFbS" id="1$2M8shE90b" role="9aQI4">
+        <node concept="raruj" id="1$2M8shE9F_" role="lGtFl" />
       </node>
     </node>
   </node>
