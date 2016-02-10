@@ -34,7 +34,7 @@
       <concept id="4006803715457767854" name="ArduinoML.structure.State" flags="ng" index="B25XI">
         <child id="4006803715457767915" name="actions" index="B25WF" />
         <child id="4006803715457767934" name="transitions" index="B25WY" />
-        <child id="7995770510022209453" name="playableList" index="PB457" />
+        <child id="7995770510022209453" name="playables" index="PB457" />
       </concept>
       <concept id="4006803715457767769" name="ArduinoML.structure.Action" flags="ng" index="B25Yp">
         <property id="4006803715457767809" name="value" index="B25X1" />
@@ -57,12 +57,17 @@
       <concept id="7995770510021927958" name="ArduinoML.structure.Track" flags="ng" index="P$0FW">
         <reference id="3392099839708325627" name="score" index="Fq$SI" />
         <reference id="7995770510022128827" name="instrument" index="PBLDh" />
+        <child id="3392099839708901993" name="ledScores" index="F$hEW" />
+      </concept>
+      <concept id="7995770510022340386" name="ArduinoML.structure.Light" flags="ng" index="PA$78">
+        <reference id="3392099839708492473" name="score" index="FqdDG" />
+        <reference id="7995770510022340794" name="led" index="PA_Tg" />
       </concept>
       <concept id="7995770510022340796" name="ArduinoML.structure.SignalWrapper" flags="ng" index="PA_Tm">
         <property id="7995770510022340797" name="value" index="PA_Tn" />
       </concept>
       <concept id="7995770510022205738" name="ArduinoML.structure.PlayableList" flags="ng" index="PB4Z0">
-        <child id="7995770510022205741" name="playables" index="PB4Z7" />
+        <child id="7995770510022205741" name="track" index="PB4Z7" />
         <child id="5691108472218993995" name="tempoValue" index="3YbEhb" />
       </concept>
       <concept id="6917301883538287430" name="ArduinoML.structure.Condition" flags="ng" index="2VzTCJ">
@@ -560,6 +565,14 @@
         <node concept="P$0FW" id="1quzEJCABWK" role="PB4Z7">
           <ref role="Fq$SI" node="1quzEJCAm4k" resolve="YMCA" />
           <ref role="PBLDh" node="14Oqs0tMgL6" resolve="buzzer" />
+          <node concept="PA$78" id="1quzEJCBqjn" role="F$hEW">
+            <ref role="FqdDG" node="1quzEJCABYZ" resolve="YMCA1" />
+            <ref role="PA_Tg" node="14Oqs0tMgLy" resolve="led1" />
+          </node>
+          <node concept="PA$78" id="1quzEJCBqjp" role="F$hEW">
+            <ref role="FqdDG" node="1quzEJCAC61" resolve="YMCA2" />
+            <ref role="PA_Tg" node="6VQFIDrrLDQ" resolve="led2" />
+          </node>
         </node>
         <node concept="vlwI0" id="3M0M$zEbZ$m" role="3YbEhb">
           <property role="vlwI3" value="132" />
@@ -575,6 +588,14 @@
         <node concept="P$0FW" id="4VUSg2KPtk3" role="PB4Z7">
           <ref role="PBLDh" node="14Oqs0tMgL6" resolve="buzzer" />
           <ref role="Fq$SI" node="1quzEJCAm4k" resolve="YMCA" />
+          <node concept="PA$78" id="1quzEJCBqjs" role="F$hEW">
+            <ref role="FqdDG" node="1quzEJCABYZ" resolve="YMCA1" />
+            <ref role="PA_Tg" node="14Oqs0tMgLy" resolve="led1" />
+          </node>
+          <node concept="PA$78" id="1quzEJCBqju" role="F$hEW">
+            <ref role="FqdDG" node="1quzEJCAC61" resolve="YMCA2" />
+            <ref role="PA_Tg" node="6VQFIDrrLDQ" resolve="led2" />
+          </node>
         </node>
       </node>
       <node concept="B25N_" id="4q4K4ncqpcS" role="B25WY">
@@ -601,6 +622,14 @@
         <node concept="P$0FW" id="1quzEJCABEO" role="PB4Z7">
           <ref role="Fq$SI" node="1quzEJCABBL" resolve="Metroid" />
           <ref role="PBLDh" node="14Oqs0tMgL6" resolve="buzzer" />
+          <node concept="PA$78" id="1quzEJCBqjx" role="F$hEW">
+            <ref role="FqdDG" node="1quzEJCACei" resolve="Metroid1" />
+            <ref role="PA_Tg" node="14Oqs0tMgLy" resolve="led1" />
+          </node>
+          <node concept="PA$78" id="1quzEJCBqjz" role="F$hEW">
+            <ref role="FqdDG" node="1quzEJCACfy" resolve="Metroid2" />
+            <ref role="PA_Tg" node="6VQFIDrrLDQ" resolve="led2" />
+          </node>
         </node>
         <node concept="vlwI0" id="1quzEJC_mxu" role="3YbEhb">
           <property role="vlwI3" value="80" />
