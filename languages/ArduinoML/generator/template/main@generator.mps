@@ -1126,7 +1126,7 @@
             <node concept="liA8E" id="7KU5MeOmhyp" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="7KU5MeOmhAD" role="37wK5m">
-                <property role="Xl_RC" value="    for (int i = 0; i &lt; nLeds; i++) {\n        currentLedStates[i] = ledStates[current + size * 1];    }" />
+                <property role="Xl_RC" value="    for (int i = 0; i &lt; nLeds; i++) {\n        currentLedStates[i] = ledStates[current + size * i];    }" />
               </node>
             </node>
           </node>
