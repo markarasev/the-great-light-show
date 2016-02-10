@@ -34,7 +34,7 @@
       <concept id="4006803715457767854" name="ArduinoML.structure.State" flags="ng" index="B25XI">
         <child id="4006803715457767915" name="actions" index="B25WF" />
         <child id="4006803715457767934" name="transitions" index="B25WY" />
-        <child id="7995770510022209453" name="playableList" index="PB457" />
+        <child id="7995770510022209453" name="playables" index="PB457" />
       </concept>
       <concept id="4006803715457767769" name="ArduinoML.structure.Action" flags="ng" index="B25Yp">
         <property id="4006803715457767809" name="value" index="B25X1" />
@@ -57,6 +57,7 @@
       <concept id="7995770510021927958" name="ArduinoML.structure.Track" flags="ng" index="P$0FW">
         <reference id="3392099839708325627" name="score" index="Fq$SI" />
         <reference id="7995770510022128827" name="instrument" index="PBLDh" />
+        <child id="3392099839708901993" name="ledScores" index="F$hEW" />
       </concept>
       <concept id="7995770510022340386" name="ArduinoML.structure.Light" flags="ng" index="PA$78">
         <reference id="3392099839708492473" name="score" index="FqdDG" />
@@ -65,11 +66,8 @@
       <concept id="7995770510022340796" name="ArduinoML.structure.SignalWrapper" flags="ng" index="PA_Tm">
         <property id="7995770510022340797" name="value" index="PA_Tn" />
       </concept>
-      <concept id="7995770510022353209" name="ArduinoML.structure.LightList" flags="ng" index="PASZj">
-        <child id="7995770510022353210" name="lights" index="PASZg" />
-      </concept>
       <concept id="7995770510022205738" name="ArduinoML.structure.PlayableList" flags="ng" index="PB4Z0">
-        <child id="7995770510022205741" name="playables" index="PB4Z7" />
+        <child id="7995770510022205741" name="track" index="PB4Z7" />
         <child id="5691108472218993995" name="tempoValue" index="3YbEhb" />
       </concept>
       <concept id="6917301883538287430" name="ArduinoML.structure.Condition" flags="ng" index="2VzTCJ">
@@ -127,14 +125,12 @@
         <node concept="P$0FW" id="2Wjadk4w85w" role="PB4Z7">
           <ref role="PBLDh" node="14Oqs0tMgL6" resolve="buzzer" />
           <ref role="Fq$SI" node="2Wjadk4w7JM" resolve="ymca" />
-        </node>
-        <node concept="PASZj" id="2Wjadk4w85A" role="PB4Z7">
-          <node concept="PA$78" id="2Wjadk4w85C" role="PASZg">
-            <ref role="FqdDG" node="2Wjadk4w7RQ" resolve="led1" />
+          <node concept="PA$78" id="2Wjadk4wNle" role="F$hEW">
+            <ref role="FqdDG" node="2Wjadk4w7RQ" resolve="led1Score" />
             <ref role="PA_Tg" node="14Oqs0tMgLy" resolve="led1" />
           </node>
-          <node concept="PA$78" id="2Wjadk4wh$l" role="PASZg">
-            <ref role="FqdDG" node="2Wjadk4w7Ss" resolve="led2" />
+          <node concept="PA$78" id="2Wjadk4xrUl" role="F$hEW">
+            <ref role="FqdDG" node="2Wjadk4w7Ss" resolve="led2Score" />
             <ref role="PA_Tg" node="6VQFIDrrLDQ" resolve="led2" />
           </node>
         </node>
@@ -162,17 +158,15 @@
         <property role="B25X1" value="true" />
         <ref role="B25Xg" node="14Oqs0tMgLy" resolve="led1" />
       </node>
-      <node concept="PB4Z0" id="2Wjadk4w86c" role="PB457">
-        <node concept="vlwI5" id="2Wjadk4w86i" role="3YbEhb">
+      <node concept="PB4Z0" id="2Wjadk4yNAD" role="PB457">
+        <node concept="vlwI5" id="2Wjadk4yNAJ" role="3YbEhb">
           <ref role="vlwIe" node="1rXPBGhbmHx" resolve="tempoControl" />
         </node>
-        <node concept="P$0FW" id="2Wjadk4w87f" role="PB4Z7">
+        <node concept="P$0FW" id="2Wjadk4yNAF" role="PB4Z7">
           <ref role="Fq$SI" node="2Wjadk4w7JM" resolve="ymca" />
           <ref role="PBLDh" node="14Oqs0tMgL6" resolve="buzzer" />
-        </node>
-        <node concept="PASZj" id="2Wjadk4w87l" role="PB4Z7">
-          <node concept="PA$78" id="2Wjadk4w87n" role="PASZg">
-            <ref role="FqdDG" node="2Wjadk4w7RQ" resolve="led1" />
+          <node concept="PA$78" id="2Wjadk4yNAM" role="F$hEW">
+            <ref role="FqdDG" node="2Wjadk4w7RQ" resolve="led1Score" />
             <ref role="PA_Tg" node="14Oqs0tMgLy" resolve="led1" />
           </node>
         </node>
@@ -262,7 +256,7 @@
       </node>
     </node>
     <node concept="FqdDz" id="2Wjadk4w7RQ" role="FpTZa">
-      <property role="TrG5h" value="led1" />
+      <property role="TrG5h" value="led1Score" />
       <node concept="PA_Tm" id="2Wjadk4w7SK" role="FqdDy">
         <property role="PA_Tn" value="true" />
       </node>
@@ -313,7 +307,7 @@
       </node>
     </node>
     <node concept="FqdDz" id="2Wjadk4w7Ss" role="FpTZa">
-      <property role="TrG5h" value="led2" />
+      <property role="TrG5h" value="led2Score" />
       <node concept="PA_Tm" id="2Wjadk4w7ZM" role="FqdDy">
         <property role="PA_Tn" value="false" />
       </node>

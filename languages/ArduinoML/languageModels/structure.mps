@@ -161,7 +161,7 @@
     </node>
     <node concept="1TJgyj" id="6VQFIDrqIYH" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="playableList" />
+      <property role="20kJfa" value="playables" />
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="6VQFIDrqI4E" resolve="PlayableList" />
     </node>
@@ -430,6 +430,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3ur1G0gz1fS" resolve="Actuator" />
     </node>
+    <node concept="1TJgyj" id="2Wjadk4wz9D" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="ledScores" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6VQFIDrreWy" resolve="Light" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6VQFIDrqI4E">
     <property role="1pbfSe" value="899575788" />
@@ -443,9 +449,9 @@
     </node>
     <node concept="1TJgyj" id="6VQFIDrqI4H" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="playables" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="4QOGFq8r90H" resolve="Playable" />
+      <property role="20kJfa" value="track" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6VQFIDrpEgm" resolve="Track" />
     </node>
   </node>
   <node concept="1TIwiD" id="6VQFIDrreWy">
@@ -472,17 +478,6 @@
     <node concept="1TJgyi" id="6VQFIDrrf2X" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" node="3ur1G0g$PzW" resolve="SIGNAL" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6VQFIDrri4T">
-    <property role="1pbfSe" value="899428317" />
-    <property role="TrG5h" value="LightList" />
-    <ref role="1TJDcQ" node="4QOGFq8r90H" resolve="Playable" />
-    <node concept="1TJgyj" id="6VQFIDrri4U" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="lights" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="6VQFIDrreWy" resolve="Light" />
     </node>
   </node>
   <node concept="1TIwiD" id="2Wjadk4uZaQ">
