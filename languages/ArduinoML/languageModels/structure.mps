@@ -153,10 +153,11 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3ur1G0g$PC_" resolve="Transition" />
     </node>
-    <node concept="1TJgyj" id="4QOGFq8reMR" role="1TKVEi">
+    <node concept="1TJgyj" id="6VQFIDrqIYH" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="playable" />
-      <ref role="20lvS9" node="4QOGFq8r90H" resolve="Playable" />
+      <property role="20kJfa" value="playableList" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="6VQFIDrqI4E" resolve="PlayableList" />
     </node>
   </node>
   <node concept="1TIwiD" id="3ur1G0g$PC_">
@@ -388,30 +389,40 @@
   <node concept="1TIwiD" id="4QOGFq8r90H">
     <property role="1pbfSe" value="702463261" />
     <property role="TrG5h" value="Playable" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="4QOGFq8r9dx" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="score" />
-      <ref role="20lvS9" node="14Oqs0tMcZJ" resolve="Score" />
+  </node>
+  <node concept="1TIwiD" id="eB$fPhDTz3">
+    <property role="1pbfSe" value="1431251392" />
+    <property role="TrG5h" value="Operator" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="eB$fPhDTzv" role="1TKVEl">
+      <property role="TrG5h" value="operator" />
+      <ref role="AX2Wp" node="5ZZcmB$saHc" resolve="BOOLEAN_OPERATOR" />
     </node>
-    <node concept="1TJgyj" id="7IIM41$Ycfk" role="1TKVEi">
+    <node concept="1TJgyj" id="eB$fPhDTzz" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="tempoValue" />
+      <property role="20kJfa" value="right" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7IIM41$YceV" resolve="Value" />
+      <ref role="20lvS9" node="5ZZcmB$saH6" resolve="Condition" />
     </node>
-    <node concept="1TJgyj" id="4QOGFq8r9dB" role="1TKVEi">
+  </node>
+  <node concept="1TIwiD" id="6VQFIDrreWy">
+    <property role="1pbfSe" value="899441140" />
+    <property role="TrG5h" value="Light" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6VQFIDrrf2U" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="instrument" />
+      <property role="20kJfa" value="led" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3ur1G0gz1fS" resolve="Actuator" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="7IIM41$YceV">
-    <property role="1pbfSe" value="525890565" />
-    <property role="TrG5h" value="Value" />
-    <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6VQFIDrrhFl" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="ledStates" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="6VQFIDrrf2W" resolve="SignalWrapper" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7IIM41$Ycf5">
     <property role="1pbfSe" value="525890555" />
@@ -433,20 +444,63 @@
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
-  <node concept="1TIwiD" id="eB$fPhDTz3">
-    <property role="1pbfSe" value="1431251392" />
-    <property role="TrG5h" value="Operator" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="eB$fPhDTzv" role="1TKVEl">
-      <property role="TrG5h" value="operator" />
-      <ref role="AX2Wp" node="5ZZcmB$saHc" resolve="BOOLEAN_OPERATOR" />
-    </node>
-    <node concept="1TJgyj" id="eB$fPhDTzz" role="1TKVEi">
+  <node concept="1TIwiD" id="6VQFIDrri4T">
+    <property role="1pbfSe" value="899428317" />
+    <property role="TrG5h" value="LightList" />
+    <ref role="1TJDcQ" node="4QOGFq8r90H" resolve="Playable" />
+    <node concept="1TJgyj" id="6VQFIDrri4U" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="right" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5ZZcmB$saH6" resolve="Condition" />
+      <property role="20kJfa" value="lights" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="6VQFIDrreWy" resolve="Light" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="6VQFIDrpEgm">
+    <property role="1pbfSe" value="899853568" />
+    <property role="TrG5h" value="Track" />
+    <ref role="1TJDcQ" node="4QOGFq8r90H" resolve="Playable" />
+    <node concept="1TJgyj" id="6VQFIDrqhoi" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="score" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="14Oqs0tMcZJ" resolve="Score" />
+    </node>
+    <node concept="1TJgyj" id="6VQFIDrqriV" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="instrument" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3ur1G0gz1fS" resolve="Actuator" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6VQFIDrrf2W">
+    <property role="1pbfSe" value="899440730" />
+    <property role="TrG5h" value="SignalWrapper" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6VQFIDrrf2X" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" node="3ur1G0g$PzW" resolve="SIGNAL" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6VQFIDrqI4E">
+    <property role="1pbfSe" value="899575788" />
+    <property role="TrG5h" value="PlayableList" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6VQFIDrqI4F" role="1TKVEl">
+      <property role="TrG5h" value="tempo" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyj" id="6VQFIDrqI4H" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="playables" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="4QOGFq8r90H" resolve="Playable" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7IIM41$YceV">
+    <property role="1pbfSe" value="525890565" />
+    <property role="TrG5h" value="Value" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 
