@@ -14,7 +14,7 @@
       </concept>
     </language>
     <language id="9faaf0ad-8c6c-45e7-a5cb-659ec4a07533" name="ArduinoML">
-      <concept id="1239732071288066031" name="ArduinoML.structure.Score" flags="ng" index="cZaoJ">
+      <concept id="1239732071288066031" name="ArduinoML.structure.MusicScore" flags="ng" index="cZaoJ">
         <child id="1239732071288066119" name="notes" index="cZbA7" />
       </concept>
       <concept id="1239732071288066086" name="ArduinoML.structure.NoteAndRythm" flags="ng" index="cZbBA">
@@ -120,6 +120,9 @@
         </node>
       </node>
       <node concept="PB4Z0" id="6VQFIDrqVcI" role="PB457">
+        <node concept="vlwI0" id="3M0M$zEbZ$m" role="3YbEhb">
+          <property role="vlwI3" value="132" />
+        </node>
         <node concept="P$0FW" id="6VQFIDrqVcM" role="PB4Z7">
           <ref role="PBLDh" node="14Oqs0tMgL6" resolve="buzzer" />
           <node concept="cZaoJ" id="3M0M$zEbZxv" role="PBVzS">
@@ -277,9 +280,6 @@
               <property role="PA_Tn" value="false" />
             </node>
           </node>
-        </node>
-        <node concept="vlwI0" id="3M0M$zEbZ$m" role="3YbEhb">
-          <property role="vlwI3" value="132" />
         </node>
       </node>
     </node>
