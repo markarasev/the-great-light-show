@@ -485,9 +485,11 @@
     <property role="1pbfSe" value="899575788" />
     <property role="TrG5h" value="PlayableList" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="6VQFIDrqI4F" role="1TKVEl">
-      <property role="TrG5h" value="tempo" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="1TJgyj" id="4VUSg2KP4lb" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tempoValue" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7IIM41$YceV" resolve="Value" />
     </node>
     <node concept="1TJgyj" id="6VQFIDrqI4H" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

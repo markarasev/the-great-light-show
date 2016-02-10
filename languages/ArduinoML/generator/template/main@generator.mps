@@ -1839,40 +1839,16 @@
     <ref role="3gUMe" to="ve6y:6VQFIDrqI4E" resolve="PlayableList" />
     <node concept="9aQIb" id="6VQFIDrqI5c" role="13RCb5">
       <node concept="3clFbS" id="6VQFIDrqI5d" role="9aQI4">
-        <node concept="3clFbF" id="6VQFIDrpRpS" role="3cqZAp">
-          <node concept="2OqwBi" id="6VQFIDrpRpT" role="3clFbG">
-            <node concept="10M0yZ" id="6VQFIDrpRpU" role="2Oq$k0">
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-            </node>
-            <node concept="liA8E" id="6VQFIDrpRpV" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="6VQFIDrpRpW" role="37wK5m">
-                <node concept="Xl_RD" id="6VQFIDrpRpX" role="3uHU7w">
-                  <property role="Xl_RC" value=";" />
-                </node>
-                <node concept="3cpWs3" id="6VQFIDrpRpY" role="3uHU7B">
-                  <node concept="Xl_RD" id="6VQFIDrpRpZ" role="3uHU7B">
-                    <property role="Xl_RC" value="    static int tempo = " />
-                  </node>
-                  <node concept="3cmrfG" id="6VQFIDrpRq0" role="3uHU7w">
-                    <property role="3cmrfH" value="0" />
-                    <node concept="17Uvod" id="6VQFIDrpRq1" role="lGtFl">
-                      <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580320020/1068580320021" />
-                      <property role="2qtEX9" value="value" />
-                      <node concept="3zFVjK" id="6VQFIDrpRq2" role="3zH0cK">
-                        <node concept="3clFbS" id="6VQFIDrpRq3" role="2VODD2">
-                          <node concept="3clFbF" id="6VQFIDrpRq4" role="3cqZAp">
-                            <node concept="2OqwBi" id="6VQFIDrpRq5" role="3clFbG">
-                              <node concept="30H73N" id="6VQFIDrpRq6" role="2Oq$k0" />
-                              <node concept="3TrcHB" id="6VQFIDrqbwY" role="2OqNvi">
-                                <ref role="3TsBF5" to="ve6y:6VQFIDrqI4F" resolve="tempo" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
+        <node concept="3clFbH" id="4VUSg2KPl0K" role="3cqZAp">
+          <node concept="29HgVG" id="4VUSg2KPl3C" role="lGtFl">
+            <node concept="3NFfHV" id="4VUSg2KPl3D" role="3NFExx">
+              <node concept="3clFbS" id="4VUSg2KPl3E" role="2VODD2">
+                <node concept="3clFbF" id="4VUSg2KPl3K" role="3cqZAp">
+                  <node concept="2OqwBi" id="4VUSg2KPl3F" role="3clFbG">
+                    <node concept="3TrEf2" id="4VUSg2KPl3I" role="2OqNvi">
+                      <ref role="3Tt5mk" to="ve6y:4VUSg2KP4lb" />
                     </node>
+                    <node concept="30H73N" id="4VUSg2KPl3J" role="2Oq$k0" />
                   </node>
                 </node>
               </node>
@@ -1983,7 +1959,7 @@
                 </node>
                 <node concept="3cpWs3" id="1rXPBGhc_Dq" role="3uHU7B">
                   <node concept="Xl_RD" id="1rXPBGhbMUE" role="3uHU7B">
-                    <property role="Xl_RC" value="    int tempo = 20 + analogRead(" />
+                    <property role="Xl_RC" value="    static int tempo = 20 + analogRead(" />
                   </node>
                   <node concept="3cmrfG" id="1rXPBGhc_EB" role="3uHU7w">
                     <property role="3cmrfH" value="0" />
@@ -2476,7 +2452,7 @@
                 </node>
                 <node concept="3cpWs3" id="1rXPBGhbpEV" role="3uHU7B">
                   <node concept="Xl_RD" id="1rXPBGhbpdv" role="3uHU7B">
-                    <property role="Xl_RC" value="    int tempo = " />
+                    <property role="Xl_RC" value="    static int tempo = " />
                   </node>
                   <node concept="3cmrfG" id="1rXPBGhcuCK" role="3uHU7w">
                     <property role="3cmrfH" value="0" />
