@@ -14,6 +14,13 @@
       </concept>
     </language>
     <language id="9faaf0ad-8c6c-45e7-a5cb-659ec4a07533" name="ArduinoML">
+      <concept id="1239732071288066031" name="ArduinoML.structure.Score" flags="ng" index="cZaoJ">
+        <child id="1239732071288066119" name="notes" index="cZbA7" />
+      </concept>
+      <concept id="1239732071288066086" name="ArduinoML.structure.NoteAndRythm" flags="ng" index="cZbBA">
+        <property id="1239732071288066114" name="note" index="cZbA2" />
+        <property id="1239732071288066116" name="rythm" index="cZbA4" />
+      </concept>
       <concept id="4006803715457767973" name="ArduinoML.structure.Transition" flags="ng" index="B25N_">
         <reference id="4006803715457768044" name="target" index="B25MG" />
         <child id="6917301883538287537" name="condition" index="2VzTFo" />
@@ -21,6 +28,7 @@
       <concept id="4006803715457767854" name="ArduinoML.structure.State" flags="ng" index="B25XI">
         <child id="4006803715457767915" name="actions" index="B25WF" />
         <child id="4006803715457767934" name="transitions" index="B25WY" />
+        <child id="7995770510022209453" name="playableList" index="PB457" />
       </concept>
       <concept id="4006803715457767769" name="ArduinoML.structure.Action" flags="ng" index="B25Yp">
         <property id="4006803715457767809" name="value" index="B25X1" />
@@ -35,6 +43,14 @@
         <reference id="4006803715457768564" name="initialState" index="B25EO" />
         <child id="4006803715457768492" name="states" index="B25FG" />
         <child id="4006803715457291273" name="bricks" index="B5Lb9" />
+      </concept>
+      <concept id="7995770510021927958" name="ArduinoML.structure.Track" flags="ng" index="P$0FW">
+        <reference id="7995770510022128827" name="instrument" index="PBLDh" />
+        <child id="7995770510022088210" name="score" index="PBVzS" />
+      </concept>
+      <concept id="7995770510022205738" name="ArduinoML.structure.PlayableList" flags="ng" index="PB4Z0">
+        <property id="7995770510022205739" name="tempo" index="PB4Z1" />
+        <child id="7995770510022205741" name="playables" index="PB4Z7" />
       </concept>
       <concept id="6917301883538287430" name="ArduinoML.structure.Condition" flags="ng" index="2VzTCJ">
         <child id="6917301883538287431" name="input" index="2VzTCI" />
@@ -106,6 +122,72 @@
       <node concept="B25Yp" id="4VUSg2KO_FW" role="B25WF">
         <property role="B25X1" value="true" />
         <ref role="B25Xg" node="14Oqs0tMgLy" resolve="led1" />
+      </node>
+      <node concept="PB4Z0" id="4VUSg2KP4jP" role="PB457">
+        <property role="PB4Z1" value="128" />
+        <node concept="P$0FW" id="4VUSg2KP4kR" role="PB4Z7">
+          <ref role="PBLDh" node="14Oqs0tMgL6" resolve="buzzer" />
+          <node concept="cZaoJ" id="4VUSg2KP4kU" role="PBVzS">
+            <node concept="cZbBA" id="6VQFIDrqr3f" role="cZbA7">
+              <property role="cZbA2" value="2637" />
+              <property role="cZbA4" value="2" />
+            </node>
+            <node concept="cZbBA" id="6VQFIDrqr3g" role="cZbA7">
+              <property role="cZbA2" value="2349" />
+            </node>
+            <node concept="cZbBA" id="6VQFIDrqr3h" role="cZbA7">
+              <property role="cZbA2" value="2637" />
+              <property role="cZbA4" value="8" />
+            </node>
+            <node concept="cZbBA" id="6VQFIDrrLAa" role="cZbA7">
+              <property role="cZbA2" value="2349" />
+              <property role="cZbA4" value="8" />
+            </node>
+            <node concept="cZbBA" id="6VQFIDrqr3i" role="cZbA7">
+              <property role="cZbA2" value="2349" />
+              <property role="cZbA4" value="8" />
+            </node>
+            <node concept="cZbBA" id="6VQFIDrqr3j" role="cZbA7">
+              <property role="cZbA2" value="1976" />
+              <property role="cZbA4" value="8" />
+            </node>
+            <node concept="cZbBA" id="6VQFIDrqr3k" role="cZbA7">
+              <property role="cZbA2" value="2349" />
+              <property role="cZbA4" value="8" />
+            </node>
+            <node concept="cZbBA" id="6VQFIDrqr3l" role="cZbA7">
+              <property role="cZbA2" value="1976" />
+              <property role="cZbA4" value="8" />
+            </node>
+            <node concept="cZbBA" id="6VQFIDrqr3m" role="cZbA7">
+              <property role="cZbA2" value="2349" />
+              <property role="cZbA4" value="8" />
+            </node>
+            <node concept="cZbBA" id="6VQFIDrqr3n" role="cZbA7">
+              <property role="cZbA2" value="1976" />
+              <property role="cZbA4" value="8" />
+            </node>
+            <node concept="cZbBA" id="6VQFIDrqr3o" role="cZbA7">
+              <property role="cZbA2" value="1760" />
+              <property role="cZbA4" value="4" />
+            </node>
+            <node concept="cZbBA" id="6VQFIDrqr3p" role="cZbA7">
+              <property role="cZbA2" value="1760" />
+              <property role="cZbA4" value="2" />
+            </node>
+            <node concept="cZbBA" id="6VQFIDrqr3q" role="cZbA7">
+              <property role="cZbA2" value="1568" />
+            </node>
+            <node concept="cZbBA" id="6VQFIDrqr3r" role="cZbA7">
+              <property role="cZbA2" value="1760" />
+              <property role="cZbA4" value="8" />
+            </node>
+            <node concept="cZbBA" id="6VQFIDrqr3s" role="cZbA7">
+              <property role="cZbA2" value="1568" />
+              <property role="cZbA4" value="8" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="B5LkS" id="14Oqs0tMgL6" role="B5Lb9">
