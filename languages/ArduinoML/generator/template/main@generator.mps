@@ -1959,7 +1959,7 @@
                 </node>
                 <node concept="3cpWs3" id="1rXPBGhc_Dq" role="3uHU7B">
                   <node concept="Xl_RD" id="1rXPBGhbMUE" role="3uHU7B">
-                    <property role="Xl_RC" value="    static int tempo = 20 + analogRead(" />
+                    <property role="Xl_RC" value="    int tempo = 20 + analogRead(" />
                   </node>
                   <node concept="3cmrfG" id="1rXPBGhc_EB" role="3uHU7w">
                     <property role="3cmrfH" value="0" />
@@ -2452,7 +2452,7 @@
                 </node>
                 <node concept="3cpWs3" id="1rXPBGhbpEV" role="3uHU7B">
                   <node concept="Xl_RD" id="1rXPBGhbpdv" role="3uHU7B">
-                    <property role="Xl_RC" value="    static int tempo = " />
+                    <property role="Xl_RC" value="    int tempo = " />
                   </node>
                   <node concept="3cmrfG" id="1rXPBGhcuCK" role="3uHU7w">
                     <property role="3cmrfH" value="0" />
