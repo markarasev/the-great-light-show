@@ -21,6 +21,9 @@
         <property id="1239732071288066114" name="note" index="cZbA2" />
         <property id="1239732071288066116" name="rythm" index="cZbA4" />
       </concept>
+      <concept id="8912280891510277056" name="ArduinoML.structure.HardcodedValue" flags="ng" index="vlwI0">
+        <property id="8912280891510277059" name="value" index="vlwI3" />
+      </concept>
       <concept id="8912280891510277061" name="ArduinoML.structure.SensorValue" flags="ng" index="vlwI5">
         <reference id="8912280891510277070" name="sensor" index="vlwIe" />
       </concept>
@@ -116,26 +119,172 @@
           </node>
         </node>
       </node>
+      <node concept="PB4Z0" id="6VQFIDrqVcI" role="PB457">
+        <node concept="P$0FW" id="6VQFIDrqVcM" role="PB4Z7">
+          <ref role="PBLDh" node="14Oqs0tMgL6" resolve="buzzer" />
+          <node concept="cZaoJ" id="3M0M$zEbZxv" role="PBVzS">
+            <node concept="cZbBA" id="3M0M$zEbZxw" role="cZbA7">
+              <property role="cZbA2" value="2637" />
+              <property role="cZbA4" value="2" />
+            </node>
+            <node concept="cZbBA" id="3M0M$zEbZxx" role="cZbA7">
+              <property role="cZbA2" value="2349" />
+            </node>
+            <node concept="cZbBA" id="3M0M$zEbZxy" role="cZbA7">
+              <property role="cZbA2" value="2637" />
+              <property role="cZbA4" value="8" />
+            </node>
+            <node concept="cZbBA" id="3M0M$zEbZxz" role="cZbA7">
+              <property role="cZbA2" value="2349" />
+              <property role="cZbA4" value="4" />
+            </node>
+            <node concept="cZbBA" id="3M0M$zEbZx$" role="cZbA7">
+              <property role="cZbA2" value="1976" />
+              <property role="cZbA4" value="8" />
+            </node>
+            <node concept="cZbBA" id="3M0M$zEbZx_" role="cZbA7">
+              <property role="cZbA2" value="2349" />
+              <property role="cZbA4" value="8" />
+            </node>
+            <node concept="cZbBA" id="3M0M$zEbZxA" role="cZbA7">
+              <property role="cZbA2" value="1976" />
+              <property role="cZbA4" value="8" />
+            </node>
+            <node concept="cZbBA" id="3M0M$zEbZxB" role="cZbA7">
+              <property role="cZbA2" value="2349" />
+              <property role="cZbA4" value="8" />
+            </node>
+            <node concept="cZbBA" id="3M0M$zEbZxC" role="cZbA7">
+              <property role="cZbA2" value="1976" />
+              <property role="cZbA4" value="8" />
+            </node>
+            <node concept="cZbBA" id="3M0M$zEbZxD" role="cZbA7">
+              <property role="cZbA2" value="1760" />
+              <property role="cZbA4" value="4" />
+            </node>
+            <node concept="cZbBA" id="3M0M$zEbZxE" role="cZbA7">
+              <property role="cZbA2" value="1760" />
+              <property role="cZbA4" value="2" />
+            </node>
+            <node concept="cZbBA" id="3M0M$zEbZxF" role="cZbA7">
+              <property role="cZbA2" value="1568" />
+            </node>
+            <node concept="cZbBA" id="3M0M$zEbZxG" role="cZbA7">
+              <property role="cZbA2" value="1760" />
+              <property role="cZbA4" value="8" />
+            </node>
+            <node concept="cZbBA" id="3M0M$zEbZxH" role="cZbA7">
+              <property role="cZbA2" value="1568" />
+              <property role="cZbA4" value="8" />
+            </node>
+            <node concept="cZbBA" id="1quzEJC_5BI" role="cZbA7" />
+          </node>
+        </node>
+        <node concept="PASZj" id="6VQFIDrro5P" role="PB4Z7">
+          <node concept="PA$78" id="6VQFIDrro5R" role="PASZg">
+            <ref role="PA_Tg" node="14Oqs0tMgLy" resolve="led1" />
+            <node concept="PA_Tm" id="6VQFIDrr$UG" role="PAVgZ">
+              <property role="PA_Tn" value="true" />
+            </node>
+            <node concept="PA_Tm" id="6VQFIDrrL$F" role="PAVgZ">
+              <property role="PA_Tn" value="false" />
+            </node>
+            <node concept="PA_Tm" id="6VQFIDrrL$P" role="PAVgZ">
+              <property role="PA_Tn" value="true" />
+            </node>
+            <node concept="PA_Tm" id="6VQFIDrrL$T" role="PAVgZ">
+              <property role="PA_Tn" value="false" />
+            </node>
+            <node concept="PA_Tm" id="6VQFIDrrL$Y" role="PAVgZ">
+              <property role="PA_Tn" value="true" />
+            </node>
+            <node concept="PA_Tm" id="6VQFIDrrL_4" role="PAVgZ">
+              <property role="PA_Tn" value="false" />
+            </node>
+            <node concept="PA_Tm" id="6VQFIDrrL_b" role="PAVgZ">
+              <property role="PA_Tn" value="true" />
+            </node>
+            <node concept="PA_Tm" id="6VQFIDrrL_j" role="PAVgZ">
+              <property role="PA_Tn" value="false" />
+            </node>
+            <node concept="PA_Tm" id="6VQFIDrrL_s" role="PAVgZ">
+              <property role="PA_Tn" value="true" />
+            </node>
+            <node concept="PA_Tm" id="6VQFIDrrL_A" role="PAVgZ">
+              <property role="PA_Tn" value="false" />
+            </node>
+            <node concept="PA_Tm" id="6VQFIDrrL_L" role="PAVgZ">
+              <property role="PA_Tn" value="true" />
+            </node>
+            <node concept="PA_Tm" id="6VQFIDrrL_X" role="PAVgZ">
+              <property role="PA_Tn" value="false" />
+            </node>
+            <node concept="PA_Tm" id="6VQFIDrrLD4" role="PAVgZ">
+              <property role="PA_Tn" value="true" />
+            </node>
+            <node concept="PA_Tm" id="6VQFIDrrLDi" role="PAVgZ">
+              <property role="PA_Tn" value="false" />
+            </node>
+            <node concept="PA_Tm" id="1quzEJC_5BZ" role="PAVgZ">
+              <property role="PA_Tn" value="false" />
+            </node>
+          </node>
+          <node concept="PA$78" id="6VQFIDrrTlv" role="PASZg">
+            <ref role="PA_Tg" node="6VQFIDrrLDQ" resolve="led2" />
+            <node concept="PA_Tm" id="6VQFIDrrTlw" role="PAVgZ">
+              <property role="PA_Tn" value="false" />
+            </node>
+            <node concept="PA_Tm" id="6VQFIDrrTlN" role="PAVgZ">
+              <property role="PA_Tn" value="true" />
+            </node>
+            <node concept="PA_Tm" id="6VQFIDrrTlQ" role="PAVgZ">
+              <property role="PA_Tn" value="false" />
+            </node>
+            <node concept="PA_Tm" id="6VQFIDrrTlU" role="PAVgZ">
+              <property role="PA_Tn" value="true" />
+            </node>
+            <node concept="PA_Tm" id="6VQFIDrrTlZ" role="PAVgZ">
+              <property role="PA_Tn" value="false" />
+            </node>
+            <node concept="PA_Tm" id="6VQFIDrrTm5" role="PAVgZ">
+              <property role="PA_Tn" value="true" />
+            </node>
+            <node concept="PA_Tm" id="6VQFIDrrTmc" role="PAVgZ">
+              <property role="PA_Tn" value="false" />
+            </node>
+            <node concept="PA_Tm" id="6VQFIDrrTmk" role="PAVgZ">
+              <property role="PA_Tn" value="true" />
+            </node>
+            <node concept="PA_Tm" id="6VQFIDrrTmt" role="PAVgZ">
+              <property role="PA_Tn" value="false" />
+            </node>
+            <node concept="PA_Tm" id="6VQFIDrrTmB" role="PAVgZ">
+              <property role="PA_Tn" value="true" />
+            </node>
+            <node concept="PA_Tm" id="6VQFIDrrTmM" role="PAVgZ">
+              <property role="PA_Tn" value="false" />
+            </node>
+            <node concept="PA_Tm" id="6VQFIDrrTmY" role="PAVgZ">
+              <property role="PA_Tn" value="true" />
+            </node>
+            <node concept="PA_Tm" id="6VQFIDrrTnb" role="PAVgZ">
+              <property role="PA_Tn" value="false" />
+            </node>
+            <node concept="PA_Tm" id="6VQFIDrrTnp" role="PAVgZ">
+              <property role="PA_Tn" value="true" />
+            </node>
+            <node concept="PA_Tm" id="6VQFIDrrTnC" role="PAVgZ">
+              <property role="PA_Tn" value="false" />
+            </node>
+          </node>
+        </node>
+        <node concept="vlwI0" id="3M0M$zEbZ$m" role="3YbEhb">
+          <property role="vlwI3" value="132" />
+        </node>
+      </node>
     </node>
     <node concept="B25XI" id="4q4K4ncqpbC" role="B25FG">
       <property role="TrG5h" value="mario" />
-      <node concept="B25N_" id="4q4K4ncqpcS" role="B25WY">
-        <ref role="B25MG" node="4QOGFq8rp75" resolve="off" />
-        <node concept="2VzTCJ" id="4q4K4ncqpcT" role="2VzTFo">
-          <node concept="2VzTIm" id="4q4K4ncqpcY" role="2VzTCI">
-            <property role="2VzTDD" value="true" />
-            <ref role="2VzTDF" node="14Oqs0tMgLk" resolve="button" />
-          </node>
-        </node>
-      </node>
-      <node concept="B25Yp" id="4q4K4ncqpc8" role="B25WF">
-        <property role="B25X1" value="false" />
-        <ref role="B25Xg" node="14Oqs0tMgL6" resolve="buzzer" />
-      </node>
-      <node concept="B25Yp" id="4VUSg2KO_FW" role="B25WF">
-        <property role="B25X1" value="true" />
-        <ref role="B25Xg" node="14Oqs0tMgLy" resolve="led1" />
-      </node>
       <node concept="PB4Z0" id="4VUSg2KPtjU" role="PB457">
         <node concept="vlwI5" id="4VUSg2KPtk0" role="3YbEhb">
           <ref role="vlwIe" node="1rXPBGhbmHx" resolve="tempoControl" />
@@ -253,6 +402,23 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="B25N_" id="4q4K4ncqpcS" role="B25WY">
+        <ref role="B25MG" node="4QOGFq8rp75" resolve="off" />
+        <node concept="2VzTCJ" id="4q4K4ncqpcT" role="2VzTFo">
+          <node concept="2VzTIm" id="4q4K4ncqpcY" role="2VzTCI">
+            <property role="2VzTDD" value="true" />
+            <ref role="2VzTDF" node="14Oqs0tMgLk" resolve="button" />
+          </node>
+        </node>
+      </node>
+      <node concept="B25Yp" id="4q4K4ncqpc8" role="B25WF">
+        <property role="B25X1" value="false" />
+        <ref role="B25Xg" node="14Oqs0tMgL6" resolve="buzzer" />
+      </node>
+      <node concept="B25Yp" id="4VUSg2KO_FW" role="B25WF">
+        <property role="B25X1" value="true" />
+        <ref role="B25Xg" node="14Oqs0tMgLy" resolve="led1" />
       </node>
     </node>
     <node concept="B5LkS" id="14Oqs0tMgL6" role="B5Lb9">
