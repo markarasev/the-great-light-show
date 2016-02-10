@@ -8,12 +8,20 @@
     <import index="ly3x" ref="r:40d89853-463b-41ba-968e-9ba442ef3aa0(ArduinoML.tests.simple_music)" />
   </imports>
   <registry>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1200397529627" name="jetbrains.mps.baseLanguage.structure.CharConstant" flags="nn" index="1Xhbcc">
+        <property id="1200397540847" name="charConstant" index="1XhdNS" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
     <language id="9faaf0ad-8c6c-45e7-a5cb-659ec4a07533" name="ArduinoML">
+      <concept id="1802223283343912387" name="ArduinoML.structure.MatrixDisplayScore" flags="ng" index="8D2l4">
+        <child id="1802223283343912388" name="chars" index="8D2l3" />
+      </concept>
       <concept id="1239732071288066031" name="ArduinoML.structure.MusicScore" flags="ng" index="cZaoJ">
         <child id="1239732071288066119" name="notes" index="cZbA7" />
       </concept>
@@ -355,6 +363,57 @@
       </node>
       <node concept="PA_Tm" id="2Wjadk4w82e" role="FqdDy">
         <property role="PA_Tn" value="false" />
+      </node>
+    </node>
+    <node concept="8D2l4" id="1$2M8shE082" role="FpTZa">
+      <property role="TrG5h" value="charsScore" />
+      <node concept="1Xhbcc" id="1$2M8shE8Lq" role="8D2l3">
+        <property role="1XhdNS" value="D" />
+      </node>
+      <node concept="1Xhbcc" id="1$2M8shE8Lz" role="8D2l3">
+        <property role="1XhdNS" value="E" />
+      </node>
+      <node concept="1Xhbcc" id="1$2M8shE8LG" role="8D2l3">
+        <property role="1XhdNS" value="R" />
+      </node>
+      <node concept="1Xhbcc" id="1$2M8shE8LN" role="8D2l3">
+        <property role="1XhdNS" value="P" />
+      </node>
+      <node concept="1Xhbcc" id="1$2M8shE8Oc" role="8D2l3">
+        <property role="1XhdNS" value="+" />
+      </node>
+      <node concept="1Xhbcc" id="1$2M8shE8Ou" role="8D2l3">
+        <property role="1XhdNS" value="D" />
+      </node>
+      <node concept="1Xhbcc" id="1$2M8shE8RC" role="8D2l3">
+        <property role="1XhdNS" value="E" />
+      </node>
+      <node concept="1Xhbcc" id="1$2M8shE8RQ" role="8D2l3">
+        <property role="1XhdNS" value="R" />
+      </node>
+      <node concept="1Xhbcc" id="1$2M8shE8S2" role="8D2l3">
+        <property role="1XhdNS" value="P" />
+      </node>
+      <node concept="1Xhbcc" id="1$2M8shE8Sl" role="8D2l3">
+        <property role="1XhdNS" value="Y" />
+      </node>
+      <node concept="1Xhbcc" id="1$2M8shE8Tv" role="8D2l3">
+        <property role="1XhdNS" value=" " />
+      </node>
+      <node concept="1Xhbcc" id="1$2M8shE8TO" role="8D2l3">
+        <property role="1XhdNS" value="P" />
+      </node>
+      <node concept="1Xhbcc" id="1$2M8shE8Ua" role="8D2l3">
+        <property role="1XhdNS" value="O" />
+      </node>
+      <node concept="1Xhbcc" id="1$2M8shE8Ux" role="8D2l3">
+        <property role="1XhdNS" value="U" />
+      </node>
+      <node concept="1Xhbcc" id="1$2M8shE8UT" role="8D2l3">
+        <property role="1XhdNS" value="E" />
+      </node>
+      <node concept="1Xhbcc" id="1$2M8shE8Vf" role="8D2l3">
+        <property role="1XhdNS" value="T" />
       </node>
     </node>
   </node>

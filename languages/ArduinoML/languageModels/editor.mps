@@ -656,5 +656,21 @@
       <node concept="l2Vlx" id="1rXPBGhaUIP" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="1$2M8shDIRb">
+    <ref role="1XX52x" to="ve6y:1$2M8shDIR3" resolve="MatrixDisplayScore" />
+    <node concept="3EZMnI" id="1$2M8shDIRd" role="2wV5jI">
+      <node concept="3F0A7n" id="1$2M8shDIRt" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="1$2M8shE06b" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F2HdR" id="1$2M8shE06j" role="3EZMnx">
+        <ref role="1NtTu8" to="ve6y:1$2M8shDIR4" />
+        <node concept="2iRfu4" id="1$2M8shE06l" role="2czzBx" />
+      </node>
+      <node concept="2iRfu4" id="1$2M8shDIRg" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

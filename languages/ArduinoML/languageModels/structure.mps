@@ -8,6 +8,7 @@
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="4fqr" ref="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -525,6 +526,17 @@
     <property role="TrG5h" value="Value" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="1$2M8shDIR3">
+    <property role="1pbfSe" value="715765322" />
+    <property role="TrG5h" value="MatrixDisplayScore" />
+    <ref role="1TJDcQ" node="2Wjadk4uZaL" resolve="Score" />
+    <node concept="1TJgyj" id="1$2M8shDIR4" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="chars" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" to="tpee:htXhb8r" resolve="CharConstant" />
+    </node>
   </node>
 </model>
 
