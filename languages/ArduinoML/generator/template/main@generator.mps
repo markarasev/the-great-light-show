@@ -13,6 +13,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -69,6 +70,7 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -387,7 +389,7 @@
             <node concept="liA8E" id="7KU5MeOnjq2" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="7KU5MeOnjtg" role="37wK5m">
-                <property role="Xl_RC" value="// BuzzAndLight function definition\nvoid buzzAndLight(int buzzer, long frequency, long length, int leds[], int ledStates[], int nLeds) {\n  for (int i = 0; i &lt; nLeds; i++) {\n    digitalWrite(leds[i], ledStates[i]); \n  }\n  if (!frequency) {\n    digitalWrite(buzzer, LOW);\n    delay(length);\n  }\n  else { \n   long delayValue = 1000000 / frequency / 2; // calculate the delay value between transitions\n    // 1 second's worth of microseconds, divided by the frequency, then split in half since\n    // there are two phases to each cycle\n    long numCycles = frequency * length / 1000; // calculate the number of cycles for proper timing\n    // multiply frequency, which is really cycles per second, by the number of seconds to\n    // get the total number of cycles to produce\n    for (long i = 0; i &lt; numCycles; i++) { // for the calculated length of time…\n        digitalWrite(buzzer, HIGH); // write the buzzer pin high to push out the diaphram\n        delayMicroseconds(delayValue); // wait for the calculated delay value\n        digitalWrite(buzzer, LOW); // write the buzzer pin low to pull back the diaphram\n        delayMicroseconds(delayValue); // wait again or the calculated delay value\n    }\n  }\n  for (int i = 0; i &lt; nLeds; i++) {\n    digitalWrite(leds[i], LOW); \n  }\n}\n" />
+                <property role="Xl_RC" value="// BuzzAndLight function definition\nvoid buzzAndLight(int buzzer, long frequency, long length, int leds[], int ledStates[], int nLeds, int matrix[], int matrixSize, int current) {\n  for (int i = 0; i &lt; nLeds; i++) {\n    digitalWrite(leds[i], ledStates[i]); \n  }\n  if (!frequency) {\n    digitalWrite(buzzer, LOW);\n    delay(length);\n  }\n  else { \n   long delayValue = 1000000 / frequency / 2; // calculate the delay value between transitions\n    // 1 second's worth of microseconds, divided by the frequency, then split in half since\n    // there are two phases to each cycle\n    long numCycles = frequency * length / 1000; // calculate the number of cycles for proper timing\n    // multiply frequency, which is really cycles per second, by the number of seconds to\n    // get the total number of cycles to produce\n    for (long i = 0; i &lt; numCycles; i++) { // for the calculated length of time…\n        digitalWrite(buzzer, HIGH); // write the buzzer pin high to push out the diaphram\n        delayMicroseconds(delayValue); // wait for the calculated delay value\n        digitalWrite(buzzer, LOW); // write the buzzer pin low to pull back the diaphram\n        delayMicroseconds(delayValue); // wait again or the calculated delay value\n    }\n  }\n  for (int i = 0; i &lt; nLeds; i++) {\n    digitalWrite(leds[i], LOW); \n  }\n}\n" />
               </node>
             </node>
           </node>
@@ -1005,7 +1007,7 @@
             <node concept="liA8E" id="7KU5MeOm7YR" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="7KU5MeOm7Za" role="37wK5m">
-                <property role="Xl_RC" value="    \n    Serial.println(current);\n    // to calculate the note duration, take one second\n    // divided by the note type.\n    //e.g. quarter note = 1000 / 4, eighth note = 1000/8, etc.\n    int totalDuration = 240000 / tempo / rythm[current];\n    int noteDuration = totalDuration * 9 / 10;\n    int delayDuration = totalDuration * 1 / 10;\n\n    buzzAndLight(buzzer, melody[current], noteDuration, leds, currentLedStates, nLeds);\n    delay(delayDuration);\n    // updating iterators\n    current = (current + 1) % size;" />
+                <property role="Xl_RC" value="    \n    Serial.println(current);\n    // to calculate the note duration, take one second\n    // divided by the note type.\n    //e.g. quarter note = 1000 / 4, eighth note = 1000/8, etc.\n    int totalDuration = 240000 / tempo / rythm[current];\n    int noteDuration = totalDuration * 9 / 10;\n    int delayDuration = totalDuration * 1 / 10;\n\n    buzzAndLight(buzzer, melody[current], noteDuration, leds, currentLedStates, nLeds, matrix, matrixSize, current);\n    delay(delayDuration);\n    // updating iterators\n    current = (current + 1) % size;" />
               </node>
             </node>
           </node>
@@ -2186,7 +2188,154 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="2Wjadk4z6Z2" role="3cqZAp" />
+        <node concept="3clFbH" id="1$2M8shEzz7" role="3cqZAp" />
+        <node concept="3clFbF" id="1$2M8shE$1$" role="3cqZAp">
+          <node concept="2OqwBi" id="1$2M8shE$1x" role="3clFbG">
+            <node concept="10M0yZ" id="1$2M8shE$1y" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="1$2M8shE$1z" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.print(java.lang.String):void" resolve="print" />
+              <node concept="Xl_RD" id="1$2M8shE$tx" role="37wK5m">
+                <property role="Xl_RC" value="    static char matrix[] = { " />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1$2M8shEGbz" role="3cqZAp">
+          <node concept="2OqwBi" id="1$2M8shEGb$" role="3clFbG">
+            <node concept="10M0yZ" id="1$2M8shEGb_" role="2Oq$k0">
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="1$2M8shEGbA" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.print(java.lang.String):void" resolve="print" />
+              <node concept="3cpWs3" id="1$2M8shEGbB" role="37wK5m">
+                <node concept="3cmrfG" id="1$2M8shEGbC" role="3uHU7B">
+                  <property role="3cmrfH" value="0" />
+                  <node concept="17Uvod" id="1$2M8shEGbD" role="lGtFl">
+                    <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580320020/1068580320021" />
+                    <property role="2qtEX9" value="value" />
+                    <node concept="3zFVjK" id="1$2M8shEGbE" role="3zH0cK">
+                      <node concept="3clFbS" id="1$2M8shEGbF" role="2VODD2">
+                        <node concept="3clFbF" id="1$2M8shEGbG" role="3cqZAp">
+                          <node concept="2OqwBi" id="1$2M8shESml" role="3clFbG">
+                            <node concept="2OqwBi" id="1$2M8shEP5C" role="2Oq$k0">
+                              <node concept="30H73N" id="1$2M8shEGbJ" role="2Oq$k0" />
+                              <node concept="3TrcHB" id="1$2M8shERsM" role="2OqNvi">
+                                <ref role="3TsBF5" to="tpee:htXhdRJ" resolve="charConstant" />
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="1$2M8shES$_" role="2OqNvi">
+                              <ref role="37wK5l" to="wyt6:~String.charAt(int):char" resolve="charAt" />
+                              <node concept="3cmrfG" id="1$2M8shESH9" role="37wK5m">
+                                <property role="3cmrfH" value="0" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="1$2M8shEGbM" role="3uHU7w">
+                  <property role="Xl_RC" value="," />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1WS0z7" id="1$2M8shEGbN" role="lGtFl">
+            <node concept="3JmXsc" id="1$2M8shEGbO" role="3Jn$fo">
+              <node concept="3clFbS" id="1$2M8shEGbP" role="2VODD2">
+                <node concept="3clFbF" id="1$2M8shEGbQ" role="3cqZAp">
+                  <node concept="2OqwBi" id="1$2M8shEJ1X" role="3clFbG">
+                    <node concept="2OqwBi" id="1$2M8shEGbR" role="2Oq$k0">
+                      <node concept="30H73N" id="1$2M8shEGbS" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="1$2M8shEIPP" role="2OqNvi">
+                        <ref role="3Tt5mk" to="ve6y:1$2M8shEoGR" />
+                      </node>
+                    </node>
+                    <node concept="3Tsc0h" id="1$2M8shEJew" role="2OqNvi">
+                      <ref role="3TtcxE" to="ve6y:1$2M8shDIR4" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1$2M8shEJw2" role="3cqZAp">
+          <node concept="2OqwBi" id="1$2M8shEJvZ" role="3clFbG">
+            <node concept="10M0yZ" id="1$2M8shEJw0" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="1$2M8shEJw1" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="1$2M8shEK0h" role="37wK5m">
+                <property role="Xl_RC" value=" };" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1$2M8shETi_" role="3cqZAp">
+          <node concept="2OqwBi" id="1$2M8shETiy" role="3clFbG">
+            <node concept="10M0yZ" id="1$2M8shETiz" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="1$2M8shETi$" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="1$2M8shEYLX" role="37wK5m">
+                <node concept="3cmrfG" id="1$2M8shEZRK" role="3uHU7w">
+                  <property role="3cmrfH" value="0" />
+                  <node concept="17Uvod" id="1$2M8shF0eF" role="lGtFl">
+                    <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580320020/1068580320021" />
+                    <property role="2qtEX9" value="value" />
+                    <node concept="3zFVjK" id="1$2M8shF0eG" role="3zH0cK">
+                      <node concept="3clFbS" id="1$2M8shF0eH" role="2VODD2">
+                        <node concept="3clFbF" id="1$2M8shF0_N" role="3cqZAp">
+                          <node concept="3K4zz7" id="1$2M8shF2iU" role="3clFbG">
+                            <node concept="3cmrfG" id="1$2M8shF2mJ" role="3K4E3e">
+                              <property role="3cmrfH" value="0" />
+                            </node>
+                            <node concept="2OqwBi" id="1$2M8shF6ma" role="3K4GZi">
+                              <node concept="2OqwBi" id="1$2M8shF3sP" role="2Oq$k0">
+                                <node concept="2OqwBi" id="1$2M8shF2DF" role="2Oq$k0">
+                                  <node concept="30H73N" id="1$2M8shF2qk" role="2Oq$k0" />
+                                  <node concept="3TrEf2" id="1$2M8shF2Oe" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="ve6y:1$2M8shEoGR" />
+                                  </node>
+                                </node>
+                                <node concept="3Tsc0h" id="1$2M8shF3_o" role="2OqNvi">
+                                  <ref role="3TtcxE" to="ve6y:1$2M8shDIR4" />
+                                </node>
+                              </node>
+                              <node concept="34oBXx" id="1$2M8shF83y" role="2OqNvi" />
+                            </node>
+                            <node concept="3clFbC" id="1$2M8shF26q" role="3K4Cdx">
+                              <node concept="10Nm6u" id="1$2M8shF2aw" role="3uHU7w" />
+                              <node concept="2OqwBi" id="1$2M8shF0Dd" role="3uHU7B">
+                                <node concept="30H73N" id="1$2M8shF0_M" role="2Oq$k0" />
+                                <node concept="3TrEf2" id="1$2M8shF0MV" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="ve6y:1$2M8shEoGR" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="1$2M8shETNH" role="3uHU7B">
+                  <property role="Xl_RC" value="    static int matrixSize = " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
