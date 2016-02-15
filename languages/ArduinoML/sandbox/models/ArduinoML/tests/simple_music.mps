@@ -175,6 +175,7 @@
         <node concept="P$0FW" id="2Wjadk4yNAF" role="PB4Z7">
           <ref role="Fq$SI" node="2Wjadk4w7JM" resolve="ymca" />
           <ref role="PBLDh" node="14Oqs0tMgL6" resolve="buzzer" />
+          <ref role="8EOeK" node="1$2M8shE082" resolve="charsScore" />
           <node concept="PA$78" id="2Wjadk4yNAM" role="F$hEW">
             <ref role="FqdDG" node="2Wjadk4w7RQ" resolve="led1Score" />
             <ref role="PA_Tg" node="14Oqs0tMgLy" resolve="led1" />
@@ -370,19 +371,19 @@
     <node concept="8D2l4" id="1$2M8shE082" role="FpTZa">
       <property role="TrG5h" value="charsScore" />
       <node concept="1Xhbcc" id="1$2M8shE8Lq" role="8D2l3">
-        <property role="1XhdNS" value="D" />
+        <property role="1XhdNS" value="Y" />
       </node>
       <node concept="1Xhbcc" id="1$2M8shE8Lz" role="8D2l3">
-        <property role="1XhdNS" value="E" />
+        <property role="1XhdNS" value="M" />
       </node>
       <node concept="1Xhbcc" id="1$2M8shE8LG" role="8D2l3">
-        <property role="1XhdNS" value="R" />
+        <property role="1XhdNS" value="C" />
       </node>
       <node concept="1Xhbcc" id="1$2M8shE8LN" role="8D2l3">
-        <property role="1XhdNS" value="P" />
+        <property role="1XhdNS" value="A" />
       </node>
       <node concept="1Xhbcc" id="1$2M8shE8Oc" role="8D2l3">
-        <property role="1XhdNS" value="+" />
+        <property role="1XhdNS" value=" " />
       </node>
       <node concept="1Xhbcc" id="1$2M8shE8Ou" role="8D2l3">
         <property role="1XhdNS" value="D" />
@@ -397,25 +398,25 @@
         <property role="1XhdNS" value="P" />
       </node>
       <node concept="1Xhbcc" id="1$2M8shE8Sl" role="8D2l3">
-        <property role="1XhdNS" value="Y" />
+        <property role="1XhdNS" value=" " />
       </node>
       <node concept="1Xhbcc" id="1$2M8shE8Tv" role="8D2l3">
         <property role="1XhdNS" value=" " />
       </node>
       <node concept="1Xhbcc" id="1$2M8shE8TO" role="8D2l3">
-        <property role="1XhdNS" value="P" />
+        <property role="1XhdNS" value="Y" />
       </node>
       <node concept="1Xhbcc" id="1$2M8shE8Ua" role="8D2l3">
-        <property role="1XhdNS" value="O" />
+        <property role="1XhdNS" value="M" />
       </node>
       <node concept="1Xhbcc" id="1$2M8shE8Ux" role="8D2l3">
-        <property role="1XhdNS" value="U" />
+        <property role="1XhdNS" value="C" />
       </node>
       <node concept="1Xhbcc" id="1$2M8shE8UT" role="8D2l3">
-        <property role="1XhdNS" value="E" />
+        <property role="1XhdNS" value="A" />
       </node>
       <node concept="1Xhbcc" id="1$2M8shE8Vf" role="8D2l3">
-        <property role="1XhdNS" value="T" />
+        <property role="1XhdNS" value="!" />
       </node>
     </node>
   </node>

@@ -389,7 +389,7 @@
             <node concept="liA8E" id="7KU5MeOnjq2" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="7KU5MeOnjtg" role="37wK5m">
-                <property role="Xl_RC" value="// BuzzAndLight function definition\nvoid buzzAndLight(int buzzer, long frequency, long length, int leds[], int ledStates[], int nLeds, int matrix[], int matrixSize, int current) {\n  for (int i = 0; i &lt; nLeds; i++) {\n    digitalWrite(leds[i], ledStates[i]); \n  }\n  if (!frequency) {\n    digitalWrite(buzzer, LOW);\n    delay(length);\n  }\n  else { \n   long delayValue = 1000000 / frequency / 2; // calculate the delay value between transitions\n    // 1 second's worth of microseconds, divided by the frequency, then split in half since\n    // there are two phases to each cycle\n    long numCycles = frequency * length / 1000; // calculate the number of cycles for proper timing\n    // multiply frequency, which is really cycles per second, by the number of seconds to\n    // get the total number of cycles to produce\n    for (long i = 0; i &lt; numCycles; i++) { // for the calculated length of time…\n        digitalWrite(buzzer, HIGH); // write the buzzer pin high to push out the diaphram\n        delayMicroseconds(delayValue); // wait for the calculated delay value\n        digitalWrite(buzzer, LOW); // write the buzzer pin low to pull back the diaphram\n        delayMicroseconds(delayValue); // wait again or the calculated delay value\n    }\n  }\n  for (int i = 0; i &lt; nLeds; i++) {\n    digitalWrite(leds[i], LOW); \n  }\n}\n" />
+                <property role="Xl_RC" value="// BuzzAndLight function definition\nvoid buzzAndLight(int buzzer, long frequency, long length, int leds[], int ledStates[], int nLeds, char matrix[], int matrixSize, int current) {\n  for (int i = 0; i &lt; nLeds; i++) {\n    digitalWrite(leds[i], ledStates[i]); \n  }\n  Serial.write(\&quot; \&quot;);\n  if (!frequency) {\n    digitalWrite(buzzer, LOW);\n    delay(length);\n  }\n  else { \n  \tif (matrixSize &gt; 0) {\n\t\tSerial.write(matrix[current]);\n\t}\n   long delayValue = 1000000 / frequency / 2; // calculate the delay value between transitions\n    // 1 second's worth of microseconds, divided by the frequency, then split in half since\n    // there are two phases to each cycle\n    long numCycles = frequency * length / 1000; // calculate the number of cycles for proper timing\n    // multiply frequency, which is really cycles per second, by the number of seconds to\n    // get the total number of cycles to produce\n    for (long i = 0; i &lt; numCycles; i++) { // for the calculated length of time…\n        digitalWrite(buzzer, HIGH); // write the buzzer pin high to push out the diaphram\n        delayMicroseconds(delayValue); // wait for the calculated delay value\n        digitalWrite(buzzer, LOW); // write the buzzer pin low to pull back the diaphram\n        delayMicroseconds(delayValue); // wait again or the calculated delay value\n    }\n  }\n  for (int i = 0; i &lt; nLeds; i++) {\n    digitalWrite(leds[i], LOW); \n  }\n  \n}" />
               </node>
             </node>
           </node>
@@ -1007,7 +1007,7 @@
             <node concept="liA8E" id="7KU5MeOm7YR" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="7KU5MeOm7Za" role="37wK5m">
-                <property role="Xl_RC" value="    \n    Serial.println(current);\n    // to calculate the note duration, take one second\n    // divided by the note type.\n    //e.g. quarter note = 1000 / 4, eighth note = 1000/8, etc.\n    int totalDuration = 240000 / tempo / rythm[current];\n    int noteDuration = totalDuration * 9 / 10;\n    int delayDuration = totalDuration * 1 / 10;\n\n    buzzAndLight(buzzer, melody[current], noteDuration, leds, currentLedStates, nLeds, matrix, matrixSize, current);\n    delay(delayDuration);\n    // updating iterators\n    current = (current + 1) % size;" />
+                <property role="Xl_RC" value="    \n    //Serial.println(current);\n    // to calculate the note duration, take one second\n    // divided by the note type.\n    //e.g. quarter note = 1000 / 4, eighth note = 1000/8, etc.\n    int totalDuration = 240000 / tempo / rythm[current];\n    int noteDuration = totalDuration * 9 / 10;\n    int delayDuration = totalDuration * 1 / 10;\n\n    buzzAndLight(buzzer, melody[current], noteDuration, leds, currentLedStates, nLeds, matrix, matrixSize, current);\n    delay(delayDuration);\n    // updating iterators\n    current = (current + 1) % size;" />
               </node>
             </node>
           </node>
@@ -2212,25 +2212,34 @@
             <node concept="liA8E" id="1$2M8shEGbA" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.print(java.lang.String):void" resolve="print" />
               <node concept="3cpWs3" id="1$2M8shEGbB" role="37wK5m">
-                <node concept="3cmrfG" id="1$2M8shEGbC" role="3uHU7B">
-                  <property role="3cmrfH" value="0" />
-                  <node concept="17Uvod" id="1$2M8shEGbD" role="lGtFl">
-                    <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580320020/1068580320021" />
-                    <property role="2qtEX9" value="value" />
-                    <node concept="3zFVjK" id="1$2M8shEGbE" role="3zH0cK">
-                      <node concept="3clFbS" id="1$2M8shEGbF" role="2VODD2">
-                        <node concept="3clFbF" id="1$2M8shEGbG" role="3cqZAp">
-                          <node concept="2OqwBi" id="1$2M8shESml" role="3clFbG">
-                            <node concept="2OqwBi" id="1$2M8shEP5C" role="2Oq$k0">
-                              <node concept="30H73N" id="1$2M8shEGbJ" role="2Oq$k0" />
-                              <node concept="3TrcHB" id="1$2M8shERsM" role="2OqNvi">
-                                <ref role="3TsBF5" to="tpee:htXhdRJ" resolve="charConstant" />
-                              </node>
-                            </node>
-                            <node concept="liA8E" id="1$2M8shES$_" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.charAt(int):char" resolve="charAt" />
-                              <node concept="3cmrfG" id="1$2M8shESH9" role="37wK5m">
-                                <property role="3cmrfH" value="0" />
+                <node concept="Xl_RD" id="1$2M8shEGbM" role="3uHU7w">
+                  <property role="Xl_RC" value="," />
+                </node>
+                <node concept="3cpWs3" id="6h8QxEC7uaX" role="3uHU7B">
+                  <node concept="Xl_RD" id="6h8QxEC7uyJ" role="3uHU7w">
+                    <property role="Xl_RC" value="'" />
+                  </node>
+                  <node concept="3cpWs3" id="6h8QxEC7t2i" role="3uHU7B">
+                    <node concept="Xl_RD" id="6h8QxEC7sB4" role="3uHU7B">
+                      <property role="Xl_RC" value="'" />
+                    </node>
+                    <node concept="Xl_RD" id="6h8QxEC7tpP" role="3uHU7w">
+                      <node concept="17Uvod" id="6h8QxEC7wFT" role="lGtFl">
+                        <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+                        <property role="2qtEX9" value="value" />
+                        <node concept="3zFVjK" id="6h8QxEC7wFU" role="3zH0cK">
+                          <node concept="3clFbS" id="6h8QxEC7wFV" role="2VODD2">
+                            <node concept="3clFbF" id="1$2M8shEGbG" role="3cqZAp">
+                              <node concept="2OqwBi" id="6h8QxEC7r$S" role="3clFbG">
+                                <node concept="2OqwBi" id="1$2M8shEP5C" role="2Oq$k0">
+                                  <node concept="30H73N" id="1$2M8shEGbJ" role="2Oq$k0" />
+                                  <node concept="3TrcHB" id="1$2M8shERsM" role="2OqNvi">
+                                    <ref role="3TsBF5" to="tpee:htXhdRJ" resolve="charConstant" />
+                                  </node>
+                                </node>
+                                <node concept="liA8E" id="6h8QxEC7rGe" role="2OqNvi">
+                                  <ref role="37wK5l" to="wyt6:~String.toString():java.lang.String" resolve="toString" />
+                                </node>
                               </node>
                             </node>
                           </node>
@@ -2238,9 +2247,6 @@
                       </node>
                     </node>
                   </node>
-                </node>
-                <node concept="Xl_RD" id="1$2M8shEGbM" role="3uHU7w">
-                  <property role="Xl_RC" value="," />
                 </node>
               </node>
             </node>
@@ -2332,6 +2338,20 @@
                 <node concept="Xl_RD" id="1$2M8shETNH" role="3uHU7B">
                   <property role="Xl_RC" value="    static int matrixSize = " />
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6h8QxEC7eUr" role="3cqZAp">
+          <node concept="2OqwBi" id="6h8QxEC7fJH" role="3clFbG">
+            <node concept="10M0yZ" id="6h8QxEC7eUq" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="6h8QxEC7fTw" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="6h8QxEC7fTN" role="37wK5m">
+                <property role="Xl_RC" value=";" />
               </node>
             </node>
           </node>
