@@ -94,7 +94,7 @@
     <node concept="B25XI" id="4QOGFq8rp75" role="B25FG">
       <property role="TrG5h" value="off" />
       <node concept="B25N_" id="4QOGFq8rp8i" role="B25WY">
-        <ref role="B25MG" node="4QOGFq8rp8B" resolve="on" />
+        <ref role="B25MG" node="4QOGFq8rp8B" resolve="ymca_normal" />
         <node concept="2VzTCJ" id="4QOGFq8rp8j" role="2VzTFo">
           <node concept="2VzTIm" id="4QOGFq8rp8o" role="2VzTCI">
             <property role="2VzTDD" value="true" />
@@ -110,9 +110,13 @@
         <property role="B25X1" value="false" />
         <ref role="B25Xg" node="14Oqs0tMgLy" resolve="led1" />
       </node>
+      <node concept="B25Yp" id="7fE9_8Ey7Km" role="B25WF">
+        <property role="B25X1" value="false" />
+        <ref role="B25Xg" node="6VQFIDrrLDQ" resolve="led2" />
+      </node>
     </node>
     <node concept="B25XI" id="4QOGFq8rp8B" role="B25FG">
-      <property role="TrG5h" value="on" />
+      <property role="TrG5h" value="ymca_normal" />
       <node concept="B25Yp" id="4QOGFq8rp9b" role="B25WF">
         <property role="B25X1" value="false" />
         <ref role="B25Xg" node="14Oqs0tMgL6" resolve="buzzer" />
@@ -122,7 +126,7 @@
         <ref role="B25Xg" node="14Oqs0tMgLy" resolve="led1" />
       </node>
       <node concept="B25N_" id="4QOGFq8rp9C" role="B25WY">
-        <ref role="B25MG" node="4q4K4ncqpbC" resolve="mario" />
+        <ref role="B25MG" node="4q4K4ncqpbC" resolve="ymca_tempo_control" />
         <node concept="2VzTCJ" id="4QOGFq8rp9D" role="2VzTFo">
           <node concept="2VzTIm" id="4QOGFq8rp9I" role="2VzTCI">
             <property role="2VzTDD" value="true" />
@@ -150,7 +154,7 @@
       </node>
     </node>
     <node concept="B25XI" id="4q4K4ncqpbC" role="B25FG">
-      <property role="TrG5h" value="mario" />
+      <property role="TrG5h" value="ymca_tempo_control" />
       <node concept="B25N_" id="4q4K4ncqpcS" role="B25WY">
         <ref role="B25MG" node="4QOGFq8rp75" resolve="off" />
         <node concept="2VzTCJ" id="4q4K4ncqpcT" role="2VzTFo">
@@ -179,6 +183,10 @@
           <node concept="PA$78" id="2Wjadk4yNAM" role="F$hEW">
             <ref role="FqdDG" node="2Wjadk4w7RQ" resolve="led1Score" />
             <ref role="PA_Tg" node="14Oqs0tMgLy" resolve="led1" />
+          </node>
+          <node concept="PA$78" id="7fE9_8Ey7JO" role="F$hEW">
+            <ref role="FqdDG" node="2Wjadk4w7Ss" resolve="led2Score" />
+            <ref role="PA_Tg" node="6VQFIDrrLDQ" resolve="led2" />
           </node>
         </node>
       </node>
