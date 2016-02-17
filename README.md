@@ -12,3 +12,5 @@ ArduinoML DSL for composing and playing music tracks and enjoying light shows on
 - Start the python program
 
 You're all set to enjoy your own Great Light Show!
+
+Note: remember to quit the Python repeater before uploading the program to the Arduino board, otherwise it may cause problems.
